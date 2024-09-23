@@ -1,0 +1,435 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+/* Global Variables */
+:root {
+    --background-primary: #ECE2DA;
+    --background-secondary: #3B8E46;
+    --background-white: #FFFFFF;
+    --primary-color: #3B8E46;
+    --secondary-color: #D2776A;
+    --white-text: #FFFFFF;
+    --black-text: #000000;
+    --button-nav: #DC9F96;
+    --button-nav-hover: #C02E44;
+    --button-page: #E0B9B4;
+    --button-page-hover: #C02E44;
+    --button-text: #FFFFFF;
+}
+
+/*body */
+body {
+    font-family: 'Syne', sans-serif; /* Police d'écriture */
+    background-color: var(--background-primary); /* Couleur de fond */
+    color: var(--black-text); /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+  }
+.hide-title .site-title{
+    display: none; /* Masque le titre du site */
+  
+}
+
+/* Entry Content */
+.entry-content p{
+    color: var(--black-text); /* Couleur du texte */
+    margin-bottom: 20px; /* Espace entre les paragraphes */
+  
+}
+
+/*headings */
+h1{
+    font-size: 38px; /* Taille de police */
+    font-weight: 800; /* Gras */
+    text-transform: uppercase; /* Majuscules */
+}
+h2{
+    font-size: 30px; /* Taille de police */
+    font-weight: 800; /* Gras */
+    text-transform: uppercase; /* Majuscules */
+}
+h3{
+    font-size: 30px; /* Taille de police */
+    font-weight: 700; 
+}
+h4{
+    font-size: 20px; /* Taille de police */
+    font-weight: bold; /* Gras */
+}
+
+/* Navigation */
+/* Links */
+a{
+    color: var(--black-text); /* Couleur du texte */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+ul,li {
+    list-style: none; 
+}
+
+/* Remove spin buttons on input fields */
+
+.panier input::-webkit-outer-spin-button,
+.panier input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* header */
+
+header #commander {
+    background-color: var(--button-nav); /* Couleur de fond */
+    padding: 10px 30px; /* Marge */
+    display: flex; /* Affichage en flexbox */
+    align-items: center; /* Alignement vertical */
+    justify-content: space-between; /* Alignement horizontal */
+    position: fixed; /* Position fixée */
+    top: 0; /* Positionnement en haut de la page */
+    left: 0; /* Positionnement en gauche de la page */
+    z-index: 100; /* Positionnement au dessus des autres éléments */
+}
+
+#menu-item-47 a :hover{
+    font-weight: bolder; 
+    font-size: 14px; 
+    line-height: 14px;
+}
+
+#master .ast-container, .site-header-focus-item + .ast-breadcrumbs-wrapper{
+    padding-right: 0;
+}
+
+.page-commander-lien{
+    background-color: var(--button-nav); /* Couleur de fond */
+    height: 100%;
+    width: 236px;
+    text-align: center;
+}
+
+/*Horizontal menu */
+.menu-content {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+
+}
+
+.menu-content li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu-content li:last-child{
+    margin-right: 0;
+
+}
+
+/* Centered content  on specific pages*/
+.page-nous-rencontrer, .page-home{
+    text-align: center;
+}
+
+.equipe{
+    display: inline-block;
+}
+.equipe img {
+    display: block;
+    margin : 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* Footer */
+footer {
+    border-top: solid var(--background-white) 1px;
+}
+
+
+footer .footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copy{
+    text-align: center;
+}
+
+
+.site-primary-footer-wrap{
+    border-top: solid var(--background-white);
+}
+
+
+.entry-title{
+    display:none;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.pagecommander {
+    background-color: var(--primary-color);
+}
+
+.page-home{
+    background-color: var(--secondary-color);
+    padding-bottom: 50px;
+}
+
+
+.group-nous-contacter{
+    position:relative;
+
+}
+
+.group-nous-contacter .background-image{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    z-index: '-1';
+    opacity: 0.5;
+    width: auto;
+    height: 200px;
+
+
+}
+
+
+
+.group-nous-contacter.wp-block-group_inner-container{
+    position: relative;
+    z-index: index 1;
+}
+
+
+
+
+
+/* Styles de la navbar */
+.main-navigation {
+    background-color: #fff; /* Couleur de fond */
+    width: 1440px; 
+    height: 80px; 
+    flex-shrink: 0;
+  }
+
+  
+/* Page home */
+.boisson {
+    color: #3B8E46 !important;
+    text-align: center;
+    font-family: Syne;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+
+.energie-des-plantes{
+    color: #3B8E46 !important;
+    text-align: center;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.gout {
+    color: #ECE2DA !important;
+    text-align: center;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.saveur{
+    color: #000 !important;
+    text-align: center;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+
+.pensent{
+    color: #3B8E46 !important;
+    text-align: center;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.im-pensent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+}
+
+/* Page commander */
+
+.panier {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Conteneur du formulaire */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espace entre les deux colonnes */
+}
+
+/* Section de gauche */
+.form-left {
+    flex: 1;
+    padding-right: 10px;
+}
+
+/* Section de droite */
+.form-right {
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* Séparateur */
+.form-separator {
+    width: 1px;
+    background-color: #ddd;
+    height: auto;
+}
+
+/* Styling des champs de saisie */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Stylisation des titres des sections */
+h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+/* Page Nous rencontrer */
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+.rencontrer {
+    background-image: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Group-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 10% 10%;
+    background-color: #ECE2DA;
+    position: relative;
+}
+
+
+.image-container img {
+    display: block; /* pour enlever tout espace sous l'image */
+    margin: 0; /* aucune marge autour de l'image */
+    padding: 0; /* aucun remplissage autour de l'image */
+}
+
+.contacter-bloc {
+    margin: 0;
+    padding : 0;
+    position : relative;
+    top: -20px;
+}
+
+.image-ronde img {
+    margin-bottom: -10 px !important;
+    border-radius: 50% !important;
+}
+
+.equipe {
+    margin :50px !important;
+}
+
+.megane{
+    margin :50px !important;
+    border-radius: 50px !important;
+}
+
+.brooke {
+    margin :50px !important;
+}
+
+.sylvie{
+    margin :50px !important;
+}
+
+
+.feuille{
+    position :absolute !important;
+    right: 20px !important;
+}
+
+
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .energie-des-plantes, .gouts, .pensent {
+        font-size: 24px !important;
+    }
+
+    .titre-home {
+        font-size: 24px !important;
+    }
+
+    .wp-block-uagb-container .item{
+        flex: 1 1 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+
+    .ast-builder-menu-1{
+        display: none !important;
+
+    }
+
+
+}
