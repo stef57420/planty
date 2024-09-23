@@ -235,6 +235,10 @@ footer .footer{
     line-height: normal;
     text-transform: uppercase;
 
+
+}
+
+
 .energie-des-plantes{
     color: #3B8E46 !important;
     text-align: center;
@@ -246,8 +250,16 @@ footer .footer{
     
 }
 
-.gout {
-    color: #ECE2DA !important;
+
+.boisson{
+    position:relative;
+    border-radius: 0 0 10% 10%;
+    overflow:hidden;
+    background-color: #ECE2DA;
+}
+
+.gouts{
+    color:#D2776A !important;
     text-align: center;
     font-family: Syne;
     font-size: 30px;
@@ -255,10 +267,9 @@ footer .footer{
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+    overflow: hidden;
+  
 }
-
-
-
 
 
 .saveur{
@@ -269,8 +280,15 @@ footer .footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-   
+    margin-bottom : -5px !important;
+    padding: 5px !important;
+    margin: 20px !important;
+
 }
+.commander{
+    margin: 35px !important;
+}
+
 
 .pensent{
     color: #3B8E46 !important;
@@ -281,6 +299,7 @@ footer .footer{
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+    margin: 30px !important;
 }
 
 .im-pensent{
@@ -290,18 +309,28 @@ footer .footer{
 }
 
 
-
-
-
+.les-gouts{
+   
+    border-radius: 0 0 5% 5%;
+    overflow: hidden;
+    background-color: #ECE2DA;
 }
+
 
 /* Page commander */
 
-.panier {
+.container{
+    max-width: 100%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    background-color: var(--primary-color);
+    align-items: center;
 }
+
+
+
+
 /* Conteneur du formulaire */
 .form-container {
     display: flex;
@@ -350,10 +379,7 @@ h3 {
 
 /* Page Nous rencontrer */
 
-.contact-info {
-    display: flex;
-    gap: 20px;
-}
+
 .rencontrer {
     background-image: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Group-2.png);
     background-repeat: no-repeat;
@@ -362,6 +388,17 @@ h3 {
     background-color: #ECE2DA;
     position: relative;
 }
+
+
+.pllante{
+    width: 145.302px;
+    height: 150.262px;
+    transform: rotate(70deg);
+    flex-shrink: 0;
+}
+
+
+
 
 
 .image-container img {
