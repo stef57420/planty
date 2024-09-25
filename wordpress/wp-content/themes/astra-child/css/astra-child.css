@@ -90,11 +90,7 @@ header #commander {
     z-index: 100; /* Positionnement au dessus des autres éléments */
 }
 
-#menu-item-47 a :hover{
-    font-weight: bolder; 
-    font-size: 14px; 
-    line-height: 14px;
-}
+
 
 #master .ast-container, .site-header-focus-item + .ast-breadcrumbs-wrapper{
     padding-right: 0;
@@ -125,6 +121,19 @@ header #commander {
 
 }
 
+/*menu commander*/
+
+#menu-item-21 a{
+    background-color: var(--button-nav); /* Couleur de fond */
+    width: 236px!important; 
+    height :75px !important;
+    
+
+}
+
+
+
+
 /* Centered content  on specific pages*/
 .page-nous-rencontrer, .page-home{
     text-align: center;
@@ -139,6 +148,37 @@ header #commander {
     width: 150px;
     height: auto;
 }
+
+/* Typography */
+.titre-home{
+    line-height: 48px !important;
+    font-size: 48px !important;
+    color: #3B8E46;
+}
+
+.energie-des-plantes, .gouts, .pensent, .fathia-vero-marc{
+    line-height: 36px !important;
+    font-size: 36px !important;
+
+}
+
+.gouts{
+    color: #D2776A !important;
+}
+.pensent, .fathia-vero-marc{
+    color: #3B8E46 !important;
+
+}
+
+.img-pensent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 
 
@@ -181,6 +221,11 @@ footer .footer{
     background-color: var(--primary-color);
 }
 
+.image-ronde img{
+    border-radius: 50%;
+}
+
+
 .page-home{
     background-color: var(--secondary-color);
     padding-bottom: 50px;
@@ -196,7 +241,7 @@ footer .footer{
     position:absolute;
     bottom: 0;
     left: 0;
-    z-index: '-1';
+    z-index: -1;
     opacity: 0.5;
     width: auto;
     height: 200px;
@@ -212,16 +257,41 @@ footer .footer{
 }
 
 
+/* Container styles */
+.wp-block-uagb-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wp-block-uagb-container .item{
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 
+.ast-builder-menu-1{
+    display: block !important;
+}
 
 /* Styles de la navbar */
 .main-navigation {
-    background-color: #fff; /* Couleur de fond */
-    width: 1440px; 
-    height: 80px; 
-    flex-shrink: 0;
+    background-color: var(--background-white);
+    color: var(--black-text);
   }
+
+.menu-content li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.main-header-menu{
+    height: 50px !important;
+}
 
   
 /* Page home */
@@ -328,6 +398,63 @@ footer .footer{
     align-items: center;
 }
 
+.section-command{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    width : 100%;
+}
+
+
+.section-command .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.section-command label{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--background-white);
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form-left,
+.form-right {
+    flex: 1;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-left, 
+.form-right {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+
 
 
 
@@ -376,6 +503,10 @@ h3 {
 }
 
 
+      
+
+
+
 
 /* Page Nous rencontrer */
 
@@ -390,16 +521,12 @@ h3 {
 }
 
 
-.pllante{
+.plante{
     width: 145.302px;
     height: 150.262px;
     transform: rotate(70deg);
     flex-shrink: 0;
 }
-
-
-
-
 
 .image-container img {
     display: block; /* pour enlever tout espace sous l'image */
@@ -416,7 +543,7 @@ h3 {
 
 .image-ronde img {
     margin-bottom: -10 px !important;
-    border-radius: 50% !important;
+    
 }
 
 .equipe {
@@ -442,6 +569,31 @@ h3 {
     right: 20px !important;
 }
 
+img-uag-image-66{
+    width: 1440px !important;
+    height: 554px !important;
+    flex-shrink: 0;
+}
+
+
+.contacter{
+    background: #ECE2DA; 
+}
+
+
+.fleur{
+   position: relative;
+   width: 100%;
+   height: 100%;5
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -450,11 +602,66 @@ h3 {
 @media (max-width: 768px) {
     .energie-des-plantes, .gouts, .pensent {
         font-size: 24px !important;
+        font-size: 24px !important;
     }
 
     .titre-home {
-        font-size: 24px !important;
+        font-size: 40px !important;
+        line-height: 40px !important;
     }
+
+    .fathia-vero-marc{
+        line-height: 30px !important;
+        font-size: 30px !important;
+    }
+
+    .main-navigation.toggled, .navbar-collapse.toggled{
+        display: block;
+    }
+
+    .section-command{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-command .item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .formulaire-contact .wp-block-column.is-layaout-flow:first-child,
+    .bloc-boisson .wp-block-column.is-layaout-flow:first-child{
+        border-right: none !important ;
+        padding-right: 10px;
+    }
+
+
+    .formulaire-contact .wp-block-column.is-layaout-flex,
+    .bloc-boisson .wp-block-column.is-layaout-flex{
+        column-gap: 10px !important;
+    }
+
+    .formulaire-contact .wp-block-column.wp-block-column.is-layaout-flow:last-child,
+    .bloc-boisson .wp-block-column.wp-block-column.is-layaout-flex:last-child{
+        border-left: none !important ;
+        padding-left: 10px;
+    }
+
+    .bloc-boisson .wp-block-column.is-layaout-flow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+       
+    .wp-admin.wp-core-ui.js.ast-highlight-wpblock-onhover.ast-defaut-cotent-unboxed.ast-defaut-sidebar-unboxed.ast-defaut-layout-page-builder.ast-block-custom.ast-no-sidebar.ast-siedebar-defaut-no-siededbar.is-fullscreen-mode.post-php.auto-fold.admin-bar.post-type-page.branch-6-5.version-6-5-4.admin-color-fresh.locale-fr-fr.block-editor-page.wp-embed-responsive.customize-support.svg.ast-page-builder-template{
+       background-color: #fff;
+       padding: 20px;
+       text-align: left;
+    }
+
+
 
     .wp-block-uagb-container .item{
         flex: 1 1 100%;
@@ -468,5 +675,18 @@ h3 {
 
     }
 
+    .wp-block-uagb-container{
+        flex-direction: column ;
+        align-items: center;
+    }
 
+    .wp-block-uagb-container .item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .ast-builder-menu-1{
+        display: none !important;
+    }
 }

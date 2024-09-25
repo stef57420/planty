@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-09-02 11:13:48+0000\n"
+"PO-Revision-Date: 2024-09-24 12:34:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,106 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release)\n"
+
+#: blocks-config/popup-builder/class-uagb-popup-builder.php:238
+msgid "Enable/Disable"
+msgstr "Activer/désactiver"
+
+#: blocks-config/popup-builder/class-uagb-popup-builder.php:261
+msgid "Info Bar"
+msgstr "Barre d’info"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:143
+msgid "500px"
+msgstr "500px"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:154
+msgid "A"
+msgstr "A"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:165
+msgid "Accessible Icon"
+msgstr "Icône accessibilité"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:176
+msgid "Accusoft"
+msgstr "Accusoft"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:192
+msgid "Address Book"
+msgstr "Carnet d’adresses"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:219
+msgid "App.net"
+msgstr "App.net"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:230
+msgid "Adversal"
+msgstr "Adversaire"
+
+#: blocks-config/popup-builder/class-uagb-popup-builder.php:91
+#: blocks-config/popup-builder/class-uagb-popup-builder.php:92
+#: includes/blocks/popup-builder/block.php:16 dist/blocks-placeholder.js:29
+msgid "Popup Builder"
+msgstr "Constructeur de fenêtre surgissante"
+
+#: admin-core/inc/admin-menu.php:172 admin-core/assets/build/dashboard-app.js:1
+msgid "AI Features"
+msgstr "Fonctionnalités d’IA"
+
+#: admin-core/inc/admin-menu.php:148
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: admin-core/ajax/common-settings.php:986
+msgid "Module not found!"
+msgstr "Module non trouvé !"
+
+#. Translators: %s is the module name.
+#: admin-core/ajax/common-settings.php:1004
+msgid "%s disabled!"
+msgstr "%s désactivé !"
+
+#. Translators: %s is the module name.
+#: admin-core/ajax/common-settings.php:1014
+msgid "Unable to disable %s"
+msgstr "Impossible de désactiver %s"
+
+#. Translators: %s is the module name.
+#: admin-core/ajax/common-settings.php:1026
+msgid "%s enabled!"
+msgstr "%s activé !"
+
+#. Translators: %s is the module name.
+#: admin-core/ajax/common-settings.php:1036
+msgid "Unable to enable %s"
+msgstr "Impossible d activer %s"
+
+#: admin-core/ajax/common-settings.php:1044
+msgid "Unable to save setting."
+msgstr "Impossible d’enregistrer le réglage."
+
+#: admin-core/ajax/common-settings.php:1063
+msgid "Unable to verify authenticity."
+msgstr "Impossible de vérifier l’authenticité."
+
+#: admin-core/ajax/common-settings.php:847
+msgid "Successfully refreshed tokens!"
+msgstr "Les jetons ont bien été actualisé !"
+
+#: admin-core/ajax/common-settings.php:849
+msgid "Failed to refresh tokens"
+msgstr "Échec de l’actualisation des jetons"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:132
+msgid "42.group"
+msgstr "42.group"
+
+#. translators: %1$s: Opening Strong Tag, %2$s: Closing Strong Tag, %3$s Anchor
+#. Tag with Star Symbol Codes.
+#: admin-core/inc/admin-menu.php:502
+msgid "Enjoyed %1$sSpectra%2$s? Please leave us a %3$s rating. We really appreciate your support!"
+msgstr "Vous avez apprécié %1$sSpectra%2$s ? Veuillez nous laisser une évaluation de %3$s. Nous apprécions vraiment votre soutien !"
 
 #: includes/blocks/modal/block.php:17
 msgid "This block allows you to add modal popup."
@@ -74,6 +174,14 @@ msgstr "Charger plus d’images"
 msgid "Unable to load image"
 msgstr "Impossible de charger l’image"
 
+#: classes/class-uagb-init-blocks.php:802
+msgid ""
+"Use custom class added in block's advanced settings to target your desired block. Examples:\n"
+"\t\t.my-class {text-align: center;} // my-class is a custom selector"
+msgstr ""
+"Utilisez la classe personnalisée ajoutée dans les réglages avancés du bloc pour cibler le bloc souhaité. Exemples :\n"
+"\t\t\t\t.my-class {text-align: center;} // my-class is a custom selector"
+
 #: includes/blocks/how-to/block.php:16 dist/blocks-placeholder.js:19
 msgid "How To"
 msgstr "Comment faire"
@@ -95,6 +203,10 @@ msgstr "Téléverser"
 #: blocks-config/uagb-controls/spectra-icons-v6-1.php:2598
 msgid "Filter"
 msgstr "Filtre"
+
+#: lib/gutenberg-templates/inc/api/favorite.php:178
+msgid "Action Completed"
+msgstr "Action terminée"
 
 #: blocks-config/uagb-controls/spectra-icons-v6-1.php:385
 msgid "Diamond"
@@ -119,6 +231,27 @@ msgstr "Carte Google pour "
 #: blocks-config/uagb-controls/spectra-icons-v6-2.php:176
 msgid "Italic"
 msgstr "Italique"
+
+#: includes/blocks/slider-child/block.php:14
+#: includes/blocks/slider/block.php:16 dist/blocks-placeholder.js:35
+msgid "Slider"
+msgstr "Diaporama"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:4438
+msgid "Clock"
+msgstr "Horloge"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-3.php:330
+msgid "Share"
+msgstr "Partager"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:2831
+msgid "Paste"
+msgstr "Coller"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-1.php:4759
+msgid "Highlighter"
+msgstr "Surligneur"
 
 #: includes/blocks/review/block.php:16 dist/blocks-placeholder.js:33
 msgid "Review"
@@ -500,6 +633,10 @@ msgstr "Safari"
 msgid "Opera"
 msgstr "Opera"
 
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:143
+msgid "Internet-explorer"
+msgstr "Internet Explorer"
+
 #: blocks-config/uagb-controls/spectra-icons-v6-2.php:944
 msgid "Linux"
 msgstr "Linux"
@@ -515,6 +652,10 @@ msgstr "Composition"
 #: blocks-config/uagb-controls/spectra-icons-v6-0.php:417
 msgid "Android"
 msgstr "Androïd"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:2152
+msgid "Mound"
+msgstr "Monticule"
 
 #: includes/blocks/forms-accept/block.php:14
 msgid "Accept"
@@ -634,6 +775,10 @@ msgstr "Une erreur s’est produite, la version sélectionnée n’est pas valid
 msgid "Price List-Child"
 msgstr "Liste enfant de prix"
 
+#: blocks-config/uagb-controls/spectra-icons-v6-3.php:5198
+msgid "Brands"
+msgstr "Marques"
+
 #: blocks-config/uagb-controls/spectra-icons-v6-3.php:4594
 msgid "WhatsApp"
 msgstr "WhatsApp"
@@ -662,9 +807,21 @@ msgstr "Tampon"
 msgid "VK"
 msgstr "VK"
 
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:4930
+msgid "Rocket"
+msgstr "Roquette"
+
 #: blocks-config/uagb-controls/spectra-icons-v6-2.php:966
 msgid "List"
 msgstr "Liste"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-1.php:3309
+msgid "Gears"
+msgstr "Engrenages"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-3.php:2088
+msgid "Table Columns"
+msgstr "Colonnes de tableau"
 
 #: blocks-config/uagb-controls/spectra-icons-v6-2.php:632
 msgid "Language"
@@ -725,6 +882,10 @@ msgstr "Partage social enfant"
 msgid "Book"
 msgstr "Livre"
 
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:4492
+msgid "Cloud"
+msgstr "Nuage"
+
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:646
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:650
 #: includes/blocks/table-of-contents/attributes.php:18
@@ -759,6 +920,10 @@ msgstr "E-mail"
 #: blocks-config/uagb-controls/spectra-icons-v6-1.php:2004
 msgid "Facebook"
 msgstr "Facebook"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-1.php:3688
+msgid "Google Plus G"
+msgstr "Google Plus"
 
 #: includes/blocks/icon-list-child/block.php:14
 #: includes/blocks/icon/block.php:16 dist/blocks-placeholder.js:21
@@ -851,6 +1016,26 @@ msgstr "Souligner"
 #: blocks-config/uagb-controls/spectra-icons-v6-3.php:4154
 msgid "Video"
 msgstr "Vidéo"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-3.php:2055
+msgid "Table"
+msgstr "Tableau"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-0.php:4668
+msgid "Clover"
+msgstr "Trèfle"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:4167
+msgid "Prescription"
+msgstr "Ordonnance"
+
+#: blocks-config/uagb-controls/spectra-icons-v6-2.php:2163
+msgid "Mountain"
+msgstr "Montagne"
+
+#: blocks-config/popup-builder/class-uagb-popup-builder.php:267
+msgid "Unset"
+msgstr "Non défini"
 
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:934
 #: includes/blocks/table-of-contents/attributes.php:19

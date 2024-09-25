@@ -17,26 +17,23 @@ function astra_child_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'astra_child_enqueue_scripts');
 
-// Ajouter les liens "Nous rencontrer", "Admin", et "Commander" au menu principal
+// Ajouter le lien "Admin", au menu principal
 function add_custom_links_to_menu($items, $args) {
-    if ($args->theme_location === 'primary') {
-        // Créer les liens
-        $nous_rencontrer_link = '<li class="menu-item"><a href="' . home_url('/nous-rencontrer') . '">Nous rencontrer</a></li>';
+    //if ($args->theme_location === 'primary') {
+        
+        // Créer le lien
         $admin_link = '<li class="menu-item"><a class="menu-admin" href="' . admin_url() . '">Admin</a></li>';
-        $commander_link = '<li class="menu-item"><a class="menu-commander" href="' . home_url('/commander') . '">Commander</a></li>';
-
-        // Assurer qu'aucun des liens n'est déjà présent
-        if (strpos($items, 'menu-admin') === false) {
-            $items .= $admin_link;
+       
+        // On insère le lien si l'utilisateur est connecté et que le lien n'existe pas
+        if ((is_user_logged_in()) && (strpos($items, 'menu-admin') === false) ){
+            
+                $items .= $admin_link;
+          
+            
         }
-        if (strpos($items, 'menu-commander') === false) {
-            $items .= $commander_link;
-        }
-        // Ajouter "Nous rencontrer" au début du menu
-        if (strpos($items, 'Nous rencontrer') === false) {
-            $items = $nous_rencontrer_link . $items;
-        }
-    }
+        
+    
+    //}
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_custom_links_to_menu', 10, 2);
