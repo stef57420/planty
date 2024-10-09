@@ -125,8 +125,12 @@ header #commander {
 
 #menu-item-21 a{
     background-color: var(--button-nav); /* Couleur de fond */
-    width: 236px!important; 
-    height :75px !important;
+    font-weight: 700 !important;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center !important;
+    text-align: center !important;
+
     
 
 }
@@ -164,6 +168,7 @@ header #commander {
 
 .gouts{
     color: #D2776A !important;
+    margin-top: 50px !important;
 }
 .pensent, .fathia-vero-marc{
     color: #3B8E46 !important;
@@ -178,8 +183,51 @@ header #commander {
 
 
 
+#post-6 > div > div.wp-block-uagb-container.uagb-block-919fd6cd.alignfull.uagb-is-root-container > div > p{
+    align-items: center !important;
+    margin-bottom: inherit !important;
+    margin-top: 50px !important;
+}
+
+.energie-plantes{
+  margin-bottom: 50px !important;
+}
 
 
+/* image canette sur page home */
+
+body.home {
+    background: none;
+}
+
+.canette {
+    width: 1307px;
+    height: 950px;
+    position: relative;
+    flex-shrink: 0;
+    background: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Planty6-1.png) lightgray 50% / cover no-repeat;
+}
+
+.canette img {
+    width: 100%;
+    height: auto;
+}
+
+.feuille-gauche {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feuill-droite {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.image-canette {
+    background-image: url('//localhost/planty/wordpress/wp-content/uploads/2024/09/Group-8-1-768x70-1.png');
+}
 
 
 /* Footer */
@@ -289,9 +337,6 @@ footer .footer{
     margin: 10px 0;
 }
 
-.main-header-menu{
-    height: 50px !important;
-}
 
   
 /* Page home */
@@ -507,86 +552,46 @@ h3 {
 
 
 
-
 /* Page Nous rencontrer */
-
 
 .rencontrer {
     background-image: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Group-2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 0 0 10% 10%;
     background-color: #ECE2DA;
     position: relative;
 }
 
-
-.plante{
+.plante {
     width: 145.302px;
     height: 150.262px;
-    transform: rotate(70deg);
     flex-shrink: 0;
 }
 
 .image-container img {
-    display: block; /* pour enlever tout espace sous l'image */
-    margin: 0; /* aucune marge autour de l'image */
-    padding: 0; /* aucun remplissage autour de l'image */
+    margin: 0;
 }
 
 .contacter-bloc {
-    margin: 0;
-    padding : 0;
-    position : relative;
-    top: -20px;
+    margin-top: -20px;
 }
 
 .image-ronde img {
-    margin-bottom: -10 px !important;
-    
+    margin-bottom: -10px;
 }
 
-.equipe {
-    margin :50px !important;
+.contacter {
+    background-color: #ECE2DA;
 }
 
-.megane{
-    margin :50px !important;
-    border-radius: 50px !important;
+.fleur {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.brooke {
-    margin :50px !important;
-}
-
-.sylvie{
-    margin :50px !important;
-}
-
-
-.feuille{
-    position :absolute !important;
-    right: 20px !important;
-}
-
-img-uag-image-66{
-    width: 1440px !important;
-    height: 554px !important;
-    flex-shrink: 0;
-}
-
-
-.contacter{
-    background: #ECE2DA; 
-}
-
-
-.fleur{
-   position: relative;
-   width: 100%;
-   height: 100%;5
-
-}
 
 
 

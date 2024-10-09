@@ -22,7 +22,7 @@ function add_custom_links_to_menu($items, $args) {
     //if ($args->theme_location === 'primary') {
         
         // Créer le lien
-        $admin_link = '<li class="menu-item"><a class="menu-admin" href="' . admin_url() . '">Admin</a></li>';
+        $admin_link = '<li class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-admin menu-link" href="' . admin_url() . '">Admin</a></li>';
        
         // On insère le lien si l'utilisateur est connecté et que le lien n'existe pas
         if ((is_user_logged_in()) && (strpos($items, 'menu-admin') === false) ){
