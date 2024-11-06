@@ -76,6 +76,7 @@ ul,li {
     margin: 0;
 }
 
+
 /* header */
 
 header #commander {
@@ -158,6 +159,9 @@ header #commander {
     line-height: 48px !important;
     font-size: 48px !important;
     color: #3B8E46;
+    font-family: Syne;
+    font-weight: 800;
+    text-transform: uppercase !important;
 }
 
 .energie-des-plantes, .gouts, .pensent, .fathia-vero-marc{
@@ -200,40 +204,74 @@ body.home {
     background: none;
 }
 
-.canette {
-    width: 1307px;
-    height: 950px;
-    position: relative;
-    flex-shrink: 0;
-    background: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Planty6-1.png) lightgray 50% / cover no-repeat;
+.cannette {
+   
+    height: auto !important;
+    position: relative !;
+    /* background: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Planty6-1.png) lightgray 50% / cover no-repeat; /* */
+    width: 400px;
+    height: 500px;
+    z-index: 500;
+   
+    
+      
+    
 }
 
-.canette img {
-    width: 100%;
-    height: auto;
+.uag-image-92 /* image canette sur page home */{
+    z-index: 500;
+    
+ 
 }
 
-.feuille-gauche {
+.uag-image-94 /* image feuille gauche sur page home */{
+    z-index: 50;
+    
+   
+
+}
+
+.uag-image-66 /* image feuille droite sur page home */{
+    z-index: 50;
+    
+   
+
+} 
+
+
+.feuille-gauche  {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 577px;
+    top: 30%;
+    width: 130px;
+    height: 170px;
+   
+   
 }
+   
 
-.feuill-droite {
+
+
+.feuille-droite {
     position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+    right: 550px;
+    top: 30%;
+    width: 140px;
+    height: 160px;
+    
 }
 
 .image-canette {
     background-image: url('//localhost/planty/wordpress/wp-content/uploads/2024/09/Group-8-1-768x70-1.png');
+    background-repeat: repeat-x;
+    height: 70px !important;
+    margin-bottom: 0;
+    
 }
 
 
 /* Footer */
-footer {
-    border-top: solid var(--background-white) 1px;
-}
+
 
 
 footer .footer{
@@ -242,6 +280,13 @@ footer .footer{
     align-items: center;
 
 }
+
+
+footer {
+    border-top: solid var(--background-white) 1px;
+}
+
+
 
 .copy{
     text-align: center;
@@ -265,7 +310,7 @@ footer .footer{
     
 }
 
-.pagecommander {
+.page-commander {
     background-color: var(--primary-color);
 }
 
@@ -337,7 +382,13 @@ footer .footer{
     margin: 10px 0;
 }
 
-
+.image-canette {
+    background-image: url('//localhost/planty/wordpress/wp-content/uploads/2024/09/Group-8-1-768x70-1.png');
+    background-repeat: repeat-x;
+    height: 70px !important;
+    padding: 0;
+    margin-bottom: 0;
+}
   
 /* Page home */
 .boisson {
@@ -434,128 +485,143 @@ footer .footer{
 
 /* Page commander */
 
-.container{
+#block-6b7415d7-da37-4baf-b0ca-3c4041207be8 > div > div > div{
+
+    background-color: #3B8E46 !important;
+}
+
+.container {
     max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
     width: 1440px;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
     align-items: center;
 }
-
-.section-command{
-    display:flex;
+    
+  
+  
+  .section-command {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
-    width : 100%;
-}
-
-
-.section-command .item{
+    width: 100%;
+  }
+  
+  .section-command .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
-}
-
-
-.section-command label{
+  }
+  
+  .section-command label {
     font-size: 20px;
     font-weight: 400;
     color: var(--background-white);
-
-}
-
-.form-container {
+    line-height: 2;
+    margin: 10px 0;
+  }
+  
+  .form-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
-}
-
-.form-left,
-.form-right {
+  }
+  
+  .form-left,
+  .form-right {
     flex: 1;
-}
-
-.form-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.form-left, 
-.form-right {
-    flex: 1;
-}
-
-label {
+  }
+  
+  label {
     display: block;
     margin-bottom: 10px;
-}
-
-h3 {
+  }
+  
+  h3 {
     margin-bottom: 15px;
-}
-
-
-
-
-
-/* Conteneur du formulaire */
-.form-container {
-    display: flex;
-    justify-content: space-between;
+  }
+  
+  /* Optionally adjust the form stylying */
+  
+  /* Conteneur du formulaire */
+  .form-container {
     align-items: flex-start;
-    gap: 20px; /* Espace entre les deux colonnes */
-}
-
-/* Section de gauche */
-.form-left {
-    flex: 1;
+    gap: 20px;
+  }
+  
+  /* Section de gauche */
+  .form-left {
     padding-right: 10px;
-}
-
-/* Section de droite */
-.form-right {
-    flex: 1;
+  }
+  
+  /* Section de droite */
+  .form-right {
     padding-left: 10px;
-}
-
-/* Séparateur */
-.form-separator {
+  }
+  
+  /* Séparateur */
+  .form-separator {
     width: 1px;
     background-color: #ddd;
     height: auto;
-}
-
-/* Styling des champs de saisie */
-input[type="text"],
-input[type="email"] {
+  }
+  
+  /* Styling des champs de saisie */
+  input[type="text"],
+  input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-/* Stylisation des titres des sections */
-h3 {
+  }
+  
+  /* Stylisation des titres des sections */
+  h3 {
     margin-bottom: 10px;
     font-size: 16px;
     color: #333;
+  }
+
+  .quantite {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 10px;
+    padding: 32px 5px;
+    border-radius: 3px;
+    width: 20px;
+    text-align: center;
+    margin-top: 10px;
+   
+}
+
+   
+
+
+.formulaire-contact{
+    margin-top: 50px;
+    display: flex;
+
+
 }
 
 
-      
+
+
+
+
 
 
 
 /* Page Nous rencontrer */
 
 .rencontrer {
-    background-image: url(http://localhost/planty/wordpress/wp-content/uploads/2024/09/Group-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -564,18 +630,45 @@ h3 {
     position: relative;
 }
 
+
+#post-12 > div > div.wp-block-uagb-container.rencontrer.uagb-block-2616fd46.alignfull.uagb-is-root-container{
+    position: relative;
+    margin-top: -85px !important;
+    margin-right: 20px !important;
+}
+
+
+.equipe{
+    margin-top: 50px !important;
+}
+
 .plante {
     width: 145.302px;
     height: 150.262px;
     flex-shrink: 0;
+    transform: rotate(-05deg); /* Rotation de 110 degrés dans le sens antihoraire */
+    
+   
 }
+
+
+
+
 
 .image-container img {
     margin: 0;
+    display: block; /* Pour enlever tout espace sous l'image */
+    padding: 0; /* Aucun remplissage autour de l'image */
 }
 
 .contacter-bloc {
     margin-top: -20px;
+    margin: 0; /* Aucune marge autour du bloc contacter */
+    padding: 0; /* Aucun remplissage autour du bloc contacter */
+    position: relative;
+
+
+
 }
 
 .image-ronde img {
@@ -588,15 +681,17 @@ h3 {
 
 .fleur {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 185px;
+    height: 185px;
 }
 
 
+#post-12 > div > div.wp-block-uagb-container.contacter.uagb-block-66e6da37.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container.image-canette.uagb-block-94f20f23.alignfull.uagb-is-root-container > div{
+    align-items: center !important;
+    margin-bottom: inherit !important;
+    margin-top: 50px !important;
 
-
-
-
+}
 
 
 
@@ -623,6 +718,12 @@ h3 {
     .main-navigation.toggled, .navbar-collapse.toggled{
         display: block;
     }
+
+    .main-navigation, .navbar-collapse {
+        display: none;
+    }
+
+
 
     .section-command{
         flex-direction: column;
@@ -694,4 +795,48 @@ h3 {
     .ast-builder-menu-1{
         display: none !important;
     }
+
+    .fruits{
+        display: flex;
+        justify-content: center;
+    }
 }
+
+.wp-block-uagb-container.uagb-block-66e6da37{
+    padding: 0 !important;
+}
+
+/* Sélecteur pour le footer "mentions légales" */
+.footer-mentions-legales {
+    margin-top: 0;
+    padding: 0;
+    
+  }
+  .ast-plain-container.ast-no-sidebar #primary{
+    margin-bottom: 0 !important;
+  }
+.background-color-primary {
+    background-color: var(--background-primary);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .burger-button {
+        display: block;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+
+    .main-navigation.toggled {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
