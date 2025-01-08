@@ -561,7 +561,7 @@ footer {
     
 }
 .produit input{
-    width: 40px !important;
+    width: 60px !important;
     
 
 }
@@ -827,6 +827,11 @@ h3 {
     display:none !important;
 }
 
+
+.wpcf7-form-control{
+    color : #000 !important;
+
+}
 
 /* Page Nous rencontrer */
 
