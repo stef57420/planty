@@ -24,7 +24,11 @@ add_filter( 'astra_dynamic_theme_css', 'astra_fb_widget_dynamic_css' );
  * @return boolean false if it is an existing user, true if not.
  */
 function astra_support_footer_widget_right_margin() {
+<<<<<<< HEAD
 	$astra_settings = get_option( ASTRA_THEME_SETTINGS );
+=======
+	$astra_settings = astra_get_options();
+>>>>>>> bb56ea5 (projet final)
 	return apply_filters( 'astra_apply_right_margin_footer_widget_css', isset( $astra_settings['support-footer-widget-right-margin'] ) ? false : true );
 }
 
@@ -91,6 +95,12 @@ function astra_fb_widget_dynamic_css( $dynamic_css, $dynamic_css_filtered = '' )
 			'.footer-widget-area.widget-area.site-footer-focus-item' => array(
 				'width' => 'auto',
 			),
+<<<<<<< HEAD
+=======
+			'.ast-footer-row-inline .footer-widget-area.widget-area.site-footer-focus-item' => array(
+				'width' => '100%',
+			),
+>>>>>>> bb56ea5 (projet final)
 		);
 		$dynamic_css           .= astra_parse_css( $footer_area_css_output );
 	}

@@ -177,7 +177,10 @@ div#astra_settings_meta_box {
 }
 .ast-header-settings-modal .components-modal__header {
     padding-right: 24px;
+<<<<<<< HEAD
     padding-left: 0;
+=======
+>>>>>>> bb56ea5 (projet final)
     border-bottom: 0;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -1831,6 +1834,10 @@ a.ast-pro-upgrade-link {
     box-shadow: 0 0 0 1px #334155;
 }
 .ast-palette-label-wrap{
+<<<<<<< HEAD
+=======
+  display: inline-block;
+>>>>>>> bb56ea5 (projet final)
     text-align: center;
 	color: #9CA3AF;
 	overflow: hidden;
@@ -1891,8 +1898,11 @@ a.ast-pro-upgrade-link {
 
 .ast-color-picker-custom-tooltip[data-title]::after {
 	content: attr(data-title);
+<<<<<<< HEAD
     min-width: 3em;
     max-width: 10em;
+=======
+>>>>>>> bb56ea5 (projet final)
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1917,6 +1927,13 @@ a.ast-pro-upgrade-link {
     transform: translate(50%,-0.5em);
 }
 
+<<<<<<< HEAD
+=======
+.ast-single-palette-wrap > :last-child .ast-color-picker-custom-tooltip[data-title]::after {
+    right: -16px;
+}
+
+>>>>>>> bb56ea5 (projet final)
 .ast-color-picker-custom-tooltip-wrapper {
 	position: relative;
 }

@@ -3,8 +3,11 @@
  * Astra Social Component Dynamic CSS.
  *
  * @package     astra-builder
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       3.0.0
  */
@@ -106,7 +109,11 @@ class Astra_Social_Component_Dynamic_CSS {
 			/**
 			 * Social Icon CSS.
 			 */
+<<<<<<< HEAD
 			$css_output_desktop = array(            
+=======
+			$css_output_desktop = array(
+>>>>>>> bb56ea5 (projet final)
 				$selector . ' .ast-builder-social-element,' . $selector . ' .social-show-label-true .ast-builder-social-element' => array(
 					// Icon Spacing.
 					'margin-left'                => astra_get_css_value( $icon_spacing_desktop, 'px' ),
@@ -142,7 +149,11 @@ class Astra_Social_Component_Dynamic_CSS {
 			);
 
 			if ( 'custom' === $color_type || is_customize_preview() ) {
+<<<<<<< HEAD
 				
+=======
+
+>>>>>>> bb56ea5 (projet final)
 				$css_output_desktop[ $selector . ' .ast-social-color-type-custom svg' ]['fill'] = $social_icons_color_desktop;
 				$css_output_desktop[ $selector . ' .ast-builder-social-element' ]['background'] = $social_icons_bg_color_desktop;
 
@@ -168,7 +179,11 @@ class Astra_Social_Component_Dynamic_CSS {
 				}
 			}
 
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> bb56ea5 (projet final)
 			if ( 'official' === $color_type && false === $toggle_brand_hover ) {
 				$css_output_desktop['.ast-social-color-type-official .ast-builder-social-element, .ast-social-color-type-official .social-item-label'] = array(
 					'color'            => 'var(--color)',
@@ -196,7 +211,11 @@ class Astra_Social_Component_Dynamic_CSS {
 					$css_output_desktop[ $selector . ' .ast-social-color-type-official .social-item-label' ]['color'] = $social_label_brand_color_desktop;
 				} else {
 					$css_output_desktop[ $selector . ' .ast-social-color-type-official .social-item-label' ]['color'] = $social_icons_brand_color_desktop;
+<<<<<<< HEAD
 				}           
+=======
+				}
+>>>>>>> bb56ea5 (projet final)
 			}
 
 			/**
@@ -265,7 +284,11 @@ class Astra_Social_Component_Dynamic_CSS {
 				}
 			}
 
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> bb56ea5 (projet final)
 
 			/**
 			 * Social_icons CSS.

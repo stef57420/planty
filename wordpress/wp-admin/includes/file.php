@@ -1402,6 +1402,7 @@ function verify_file_signature( $filename, $signatures, $filename_for_errors = f
 		);
 	}
 
+<<<<<<< HEAD
 	// Check for an edge-case affecting PHP Maths abilities.
 	if (
 		! extension_loaded( 'sodium' ) &&
@@ -1426,6 +1427,8 @@ function verify_file_signature( $filename, $signatures, $filename_for_errors = f
 		);
 	}
 
+=======
+>>>>>>> bb56ea5 (projet final)
 	// Verify runtime speed of Sodium_Compat is acceptable.
 	if ( ! extension_loaded( 'sodium' ) && ! ParagonIE_Sodium_Compat::polyfill_is_fast() ) {
 		$sodium_compat_is_fast = false;
@@ -2496,7 +2499,11 @@ function request_filesystem_credentials( $form_post, $type = '', $error = false,
 		);
 
 		if ( ! wp_installing() ) {
+<<<<<<< HEAD
 			update_option( 'ftp_credentials', $stored_credentials );
+=======
+			update_option( 'ftp_credentials', $stored_credentials, false );
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		return $credentials;

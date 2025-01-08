@@ -70,22 +70,41 @@
     ),
     'textdomain' => 'default',
     'attributes' => array(
+<<<<<<< HEAD
+=======
+      'blob' => array(
+        'type' => 'string',
+        'role' => 'local'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'src' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'audio',
         'attribute' => 'src',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'caption' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'figcaption',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
       ),
       'id' => array(
         'type' => 'number',
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+      ),
+      'id' => array(
+        'type' => 'number',
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'autoplay' => array(
         'type' => 'boolean',
@@ -261,34 +280,54 @@
         'source' => 'attribute',
         'selector' => 'a',
         'attribute' => 'href',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'title' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'a,button',
         'attribute' => 'title',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'text' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'a,button',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'linkTarget' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'a',
         'attribute' => 'target',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'rel' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'a',
         'attribute' => 'rel',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'placeholder' => array(
         'type' => 'string'
@@ -328,6 +367,10 @@
         '__experimentalTextTransform' => true,
         '__experimentalTextDecoration' => true,
         '__experimentalLetterSpacing' => true,
+<<<<<<< HEAD
+=======
+        '__experimentalWritingMode' => true,
+>>>>>>> bb56ea5 (projet final)
         '__experimentalDefaultControls' => array(
           'fontSize' => true
         )
@@ -400,8 +443,24 @@
       ),
       'html' => false,
       '__experimentalExposeControlsToChildren' => true,
+<<<<<<< HEAD
       'spacing' => array(
         'blockGap' => true,
+=======
+      'color' => array(
+        'gradients' => true,
+        'text' => false,
+        '__experimentalDefaultControls' => array(
+          'background' => true
+        )
+      ),
+      'spacing' => array(
+        'blockGap' => array(
+          'horizontal',
+          'vertical'
+        ),
+        'padding' => true,
+>>>>>>> bb56ea5 (projet final)
         'margin' => array(
           'top',
           'bottom'
@@ -423,6 +482,21 @@
           'fontSize' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true,
+        '__experimentalDefaultControls' => array(
+          'color' => true,
+          'radius' => true,
+          'style' => true,
+          'width' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'layout' => array(
         'allowSwitching' => false,
         'allowInheriting' => false,
@@ -493,11 +567,26 @@
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
     'apiVersion' => 3,
     'name' => 'core/categories',
+<<<<<<< HEAD
     'title' => 'Categories List',
     'category' => 'widgets',
     'description' => 'Display a list of all categories.',
     'textdomain' => 'default',
     'attributes' => array(
+=======
+    'title' => 'Terms List',
+    'category' => 'widgets',
+    'description' => 'Display a list of all terms of a given taxonomy.',
+    'keywords' => array(
+      'categories'
+    ),
+    'textdomain' => 'default',
+    'attributes' => array(
+      'taxonomy' => array(
+        'type' => 'string',
+        'default' => 'category'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'displayAsDropdown' => array(
         'type' => 'boolean',
         'default' => false
@@ -517,8 +606,24 @@
       'showEmpty' => array(
         'type' => 'boolean',
         'default' => false
+<<<<<<< HEAD
       )
     ),
+=======
+      ),
+      'label' => array(
+        'type' => 'string',
+        'role' => 'content'
+      ),
+      'showLabel' => array(
+        'type' => 'boolean',
+        'default' => true
+      )
+    ),
+    'usesContext' => array(
+      'enhancedPagination'
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'align' => true,
       'html' => false,
@@ -545,6 +650,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'editorStyle' => 'wp-block-categories-editor',
@@ -680,10 +800,18 @@
       ),
       '__experimentalBorder' => array(
         'color' => true,
+<<<<<<< HEAD
+=======
+        'radius' => true,
+>>>>>>> bb56ea5 (projet final)
         'style' => true,
         'width' => true,
         '__experimentalDefaultControls' => array(
           'color' => true,
+<<<<<<< HEAD
+=======
+          'radius' => true,
+>>>>>>> bb56ea5 (projet final)
           'style' => true,
           'width' => true
         )
@@ -873,8 +1001,26 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     )
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      )
+    ),
+    'style' => 'wp-block-comment-author-name'
+>>>>>>> bb56ea5 (projet final)
   ),
   'comment-content' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -917,6 +1063,21 @@
           'fontSize' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'spacing' => array(
         'padding' => array(
           'horizontal',
@@ -927,7 +1088,12 @@
         )
       ),
       'html' => false
+<<<<<<< HEAD
     )
+=======
+    ),
+    'style' => 'wp-block-comment-content'
+>>>>>>> bb56ea5 (projet final)
   ),
   'comment-date' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -982,8 +1148,26 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     )
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      )
+    ),
+    'style' => 'wp-block-comment-date'
+>>>>>>> bb56ea5 (projet final)
   ),
   'comment-edit-link' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -1021,7 +1205,15 @@
       ),
       'spacing' => array(
         'margin' => true,
+<<<<<<< HEAD
         'padding' => true
+=======
+        'padding' => true,
+        '__experimentalDefaultControls' => array(
+          'margin' => false,
+          'padding' => false
+        )
+>>>>>>> bb56ea5 (projet final)
       ),
       'typography' => array(
         'fontSize' => true,
@@ -1038,8 +1230,20 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     )
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true
+      )
+    ),
+    'style' => 'wp-block-comment-edit-link'
+>>>>>>> bb56ea5 (projet final)
   ),
   'comment-reply-link' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -1072,7 +1276,15 @@
       ),
       'spacing' => array(
         'margin' => true,
+<<<<<<< HEAD
         'padding' => true
+=======
+        'padding' => true,
+        '__experimentalDefaultControls' => array(
+          'margin' => false,
+          'padding' => false
+        )
+>>>>>>> bb56ea5 (projet final)
       ),
       'typography' => array(
         'fontSize' => true,
@@ -1087,8 +1299,20 @@
           'fontSize' => true
         )
       ),
+<<<<<<< HEAD
       'html' => false
     )
+=======
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true
+      ),
+      'html' => false
+    ),
+    'style' => 'wp-block-comment-reply-link'
+>>>>>>> bb56ea5 (projet final)
   ),
   'comment-template' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -1127,6 +1351,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'style' => 'wp-block-comment-template'
@@ -1422,6 +1661,12 @@
       'level' => array(
         'type' => 'number',
         'default' => 2
+<<<<<<< HEAD
+=======
+      ),
+      'levelOptions' => array(
+        'type' => 'array'
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'supports' => array(
@@ -1713,12 +1958,17 @@
     'attributes' => array(
       'url' => array(
         'type' => 'string',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'caption' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'figcaption',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
       ),
       'type' => array(
@@ -1728,6 +1978,17 @@
       'providerNameSlug' => array(
         'type' => 'string',
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+      ),
+      'type' => array(
+        'type' => 'string',
+        'role' => 'content'
+      ),
+      'providerNameSlug' => array(
+        'type' => 'string',
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'allowResponsive' => array(
         'type' => 'boolean',
@@ -1736,12 +1997,20 @@
       'responsive' => array(
         'type' => 'boolean',
         'default' => false,
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'previewable' => array(
         'type' => 'boolean',
         'default' => true,
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'supports' => array(
@@ -1773,6 +2042,13 @@
       'id' => array(
         'type' => 'number'
       ),
+<<<<<<< HEAD
+=======
+      'blob' => array(
+        'type' => 'string',
+        'role' => 'local'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'href' => array(
         'type' => 'string'
       ),
@@ -1832,6 +2108,21 @@
           'link' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'interactivity' => true
     ),
     'editorStyle' => 'wp-block-file-editor',
@@ -2052,6 +2343,19 @@
     'supports' => array(
       'anchor' => true,
       'align' => true,
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'color' => true,
+          'radius' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'html' => false,
       'units' => array(
         'px',
@@ -2159,6 +2463,10 @@
           'text' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      'shadow' => true,
+>>>>>>> bb56ea5 (projet final)
       'spacing' => array(
         'margin' => array(
           'top',
@@ -2232,12 +2540,22 @@
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'h1,h2,h3,h4,h5,h6',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'level' => array(
         'type' => 'number',
         'default' => 2
       ),
+<<<<<<< HEAD
+=======
+      'levelOptions' => array(
+        'type' => 'array'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'placeholder' => array(
         'type' => 'string'
       )
@@ -2250,6 +2568,21 @@
       'anchor' => true,
       'className' => true,
       'splitting' => true,
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true,
+        '__experimentalDefaultControls' => array(
+          'color' => true,
+          'radius' => true,
+          'style' => true,
+          'width' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'color' => array(
         'gradients' => true,
         'link' => true,
@@ -2383,12 +2716,23 @@
     ),
     'textdomain' => 'default',
     'attributes' => array(
+<<<<<<< HEAD
+=======
+      'blob' => array(
+        'type' => 'string',
+        'role' => 'local'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'url' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'img',
         'attribute' => 'src',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'alt' => array(
         'type' => 'string',
@@ -2396,13 +2740,21 @@
         'selector' => 'img',
         'attribute' => 'alt',
         'default' => '',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'caption' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'figcaption',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'lightbox' => array(
         'type' => 'object',
@@ -2415,14 +2767,22 @@
         'source' => 'attribute',
         'selector' => 'img',
         'attribute' => 'title',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'href' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'figure > a',
         'attribute' => 'href',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'rel' => array(
         'type' => 'string',
@@ -2438,7 +2798,11 @@
       ),
       'id' => array(
         'type' => 'number',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'width' => array(
         'type' => 'string'
@@ -2482,6 +2846,12 @@
       'filter' => array(
         'duotone' => true
       ),
+<<<<<<< HEAD
+=======
+      'spacing' => array(
+        'margin' => true
+      ),
+>>>>>>> bb56ea5 (projet final)
       '__experimentalBorder' => array(
         'color' => true,
         'radius' => true,
@@ -2551,6 +2921,18 @@
     ),
     'supports' => array(
       'align' => true,
+<<<<<<< HEAD
+=======
+      'color' => array(
+        'gradients' => true,
+        'link' => true,
+        '__experimentalDefaultControls' => array(
+          'background' => true,
+          'text' => true,
+          'link' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'html' => false,
       'spacing' => array(
         'margin' => true,
@@ -2740,7 +3122,11 @@
     'allowedBlocks' => array(
       'core/list-item'
     ),
+<<<<<<< HEAD
     'description' => 'Create a bulleted or numbered list.',
+=======
+    'description' => 'An organized collection of items displayed in a specific order.',
+>>>>>>> bb56ea5 (projet final)
     'keywords' => array(
       'bullet list',
       'ordered list',
@@ -2751,7 +3137,11 @@
       'ordered' => array(
         'type' => 'boolean',
         'default' => false,
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'values' => array(
         'type' => 'string',
@@ -2763,7 +3153,11 @@
           'ul'
         ),
         'default' => '',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'type' => array(
         'type' => 'string'
@@ -2781,6 +3175,15 @@
     'supports' => array(
       'anchor' => true,
       'html' => false,
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true
+      ),
+>>>>>>> bb56ea5 (projet final)
       'typography' => array(
         'fontSize' => true,
         'lineHeight' => true,
@@ -2817,6 +3220,12 @@
         'clientNavigation' => true
       )
     ),
+<<<<<<< HEAD
+=======
+    'selectors' => array(
+      'border' => '.wp-block-list:not(.wp-block-list .wp-block-list)'
+    ),
+>>>>>>> bb56ea5 (projet final)
     'editorStyle' => 'wp-block-list-editor',
     'style' => 'wp-block-list'
   ),
@@ -2832,7 +3241,11 @@
     'allowedBlocks' => array(
       'core/list'
     ),
+<<<<<<< HEAD
     'description' => 'Create a list item.',
+=======
+    'description' => 'An individual item within a list.',
+>>>>>>> bb56ea5 (projet final)
     'textdomain' => 'default',
     'attributes' => array(
       'placeholder' => array(
@@ -2842,6 +3255,7 @@
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'li',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
       )
     ),
@@ -2849,6 +3263,29 @@
       'className' => false,
       '__experimentalSelector' => '.wp-block-list > li',
       'splitting' => true,
+=======
+        'role' => 'content'
+      )
+    ),
+    'supports' => array(
+      'anchor' => true,
+      'className' => false,
+      'splitting' => true,
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true
+      ),
+      'color' => array(
+        'gradients' => true,
+        'link' => true,
+        'background' => true,
+        '__experimentalDefaultControls' => array(
+          'text' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'spacing' => array(
         'margin' => true,
         'padding' => true,
@@ -2873,6 +3310,13 @@
       'interactivity' => array(
         'clientNavigation' => true
       )
+<<<<<<< HEAD
+=======
+    ),
+    'selectors' => array(
+      'root' => '.wp-block-list > li',
+      'border' => '.wp-block-list:not(.wp-block-list .wp-block-list) > li'
+>>>>>>> bb56ea5 (projet final)
     )
   ),
   'loginout' => array(
@@ -2898,8 +3342,22 @@
         'default' => true
       )
     ),
+<<<<<<< HEAD
     'supports' => array(
       'className' => true,
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+    'supports' => array(
+      'className' => true,
+      'color' => array(
+        'background' => true,
+        'text' => false,
+        'gradients' => true,
+        'link' => true
+      ),
+>>>>>>> bb56ea5 (projet final)
       'spacing' => array(
         'margin' => true,
         'padding' => true,
@@ -2921,10 +3379,24 @@
           'fontSize' => true
         )
       ),
+<<<<<<< HEAD
       'interactivity' => array(
         'clientNavigation' => true
       )
     )
+=======
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true
+      ),
+      'interactivity' => array(
+        'clientNavigation' => true
+      )
+    ),
+    'style' => 'wp-block-loginout'
+>>>>>>> bb56ea5 (projet final)
   ),
   'media-text' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -2949,7 +3421,11 @@
         'selector' => 'figure img',
         'attribute' => 'alt',
         'default' => '',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'mediaPosition' => array(
         'type' => 'string',
@@ -2957,14 +3433,22 @@
       ),
       'mediaId' => array(
         'type' => 'number',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'mediaUrl' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'figure video,figure img',
         'attribute' => 'src',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'mediaLink' => array(
         'type' => 'string'
@@ -2983,7 +3467,11 @@
         'source' => 'attribute',
         'selector' => 'figure a',
         'attribute' => 'href',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'rel' => array(
         'type' => 'string',
@@ -2999,7 +3487,11 @@
       ),
       'mediaType' => array(
         'type' => 'string',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'mediaWidth' => array(
         'type' => 'number',
@@ -3040,6 +3532,21 @@
         'full'
       ),
       'html' => false,
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true,
+        '__experimentalDefaultControls' => array(
+          'color' => true,
+          'radius' => true,
+          'style' => true,
+          'width' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'color' => array(
         'gradients' => true,
         'heading' => true,
@@ -3456,6 +3963,22 @@
     'supports' => array(
       'reusable' => false,
       'html' => false,
+<<<<<<< HEAD
+=======
+      'typography' => array(
+        'fontSize' => true,
+        'lineHeight' => true,
+        '__experimentalFontFamily' => true,
+        '__experimentalFontWeight' => true,
+        '__experimentalFontStyle' => true,
+        '__experimentalTextTransform' => true,
+        '__experimentalTextDecoration' => true,
+        '__experimentalLetterSpacing' => true,
+        '__experimentalDefaultControls' => array(
+          'fontSize' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'interactivity' => array(
         'clientNavigation' => true
       )
@@ -3631,7 +4154,11 @@
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'p',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'dropCap' => array(
         'type' => 'boolean',
@@ -3652,6 +4179,15 @@
       'splitting' => true,
       'anchor' => true,
       'className' => false,
+<<<<<<< HEAD
+=======
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true
+      ),
+>>>>>>> bb56ea5 (projet final)
       'color' => array(
         'gradients' => true,
         'link' => true,
@@ -3783,8 +4319,26 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     ),
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      )
+    ),
+    'editorStyle' => 'wp-block-post-author-editor',
+>>>>>>> bb56ea5 (projet final)
     'style' => 'wp-block-post-author'
   ),
   'post-author-biography' => array(
@@ -3804,6 +4358,12 @@
       'postType',
       'postId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'spacing' => array(
         'margin' => true,
@@ -3832,8 +4392,26 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     )
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      )
+    ),
+    'style' => 'wp-block-post-author-biography'
+>>>>>>> bb56ea5 (projet final)
   ),
   'post-author-name' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -3860,6 +4438,12 @@
       'postType',
       'postId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'html' => false,
       'spacing' => array(
@@ -3890,8 +4474,26 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     )
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+      )
+    ),
+    'style' => 'wp-block-post-author-name'
+>>>>>>> bb56ea5 (projet final)
   ),
   'post-comments-form' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -3935,6 +4537,21 @@
         '__experimentalDefaultControls' => array(
           'fontSize' => true
         )
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'editorStyle' => 'wp-block-post-comments-form-editor',
@@ -3957,6 +4574,12 @@
       'postType',
       'queryId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'align' => array(
         'wide',
@@ -3964,11 +4587,30 @@
       ),
       'html' => false,
       'layout' => true,
+<<<<<<< HEAD
+=======
+      'background' => array(
+        'backgroundImage' => true,
+        'backgroundSize' => true,
+        '__experimentalDefaultControls' => array(
+          'backgroundImage' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'dimensions' => array(
         'minHeight' => true
       ),
       'spacing' => array(
+<<<<<<< HEAD
         'blockGap' => true
+=======
+        'blockGap' => true,
+        'padding' => true,
+        '__experimentalDefaultControls' => array(
+          'margin' => false,
+          'padding' => false
+        )
+>>>>>>> bb56ea5 (projet final)
       ),
       'color' => array(
         'gradients' => true,
@@ -3992,6 +4634,10 @@
         )
       )
     ),
+<<<<<<< HEAD
+=======
+    'style' => 'wp-block-post-content',
+>>>>>>> bb56ea5 (projet final)
     'editorStyle' => 'wp-block-post-content-editor'
   ),
   'post-date' => array(
@@ -4023,6 +4669,12 @@
       'postType',
       'queryId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'html' => false,
       'color' => array(
@@ -4053,6 +4705,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     )
   ),
@@ -4085,6 +4752,12 @@
       'postType',
       'queryId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'html' => false,
       'color' => array(
@@ -4115,6 +4788,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'editorStyle' => 'wp-block-post-excerpt-editor',
@@ -4184,6 +4872,12 @@
       'postType',
       'queryId'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'align' => array(
         'left',
@@ -4392,6 +5086,12 @@
       'postId',
       'postType'
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'html' => false,
       'color' => array(
@@ -4422,6 +5122,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'style' => 'wp-block-post-terms'
@@ -4447,6 +5162,12 @@
         'type' => 'number',
         'default' => 2
       ),
+<<<<<<< HEAD
+=======
+      'levelOptions' => array(
+        'type' => 'array'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'isLink' => array(
         'type' => 'boolean',
         'default' => false
@@ -4461,6 +5182,12 @@
         'default' => '_self'
       )
     ),
+<<<<<<< HEAD
+=======
+    'example' => array(
+      'viewportWidth' => 350
+    ),
+>>>>>>> bb56ea5 (projet final)
     'supports' => array(
       'align' => array(
         'wide',
@@ -4495,6 +5222,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'style' => 'wp-block-post-title'
@@ -4513,7 +5255,11 @@
         'source' => 'rich-text',
         'selector' => 'pre',
         '__unstablePreserveWhiteSpace' => true,
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'supports' => array(
@@ -4544,6 +5290,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'style' => 'wp-block-preformatted'
@@ -4561,13 +5322,21 @@
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'p',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'citation' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'cite',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'textAlign' => array(
         'type' => 'string'
@@ -4581,6 +5350,16 @@
         'wide',
         'full'
       ),
+<<<<<<< HEAD
+=======
+      'background' => array(
+        'backgroundImage' => true,
+        'backgroundSize' => true,
+        '__experimentalDefaultControls' => array(
+          'backgroundImage' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'color' => array(
         'gradients' => true,
         'background' => true,
@@ -4590,6 +5369,15 @@
           'text' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      'dimensions' => array(
+        'minHeight' => true,
+        '__experimentalDefaultControls' => array(
+          'minHeight' => false
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'spacing' => array(
         'margin' => true,
         'padding' => true
@@ -4663,6 +5451,12 @@
           'taxQuery' => null,
           'parents' => array(
             
+<<<<<<< HEAD
+=======
+          ),
+          'format' => array(
+            
+>>>>>>> bb56ea5 (projet final)
           )
         )
       ),
@@ -4678,6 +5472,12 @@
         'default' => false
       )
     ),
+<<<<<<< HEAD
+=======
+    'usesContext' => array(
+      'postType'
+    ),
+>>>>>>> bb56ea5 (projet final)
     'providesContext' => array(
       'queryId' => 'queryId',
       'query' => 'query',
@@ -4982,6 +5782,12 @@
         'type' => 'number',
         'default' => 1
       ),
+<<<<<<< HEAD
+=======
+      'levelOptions' => array(
+        'type' => 'array'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'showPrefix' => array(
         'type' => 'boolean',
         'default' => true
@@ -5023,6 +5829,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'style' => 'wp-block-query-title'
@@ -5046,13 +5867,21 @@
         'selector' => 'blockquote',
         'multiline' => 'p',
         'default' => '',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'citation' => array(
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'cite',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'textAlign' => array(
         'type' => 'string'
@@ -5060,7 +5889,42 @@
     ),
     'supports' => array(
       'anchor' => true,
+<<<<<<< HEAD
       'html' => false,
+=======
+      'align' => array(
+        'left',
+        'right',
+        'wide',
+        'full'
+      ),
+      'html' => false,
+      'background' => array(
+        'backgroundImage' => true,
+        'backgroundSize' => true,
+        '__experimentalDefaultControls' => array(
+          'backgroundImage' => true
+        )
+      ),
+      '__experimentalBorder' => array(
+        'color' => true,
+        'radius' => true,
+        'style' => true,
+        'width' => true,
+        '__experimentalDefaultControls' => array(
+          'color' => true,
+          'radius' => true,
+          'style' => true,
+          'width' => true
+        )
+      ),
+      'dimensions' => array(
+        'minHeight' => true,
+        '__experimentalDefaultControls' => array(
+          'minHeight' => false
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       '__experimentalOnEnter' => true,
       '__experimentalOnMerge' => true,
       'typography' => array(
@@ -5089,7 +5953,13 @@
         'allowEditing' => false
       ),
       'spacing' => array(
+<<<<<<< HEAD
         'blockGap' => true
+=======
+        'blockGap' => true,
+        'padding' => true,
+        'margin' => true
+>>>>>>> bb56ea5 (projet final)
       ),
       'interactivity' => array(
         'clientNavigation' => true
@@ -5243,7 +6113,11 @@
     'attributes' => array(
       'label' => array(
         'type' => 'string',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'showLabel' => array(
         'type' => 'boolean',
@@ -5252,7 +6126,11 @@
       'placeholder' => array(
         'type' => 'string',
         'default' => '',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'width' => array(
         'type' => 'number'
@@ -5262,7 +6140,11 @@
       ),
       'buttonText' => array(
         'type' => 'string',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'buttonPosition' => array(
         'type' => 'string',
@@ -5324,6 +6206,12 @@
           'width' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      'spacing' => array(
+        'margin' => true
+      ),
+>>>>>>> bb56ea5 (projet final)
       'html' => false
     ),
     'editorStyle' => 'wp-block-search-editor',
@@ -5498,10 +6386,32 @@
       'level' => array(
         'type' => 'number',
         'default' => 0
+<<<<<<< HEAD
       )
     ),
     'example' => array(
       
+=======
+      ),
+      'levelOptions' => array(
+        'type' => 'array',
+        'default' => array(
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        )
+      )
+    ),
+    'example' => array(
+      'viewportWidth' => 350,
+      'attributes' => array(
+        'textAlign' => 'center'
+      )
+>>>>>>> bb56ea5 (projet final)
     ),
     'supports' => array(
       'align' => array(
@@ -5533,15 +6443,32 @@
         '__experimentalFontStyle' => true,
         '__experimentalFontWeight' => true,
         '__experimentalLetterSpacing' => true,
+<<<<<<< HEAD
+=======
+        '__experimentalWritingMode' => true,
+>>>>>>> bb56ea5 (projet final)
         '__experimentalDefaultControls' => array(
           'fontSize' => true
         )
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
       )
     ),
     'editorStyle' => 'wp-block-site-tagline-editor'
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true
+      )
+    ),
+    'editorStyle' => 'wp-block-site-tagline-editor',
+    'style' => 'wp-block-site-tagline'
+>>>>>>> bb56ea5 (projet final)
   ),
   'site-title' => array(
     '$schema' => 'https://schemas.wp.org/trunk/block.json',
@@ -5556,6 +6483,21 @@
         'type' => 'number',
         'default' => 1
       ),
+<<<<<<< HEAD
+=======
+      'levelOptions' => array(
+        'type' => 'array',
+        'default' => array(
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'textAlign' => array(
         'type' => 'string'
       ),
@@ -5603,12 +6545,25 @@
         '__experimentalFontStyle' => true,
         '__experimentalFontWeight' => true,
         '__experimentalLetterSpacing' => true,
+<<<<<<< HEAD
+=======
+        '__experimentalWritingMode' => true,
+>>>>>>> bb56ea5 (projet final)
         '__experimentalDefaultControls' => array(
           'fontSize' => true
         )
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'editorStyle' => 'wp-block-site-title-editor',
@@ -5756,6 +6711,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'styles' => array(
@@ -6048,7 +7018,11 @@
     'name' => 'core/tag-cloud',
     'title' => 'Tag Cloud',
     'category' => 'widgets',
+<<<<<<< HEAD
     'description' => 'A cloud of your most used tags.',
+=======
+    'description' => 'A cloud of popular keywords, each sized by how often it appears.',
+>>>>>>> bb56ea5 (projet final)
     'textdomain' => 'default',
     'attributes' => array(
       'numberOfTags' => array(
@@ -6102,6 +7076,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     ),
     'editorStyle' => 'wp-block-tag-cloud-editor'
@@ -6184,6 +7173,21 @@
       ),
       'interactivity' => array(
         'clientNavigation' => true
+<<<<<<< HEAD
+=======
+      ),
+      '__experimentalBorder' => array(
+        'radius' => true,
+        'color' => true,
+        'width' => true,
+        'style' => true,
+        '__experimentalDefaultControls' => array(
+          'radius' => true,
+          'color' => true,
+          'width' => true,
+          'style' => true
+        )
+>>>>>>> bb56ea5 (projet final)
       )
     )
   ),
@@ -6251,7 +7255,11 @@
         'source' => 'rich-text',
         'selector' => 'pre',
         '__unstablePreserveWhiteSpace' => true,
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'textAlign' => array(
         'type' => 'string'
@@ -6259,6 +7267,16 @@
     ),
     'supports' => array(
       'anchor' => true,
+<<<<<<< HEAD
+=======
+      'background' => array(
+        'backgroundImage' => true,
+        'backgroundSize' => true,
+        '__experimentalDefaultControls' => array(
+          'backgroundImage' => true
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'color' => array(
         'gradients' => true,
         'link' => true,
@@ -6267,6 +7285,15 @@
           'text' => true
         )
       ),
+<<<<<<< HEAD
+=======
+      'dimensions' => array(
+        'minHeight' => true,
+        '__experimentalDefaultControls' => array(
+          'minHeight' => false
+        )
+      ),
+>>>>>>> bb56ea5 (projet final)
       'typography' => array(
         'fontSize' => true,
         '__experimentalFontFamily' => true,
@@ -6276,6 +7303,10 @@
         '__experimentalLetterSpacing' => true,
         '__experimentalTextTransform' => true,
         '__experimentalTextDecoration' => true,
+<<<<<<< HEAD
+=======
+        '__experimentalWritingMode' => true,
+>>>>>>> bb56ea5 (projet final)
         '__experimentalDefaultControls' => array(
           'fontSize' => true
         )
@@ -6323,7 +7354,11 @@
         'type' => 'rich-text',
         'source' => 'rich-text',
         'selector' => 'figcaption',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'controls' => array(
         'type' => 'boolean',
@@ -6334,7 +7369,11 @@
       ),
       'id' => array(
         'type' => 'number',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'loop' => array(
         'type' => 'boolean',
@@ -6361,12 +7400,23 @@
         'attribute' => 'preload',
         'default' => 'metadata'
       ),
+<<<<<<< HEAD
+=======
+      'blob' => array(
+        'type' => 'string',
+        'role' => 'local'
+      ),
+>>>>>>> bb56ea5 (projet final)
       'src' => array(
         'type' => 'string',
         'source' => 'attribute',
         'selector' => 'video',
         'attribute' => 'src',
+<<<<<<< HEAD
         '__experimentalRole' => 'content'
+=======
+        'role' => 'content'
+>>>>>>> bb56ea5 (projet final)
       ),
       'playsInline' => array(
         'type' => 'boolean',
@@ -6375,7 +7425,11 @@
         'attribute' => 'playsinline'
       ),
       'tracks' => array(
+<<<<<<< HEAD
         '__experimentalRole' => 'content',
+=======
+        'role' => 'content',
+>>>>>>> bb56ea5 (projet final)
         'type' => 'array',
         'items' => array(
           'type' => 'object'

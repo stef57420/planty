@@ -24,7 +24,10 @@ if ( ! class_exists( 'Astra_Mobile_Header' ) ) :
 		 *
 		 * @since 1.4.0
 		 *
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var object Class object.
 		 */
 		private static $instance;

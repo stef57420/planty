@@ -26,34 +26,54 @@
 			"source": "attribute",
 			"selector": "a",
 			"attribute": "href",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"title": {
 			"type": "string",
 			"source": "attribute",
 			"selector": "a,button",
 			"attribute": "title",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"text": {
 			"type": "rich-text",
 			"source": "rich-text",
 			"selector": "a,button",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"linkTarget": {
 			"type": "string",
 			"source": "attribute",
 			"selector": "a",
 			"attribute": "target",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"rel": {
 			"type": "string",
 			"source": "attribute",
 			"selector": "a",
 			"attribute": "rel",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"placeholder": {
 			"type": "string"
@@ -93,6 +113,10 @@
 			"__experimentalTextTransform": true,
 			"__experimentalTextDecoration": true,
 			"__experimentalLetterSpacing": true,
+<<<<<<< HEAD
+=======
+			"__experimentalWritingMode": true,
+>>>>>>> bb56ea5 (projet final)
 			"__experimentalDefaultControls": {
 				"fontSize": true
 			}

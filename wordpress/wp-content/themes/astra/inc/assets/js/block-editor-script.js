@@ -7,9 +7,13 @@ window.addEventListener( 'load', function(e) {
 function blockEditorDynamicStyles() {
 	setTimeout(() => {
 		const iframes = document.getElementsByTagName('iframe');
+<<<<<<< HEAD
 		if (!iframes?.length) {
 			return;
 		}
+=======
+		if (!iframes?.length) return;
+>>>>>>> bb56ea5 (projet final)
 
 		const cloneLinkElement = (id) => {
 			const element = document.getElementById(id);
@@ -19,19 +23,31 @@ function blockEditorDynamicStyles() {
 		const googleFontsStyle = cloneLinkElement('astra-google-fonts-css');
 
 		const appendLinkIfNotExists = (iframeDoc, clonedLink, linkId) => {
+<<<<<<< HEAD
 			if (!clonedLink) return;
 			const existingLink = iframeDoc.getElementById(linkId);
 			if (existingLink) return;
 			iframeDoc.head.appendChild(clonedLink);
+=======
+			if (clonedLink && !iframeDoc.getElementById(linkId)) {
+				iframeDoc.head.appendChild(clonedLink);
+			}
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		for (const iframe of iframes) {
 			try {
 				const iframeDoc = iframe?.contentWindow?.document || iframe?.contentDocument;
+<<<<<<< HEAD
 				if (!iframeDoc?.head) {
 					continue;
 				}
 				appendLinkIfNotExists(iframeDoc, googleFontsStyle, 'astra-google-fonts-css');
+=======
+				if (iframeDoc?.head) {
+					appendLinkIfNotExists(iframeDoc, googleFontsStyle, 'astra-google-fonts-css');
+				}
+>>>>>>> bb56ea5 (projet final)
 			} catch {
 				// Access denied to iframe document.
 			}

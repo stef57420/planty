@@ -2,9 +2,13 @@
 /**
  * WooCommerce cart Header Configuration.
  *
+<<<<<<< HEAD
  * @author      Astra
  * @package     Astra
  * @copyright   Copyright (c) 2023, Astra
+=======
+ * @package     Astra
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       4.5.2
  */
@@ -1023,5 +1027,9 @@ function astra_header_woo_cart_configuration( $configurations = array() ) {
 }
 
 if ( Astra_Builder_Customizer::astra_collect_customizer_builder_data() ) {
+<<<<<<< HEAD
 	astra_header_woo_cart_configuration();
+=======
+	add_action( 'init', 'astra_header_woo_cart_configuration', 10, 0 );
+>>>>>>> bb56ea5 (projet final)
 }

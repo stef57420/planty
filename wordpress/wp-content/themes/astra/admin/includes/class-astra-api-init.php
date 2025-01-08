@@ -24,7 +24,10 @@ class Astra_API_Init extends WP_REST_Controller {
 	/**
 	 * Instance
 	 *
+<<<<<<< HEAD
 	 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var null $instance
 	 * @since 4.0.0
 	 */
@@ -60,7 +63,10 @@ class Astra_API_Init extends WP_REST_Controller {
 	/**
 	 * Option name
 	 *
+<<<<<<< HEAD
 	 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var string $option_name DB option name.
 	 * @since 4.0.0
 	 */
@@ -69,7 +75,10 @@ class Astra_API_Init extends WP_REST_Controller {
 	/**
 	 * Admin settings dataset
 	 *
+<<<<<<< HEAD
 	 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var array $astra_admin_settings Settings array.
 	 * @since 4.0.0
 	 */

@@ -3,8 +3,11 @@
  * Template parts
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -168,7 +171,11 @@ if ( ! function_exists( 'astra_masthead_toggle_buttons_primary' ) ) {
 		$display_outside_menu       = astra_get_option( 'header-display-outside-menu' );
 
 		if ( ! $disable_primary_navigation || ( 'none' != $custom_header_section && ! $display_outside_menu ) ) {
+<<<<<<< HEAD
 			$menu_title          = trim( apply_filters( 'astra_main_menu_toggle_label', astra_get_option( 'header-main-menu-label' ) ) );
+=======
+			$menu_title          = trim( apply_filters( 'astra_main_menu_toggle_label', astra_get_i18n_option( 'header-main-menu-label', _x( '%astra%', 'Primary Menu: Menu Label for Toggle Button', 'astra' ) ) ) );
+>>>>>>> bb56ea5 (projet final)
 			$menu_label_class    = '';
 			$screen_reader_title = esc_html__( 'Main Menu', 'astra' );
 			if ( '' !== $menu_title ) {

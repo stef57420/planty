@@ -3,8 +3,11 @@
  * Template for Single post
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -33,11 +36,21 @@
 
 	<div class="entry-content clear"
 	<?php
+<<<<<<< HEAD
 				echo astra_attr(
 					'article-entry-content-single-layout',
 					array(
 						'class' => '',
 					)
+=======
+				echo wp_kses_post(
+					astra_attr(
+						'article-entry-content-single-layout',
+						array(
+							'class' => '',
+						)
+					) 
+>>>>>>> bb56ea5 (projet final)
 				);
 				?>
 	>

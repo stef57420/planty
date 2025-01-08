@@ -24,7 +24,10 @@ if ( ! class_exists( 'Astra_Loop' ) ) :
 		 *
 		 * @since 1.2.7
 		 *
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var object Class object.
 		 */
 		private static $instance;

@@ -60,12 +60,15 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 			// deActivation hook.
 			register_deactivation_hook( UAGB_FILE, array( $this, 'deactivation_reset' ) );
 
+<<<<<<< HEAD
 			if ( ! $this->is_gutenberg_active() ) {
 				/* TO DO */
 				add_action( 'admin_notices', array( $this, 'uagb_fails_to_load' ) );
 				return;
 			}
 
+=======
+>>>>>>> bb56ea5 (projet final)
 			$this->define_constants();
 
 			$this->loader();
@@ -86,7 +89,11 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 			define( 'UAGB_BASE', plugin_basename( UAGB_FILE ) );
 			define( 'UAGB_DIR', plugin_dir_path( UAGB_FILE ) );
 			define( 'UAGB_URL', plugins_url( '/', UAGB_FILE ) );
+<<<<<<< HEAD
 			define( 'UAGB_VER', '2.16.3' );
+=======
+			define( 'UAGB_VER', '2.18.0' );
+>>>>>>> bb56ea5 (projet final)
 			define( 'UAGB_MODULES_DIR', UAGB_DIR . 'modules/' );
 			define( 'UAGB_MODULES_URL', UAGB_URL . 'modules/' );
 			define( 'UAGB_SLUG', 'spectra' );
@@ -151,14 +158,22 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 		 */
 		public function load_plugin() {
 
+<<<<<<< HEAD
 			$this->load_textdomain();
 
+=======
+>>>>>>> bb56ea5 (projet final)
 			require_once UAGB_DIR . 'classes/class-uagb-scripts-utils.php';
 			require_once UAGB_DIR . 'classes/class-uagb-block-module.php';
 			require_once UAGB_DIR . 'classes/class-uagb-admin-helper.php';
 			require_once UAGB_DIR . 'classes/class-uagb-helper.php';
 			require_once UAGB_DIR . 'blocks-config/blocks-config.php';
 			require_once UAGB_DIR . 'lib/astra-notices/class-astra-notices.php';
+<<<<<<< HEAD
+=======
+			require_once UAGB_DIR . 'lib/class-uagb-zipwp-images.php';
+			require_once UAGB_DIR . 'lib/class-uagb-nps-survey.php';
+>>>>>>> bb56ea5 (projet final)
 
 			if ( is_admin() ) {
 				require_once UAGB_DIR . 'classes/class-uagb-admin.php';
@@ -170,6 +185,10 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 			require_once UAGB_DIR . 'classes/class-uagb-rest-api.php';
 			require_once UAGB_DIR . 'classes/class-uagb-visibility.php';
 			require_once UAGB_DIR . 'classes/class-uagb-caching.php';
+<<<<<<< HEAD
+=======
+			require_once UAGB_DIR . 'classes/class-uagb-nps-notice.php';
+>>>>>>> bb56ea5 (projet final)
 
 			if ( 'twentyseventeen' === get_template() ) {
 				require_once UAGB_DIR . 'classes/class-uagb-twenty-seventeen-compatibility.php';
@@ -181,9 +200,12 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 
 			require_once UAGB_DIR . 'admin-core/admin-loader.php';
 
+<<<<<<< HEAD
 			// Register all UAG Lite Blocks.
 			uagb_block()->register_blocks();
 
+=======
+>>>>>>> bb56ea5 (projet final)
 			add_filter( 'rest_pre_dispatch', array( $this, 'rest_pre_dispatch' ), 10, 3 );
 
 			$enable_templates_button = UAGB_Admin_Helper::get_admin_settings_option( 'uag_enable_templates_button', 'yes' );
@@ -405,11 +427,25 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 		 * Activation Reset
 		 */
 		public function activation_reset() {
+<<<<<<< HEAD
 
 			uagb_install()->create_files();
 
 			update_option( '__uagb_do_redirect', true );
 			update_option( '__uagb_asset_version', time() );
+=======
+			$has_activated_before = get_option( '__uagb_activated_before', false );
+
+			if ( ! $has_activated_before ) {
+				uagb_install()->create_files();
+		
+				update_option( '__uagb_do_redirect', true );
+				update_option( '__uagb_activated_before', true );
+				update_option( '__uagb_asset_version', time() );
+			} else {
+				update_option( '__uagb_do_redirect', false );
+			}
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		/**
@@ -428,6 +464,24 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 		 */
 		public function init_actions() {
 
+<<<<<<< HEAD
+=======
+			// Check if Gutenberg is active, if not, don't load anything.
+			// TO DO: Add an admin notice to inform the user that Gutenberg is not active.
+			if ( ! $this->is_gutenberg_active() ) {
+				add_action( 'admin_notices', array( $this, 'uagb_fails_to_load' ) );
+				return;
+			}
+
+			// Load the text domain for translation.
+			$this->load_textdomain();
+
+			// Register all UAG Lite Blocks. This is done by calling the register_blocks method
+			// on the uagb_block() instance. This method is responsible for registering all the
+			// blocks in the plugin.
+			uagb_block()->register_blocks();
+
+>>>>>>> bb56ea5 (projet final)
 			$theme_folder = get_template();
 
 			if ( function_exists( 'wp_is_block_theme' ) && wp_is_block_theme() ) {
@@ -440,6 +494,7 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 				require_once UAGB_DIR . 'compatibility/class-uagb-astra-compatibility.php';
 			}
 
+<<<<<<< HEAD
 				register_meta(
 					'post',
 					'_uag_custom_page_level_css',
@@ -455,6 +510,23 @@ if ( ! class_exists( 'UAGB_Loader' ) ) {
 						},
 					)
 				);
+=======
+			register_meta(
+				'post',
+				'_uag_custom_page_level_css',
+				array(
+					'show_in_rest'      => true,
+					'type'              => 'string',
+					'single'            => true,
+					'auth_callback'     => function() {
+						return current_user_can( 'edit_posts' );
+					},
+					'sanitize_callback' => function( $meta_value ) {
+						return wp_slash( $meta_value );
+					},
+				)
+			);
+>>>>>>> bb56ea5 (projet final)
 
 			// This class is loaded from blocks config.
 			UAGB_Popup_Builder::generate_scripts();

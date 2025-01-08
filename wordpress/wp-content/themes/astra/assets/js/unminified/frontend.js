@@ -352,6 +352,10 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 
 				popupTriggerMobile[item].removeEventListener("click", astraNavMenuToggle, false);
 				// Open the Popup when click on trigger
+<<<<<<< HEAD
+=======
+				popupTriggerMobile[item].removeEventListener("click", popupTriggerClick);
+>>>>>>> bb56ea5 (projet final)
 				popupTriggerMobile[item].addEventListener("click", popupTriggerClick, false);
 				popupTriggerMobile[item].trigger_type = 'mobile';
 
@@ -360,6 +364,10 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 
 				popupTriggerDesktop[item].removeEventListener("click", astraNavMenuToggle, false);
 				// Open the Popup when click on trigger
+<<<<<<< HEAD
+=======
+				popupTriggerDesktop[item].removeEventListener("click", popupTriggerClick);
+>>>>>>> bb56ea5 (projet final)
 				popupTriggerDesktop[item].addEventListener("click", popupTriggerClick, false);
 				popupTriggerDesktop[item].trigger_type = 'desktop';
 
@@ -432,6 +440,10 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 			for ( var item = 0;  item < popupTriggerMobile.length; item++ ) {
 
 				popupTriggerMobile[item].removeEventListener("click", popupTriggerClick, false);
+<<<<<<< HEAD
+=======
+				popupTriggerMobile[item].removeEventListener('click', astraNavMenuToggle);
+>>>>>>> bb56ea5 (projet final)
 				popupTriggerMobile[item].addEventListener('click', astraNavMenuToggle, false);
 				popupTriggerMobile[item].trigger_type = 'mobile';
 
@@ -439,6 +451,10 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 			for ( var item = 0;  item < popupTriggerDesktop.length; item++ ) {
 
 				popupTriggerDesktop[item].removeEventListener("click", popupTriggerClick, false);
+<<<<<<< HEAD
+=======
+				popupTriggerDesktop[item].removeEventListener('click', astraNavMenuToggle);
+>>>>>>> bb56ea5 (projet final)
 				popupTriggerDesktop[item].addEventListener('click', astraNavMenuToggle, false);
 				popupTriggerDesktop[item].trigger_type = 'desktop';
 
@@ -724,6 +740,10 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 
 						if ( ! menu_click_listeners_nav[i] ) {
 							menu_click_listeners_nav[i] = menu_toggle_all[i];
+<<<<<<< HEAD
+=======
+							menu_toggle_all[i].removeEventListener('click', astraNavMenuToggle);
+>>>>>>> bb56ea5 (projet final)
 							menu_toggle_all[i].addEventListener('click', astraNavMenuToggle, false);
 						}
 					}
@@ -742,7 +762,11 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 							if (astra_menu_toggle.length > 0) {
 
 								for (var j = 0; j < astra_menu_toggle.length; j++) {
+<<<<<<< HEAD
 
+=======
+									astra_menu_toggle[j].removeEventListener('click', AstraToggleSubMenu);
+>>>>>>> bb56ea5 (projet final)
 									astra_menu_toggle[j].addEventListener('click', AstraToggleSubMenu, false);
 								}
 							}
@@ -910,6 +934,7 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 	/**
 	 * Navigation Keyboard Navigation.
 	 */
+<<<<<<< HEAD
 	function navigation_accessibility( containerMenu, containerButton ) {
 		if ( ! containerMenu || ! containerButton ) {
 			return;
@@ -929,11 +954,29 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 
 		// Hide menu toggle button if menu is empty and return early.
 		if ( 'undefined' === typeof menu ) {
+=======
+	function navigation_accessibility(containerMenu, containerButton) {
+		if (!containerMenu || !containerButton) {
+			return;
+		}
+		var button = containerButton.getElementsByTagName('button')[0] || containerButton.getElementsByTagName('a')[0];
+		if (!button || (button.classList.contains('astra-search-icon'))) {
+			return;
+		}
+		var menu = containerMenu.getElementsByTagName('ul')[0];
+
+		// Hide menu toggle button if menu is empty and return early.
+		if (!menu) {
+>>>>>>> bb56ea5 (projet final)
 			button.style.display = 'none';
 			return;
 		}
 
+<<<<<<< HEAD
 		if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+=======
+		if (!menu.className.includes('nav-menu')) {
+>>>>>>> bb56ea5 (projet final)
 			menu.className += ' nav-menu';
 		}
 
@@ -942,6 +985,7 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 				var popupClose = document.getElementById('menu-toggle-close');
 				if (popupClose) {
 					popupClose.onclick = function () {
+<<<<<<< HEAD
 						if (-1 !== containerMenu.className.indexOf('toggled')) {
 							containerMenu.className = containerMenu.className.replace(' toggled', '');
 							button.setAttribute('aria-expanded', 'false');
@@ -951,11 +995,18 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 							button.setAttribute('aria-expanded', 'true');
 							menu.setAttribute('aria-expanded', 'true');
 						}
+=======
+						var toggled = containerMenu.className.includes('toggled');
+						containerMenu.className = toggled ? containerMenu.className.replace(' toggled', '') : containerMenu.className + ' toggled';
+						button.setAttribute('aria-expanded', toggled ? 'false' : 'true');
+						menu.setAttribute('aria-expanded', toggled ? 'false' : 'true');
+>>>>>>> bb56ea5 (projet final)
 					};
 				}
 			}
 		});
 
+<<<<<<< HEAD
 		button.onclick = function() {
 			if ( -1 !== containerMenu.className.indexOf( 'toggled' ) ) {
 				containerMenu.className = containerMenu.className.replace( ' toggled', '' );
@@ -994,6 +1045,37 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 		}
 
 
+=======
+		button.onclick = function () {
+			var toggled = containerMenu.className.includes('toggled');
+			containerMenu.className = toggled ? containerMenu.className.replace(' toggled', '') : containerMenu.className + ' toggled';
+			button.setAttribute('aria-expanded', toggled ? 'false' : 'true');
+			menu.setAttribute('aria-expanded', toggled ? 'false' : 'true');
+		};
+
+		if (!astra.is_header_footer_builder_active) {
+
+			// Get all the link elements within the menu.
+			var links = menu.getElementsByTagName('a');
+			var subMenus = menu.getElementsByTagName('ul');
+
+			// Set menu items with submenus to aria-haspopup="true".
+			for (var i = 0, len = subMenus.length; i < len; i++) {
+				subMenus[i].parentNode.setAttribute('aria-haspopup', 'true');
+			}
+
+			// Each time a menu link is focused or blurred, toggle focus.
+			for (var i = 0, len = links.length; i < len; i++) {
+				links[i].addEventListener('focus', toggleFocus, true);
+				links[i].addEventListener('blur', toggleFocus, true);
+				links[i].addEventListener('click', toggleClose, true);
+			}
+		}
+
+		if (astra.is_header_footer_builder_active) {
+			tabNavigation();
+		}
+>>>>>>> bb56ea5 (projet final)
 	}
 
 	// Tab navigation for accessibility.
@@ -1004,6 +1086,7 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 		const megaMenuFullWidth = document.querySelectorAll('.astra-full-megamenu-wrapper');
 
 		if (dropdownToggleLinks) {
+<<<<<<< HEAD
 
 			dropdownToggleLinks.forEach(element => {
 				element.addEventListener('keydown', function (e) {
@@ -1041,11 +1124,35 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 								}
 							}, 10);
 						}
+=======
+			dropdownToggleLinks.forEach(element => {
+				element.addEventListener('keydown', function (e) {
+					if ('Enter' === e.key) {
+						const closestLi = e.target.closest('li');
+						const subMenu = closestLi.querySelector('.sub-menu');
+						const isMegaMenu = subMenu && subMenu.classList.contains('astra-megamenu');
+
+						setTimeout(() => {
+							if (!isMegaMenu) {
+								subMenu.classList.toggle('toggled-on');
+								closestLi.classList.toggle('ast-menu-hover');
+							} else {
+								const fullMegaMenuWrapper = closestLi.querySelector('.astra-full-megamenu-wrapper');
+								if (subMenu) subMenu.classList.toggle('astra-megamenu-focus');
+								if (fullMegaMenuWrapper) fullMegaMenuWrapper.classList.toggle('astra-megamenu-wrapper-focus');
+								closestLi.classList.toggle('ast-menu-hover');
+							}
+
+							const ariaExpanded = e.target.getAttribute('aria-expanded');
+							e.target.setAttribute('aria-expanded', ariaExpanded === 'false' || !ariaExpanded ? 'true' : 'false');
+						}, 10);
+>>>>>>> bb56ea5 (projet final)
 					}
 				});
 			});
 
 			if (siteNavigationSubMenu || menuLi) {
+<<<<<<< HEAD
 				// Close sub-menus when clicking elsewhere
 				document.addEventListener('click', function (e) {
 					closeNavigationMenu(siteNavigationSubMenu, dropdownToggleLinks, menuLi, megaMenuFullWidth);
@@ -1054,13 +1161,22 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 
 			if (siteNavigationSubMenu || menuLi) {
 				// Close sub-menus on escape key
+=======
+				document.addEventListener('click', function (e) {
+					closeNavigationMenu(siteNavigationSubMenu, dropdownToggleLinks, menuLi, megaMenuFullWidth);
+				}, false);
+
+>>>>>>> bb56ea5 (projet final)
 				document.addEventListener('keydown', function (e) {
 					if ('Escape' === e.key) {
 						closeNavigationMenu(siteNavigationSubMenu, dropdownToggleLinks, menuLi, megaMenuFullWidth);
 					}
 				}, false);
 			}
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		const allParentMenu = document.querySelectorAll('nav.site-navigation .ast-nav-menu > .menu-item-has-children > a .ast-header-navigation-arrow');
@@ -1183,7 +1299,21 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 	 * @since x.x.x
 	 */
 	if ( astra.is_scroll_to_id ) {
+<<<<<<< HEAD
 		function scrollToIDHandler(e) {
+=======
+		// Calculate the offset top of an element, accounting for nested elements.
+		const getOffsetTop = (element) => {
+			let offsetTop = 0;
+			while (element) {
+				offsetTop += element.offsetTop;
+				element = element.offsetParent;
+			}
+			return offsetTop;
+		}
+
+		const scrollToIDHandler = (e) => {
+>>>>>>> bb56ea5 (projet final)
 
 			let offset = 0;
 			const siteHeader = document.querySelector('.site-header');
@@ -1199,7 +1329,11 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 					});
 				}
 
+<<<<<<< HEAD
 				const href = this.hash;
+=======
+				const href = e.target.closest('a').hash;
+>>>>>>> bb56ea5 (projet final)
 				if (href) {
 					const scrollId = document.querySelector(href);
 					if (scrollId) {
@@ -1212,6 +1346,7 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 			}
 		}
 
+<<<<<<< HEAD
 		// Calculate the offset top of an element, accounting for nested elements.
 		function getOffsetTop(element) {
 			let offsetTop = 0;
@@ -1222,6 +1357,8 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 			return offsetTop;
 		}
 
+=======
+>>>>>>> bb56ea5 (projet final)
 		let hashLinks = [];
 		const links = document.querySelectorAll(
 			'a[href*="#"]:not([href="#"]):not([href="#0"]):not([href*="uagb-tab"]):not(.uagb-toc-link__trigger):not(.skip-link):not(.nav-links a):not([href*="tab-"])'
@@ -1324,6 +1461,7 @@ astScrollToTopHandler = function ( masthead, astScrollTop ) {
 })();
 
 // Accessibility improvement for menu items.
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     let submenuToggles = document.querySelectorAll('.menu-link .dropdown-menu-toggle');
 
@@ -1340,17 +1478,52 @@ document.addEventListener('DOMContentLoaded', function() {
         toggle.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
                 toggleAriaExpanded(this);
+=======
+document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.menu-link .dropdown-menu-toggle');
+
+	const menuItemsWithSubmenu = document.querySelectorAll('.menu-item-has-children > a');
+
+	// Ensuring the submenu toggle action is handled with appropriate CSS, with cross browser compatibility for Enter key press.
+    menuItemsWithSubmenu.forEach(item => {
+        item.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const submenu = item.nextElementSibling;
+                if (submenu && submenu.classList.contains('sub-menu')) {
+                    submenu.classList.toggle('ast-visible');
+                    const ariaExpanded = item.getAttribute('aria-expanded') === 'false' ? 'true' : 'false';
+                    item.setAttribute('aria-expanded', ariaExpanded);
+                }
+>>>>>>> bb56ea5 (projet final)
             }
         });
     });
 
+<<<<<<< HEAD
     // Added event listener for Escape key press
     document.addEventListener('keydown', function(event) {
+=======
+    // Add event listeners for focus, blur, and keydown events.
+    submenuToggles.forEach(toggle => {
+        toggle.addEventListener('focus', () => updateAriaExpanded(toggle));
+        toggle.addEventListener('blur', () => updateAriaExpanded(toggle));
+        toggle.addEventListener('keydown', event => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                toggleAriaExpanded(toggle);
+            }
+        });
+    });
+
+    // Add event listener for Escape key press to close all submenus.
+    document.addEventListener('keydown', event => {
+>>>>>>> bb56ea5 (projet final)
         if (event.key === 'Escape') {
             closeAllSubmenus();
         }
     });
 
+<<<<<<< HEAD
     function updateAriaExpanded(toggle) {
         let menuItemLink = toggle.closest('.menu-link');
         let submenu = menuItemLink.nextElementSibling;
@@ -1369,6 +1542,34 @@ document.addEventListener('DOMContentLoaded', function() {
         submenuToggles.forEach(function(toggle) {
             updateAriaExpanded(toggle);
         });
+=======
+    /**
+     * Updates the `aria-expanded` attribute based on submenu visibility.
+     * @param {HTMLElement} toggle - The toggle element.
+     */
+    function updateAriaExpanded(toggle) {
+        const menuItemLink = toggle.closest('.menu-link');
+        const submenu = menuItemLink.nextElementSibling;
+        const isSubmenuVisible = submenu.classList.contains('toggled-on');
+        menuItemLink.setAttribute('aria-expanded', isSubmenuVisible ? 'true' : 'false');
+    }
+
+    /**
+     * Toggles the `aria-expanded` attribute for a given toggle element.
+     * @param {HTMLElement} toggle - The toggle element.
+     */
+    function toggleAriaExpanded(toggle) {
+        const menuItemLink = toggle.closest('.menu-link');
+        const currentState = menuItemLink.getAttribute('aria-expanded');
+        menuItemLink.setAttribute('aria-expanded', currentState === 'true' ? 'false' : 'true');
+    }
+
+    /**
+     * Closes all submenus by updating the `aria-expanded` attribute.
+     */
+    function closeAllSubmenus() {
+        submenuToggles.forEach(toggle => updateAriaExpanded(toggle));
+>>>>>>> bb56ea5 (projet final)
     }
 });
 

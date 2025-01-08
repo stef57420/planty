@@ -3,8 +3,11 @@
  * Entry Content options for Astra Theme.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2022, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 3.8.0
  */

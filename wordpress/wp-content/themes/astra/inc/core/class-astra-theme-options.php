@@ -3,8 +3,11 @@
  * Astra Theme Options
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -25,7 +28,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 		/**
 		 * Class instance.
 		 *
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var $instance Class instance.
 		 */
 		private static $instance;
@@ -33,7 +39,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 		/**
 		 * Customizer defaults.
 		 *
+<<<<<<< HEAD
 		 * @access Private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @since 1.4.3
 		 * @var Array
 		 */
@@ -50,7 +59,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 		 * A static option variable.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var mixed $db_options
 		 */
 		private static $db_options;
@@ -59,7 +71,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 		 * A static option variable.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var mixed $db_options
 		 */
 		private static $db_options_no_defaults;
@@ -68,7 +83,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 		 * A static theme astra-options variable.
 		 *
 		 * @since 4.0.2
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var mixed $astra_options
 		 */
 		public static $astra_options = null;
@@ -141,6 +159,10 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 			$astra_options        = self::get_astra_options();
 			$post_per_page        = intval( get_option( 'posts_per_page' ) );
 			$blog_defaults_update = Astra_Dynamic_CSS::astra_4_6_0_compatibility();
+<<<<<<< HEAD
+=======
+			$reorder_color_seq    = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+>>>>>>> bb56ea5 (projet final)
 
 			// Update Astra heading 5 font size & handled backward case
 			$update_heading_five_font_size  = Astra_Dynamic_CSS::astra_4_6_14_compatibility();
@@ -286,7 +308,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 					'theme-color'                          => 'var(' . $palette_css_var_prefix . '0)',
 					'link-h-color'                         => 'var(' . $palette_css_var_prefix . '1)',
 					'heading-base-color'                   => 'var(' . $palette_css_var_prefix . '2)',
+<<<<<<< HEAD
 					'border-color'                         => 'var(' . $palette_css_var_prefix . '6)',
+=======
+					'border-color'                         => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '7)' : 'var(' . $palette_css_var_prefix . '6)',
+>>>>>>> bb56ea5 (projet final)
 
 					// Footer Bar Background.
 					'footer-bg-obj'                        => array(
@@ -568,7 +594,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 					'narrow-container-max-width'           => 750,
 					'site-layout-outside-bg-obj-responsive' => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => $apply_new_default_values ? 'var(--ast-global-color-4)' : '',
+=======
+							'background-color'      => $apply_new_default_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -612,7 +642,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 					),
 					'content-bg-obj-responsive'            => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -626,7 +660,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'tablet'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -640,7 +678,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'mobile'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -759,7 +801,11 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 						'text-transform'      => ! isset( $astra_options['body-font-extras'] ) && isset( $astra_options['body-text-transform'] ) ? $astra_options['body-text-transform'] : '',
 						'text-decoration'     => '',
 					),
+<<<<<<< HEAD
 					'headings-font-height-settings'        => array(
+=======
+					'headings-font-extras'                 => array(
+>>>>>>> bb56ea5 (projet final)
 						'line-height'         => ! isset( $astra_options['headings-font-extras'] ) && isset( $astra_options['headings-line-height'] ) ? $astra_options['headings-line-height'] : '',
 						'line-height-unit'    => 'em',
 						'letter-spacing'      => '',
@@ -840,24 +886,39 @@ if ( ! class_exists( 'Astra_Theme_Options' ) ) {
 					),
 					'font-size-h1'                         => array(
 						'desktop'      => $blog_defaults_update ? 36 : 40,
+<<<<<<< HEAD
 						'tablet'       => '',
 						'mobile'       => '',
+=======
+						'tablet'       => 30,
+						'mobile'       => 30,
+>>>>>>> bb56ea5 (projet final)
 						'desktop-unit' => 'px',
 						'tablet-unit'  => 'px',
 						'mobile-unit'  => 'px',
 					),
 					'font-size-h2'                         => array(
 						'desktop'      => $blog_defaults_update ? 30 : 32,
+<<<<<<< HEAD
 						'tablet'       => '',
 						'mobile'       => '',
+=======
+						'tablet'       => 25,
+						'mobile'       => 25,
+>>>>>>> bb56ea5 (projet final)
 						'desktop-unit' => 'px',
 						'tablet-unit'  => 'px',
 						'mobile-unit'  => 'px',
 					),
 					'font-size-h3'                         => array(
 						'desktop'      => $blog_defaults_update ? 24 : 26,
+<<<<<<< HEAD
 						'tablet'       => '',
 						'mobile'       => '',
+=======
+						'tablet'       => 20,
+						'mobile'       => 20,
+>>>>>>> bb56ea5 (projet final)
 						'desktop-unit' => 'px',
 						'tablet-unit'  => 'px',
 						'mobile-unit'  => 'px',

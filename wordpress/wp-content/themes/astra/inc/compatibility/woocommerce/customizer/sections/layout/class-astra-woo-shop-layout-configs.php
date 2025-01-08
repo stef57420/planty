@@ -3,8 +3,11 @@
  * WooCommerce Options for Astra Theme.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.1.0
  */
@@ -35,6 +38,10 @@ if ( ! class_exists( 'Astra_Woo_Shop_Layout_Configs' ) ) {
 			/** @psalm-suppress UndefinedClass */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
 
 			$add_to_cart_attr             = array();
+<<<<<<< HEAD
+=======
+			$ratings                      = array();
+>>>>>>> bb56ea5 (projet final)
 			$astra_shop_page_pro_features = array();
 
 
@@ -56,6 +63,20 @@ if ( ! class_exists( 'Astra_Woo_Shop_Layout_Configs' ) ) {
 				'title'       => __( 'Add To Cart', 'astra' ),
 			);
 
+<<<<<<< HEAD
+=======
+			/**
+			 * Shop product total review count.
+			 */
+			$ratings['ratings'] = array(
+				'clone'       => false,
+				'is_parent'   => true,
+				'main_index'  => 'ratings',
+				'clone_limit' => 2,
+				'title'       => __( 'Ratings', 'astra' ),
+			);
+
+>>>>>>> bb56ea5 (projet final)
 			if ( $astra_addon_with_woo ) {
 				$current_shop_layouts = array(
 					'shop-page-grid-style'   => array(
@@ -166,13 +187,21 @@ if ( ! class_exists( 'Astra_Woo_Shop_Layout_Configs' ) ) {
 						array(
 							'title'      => __( 'Title', 'astra' ),
 							'price'      => __( 'Price', 'astra' ),
+<<<<<<< HEAD
 							'ratings'    => __( 'Ratings', 'astra' ),
+=======
+>>>>>>> bb56ea5 (projet final)
 							'short_desc' => __( 'Short Description', 'astra' ),
 						),
 						$add_to_cart_attr,
 						array(
 							'category' => __( 'Category', 'astra' ),
+<<<<<<< HEAD
 						)
+=======
+						),
+						$ratings,
+>>>>>>> bb56ea5 (projet final)
 					),
 					'divider'           => array( 'ast_class' => 'ast-section-spacing' ),
 				),
@@ -331,6 +360,7 @@ if ( ! class_exists( 'Astra_Woo_Shop_Layout_Configs' ) ) {
 			);
 
 			/**
+<<<<<<< HEAD
 			 * Option: Shop add to cart action notice.
 			 */
 			$_configs[] = array(
@@ -397,6 +427,96 @@ if ( ! class_exists( 'Astra_Woo_Shop_Layout_Configs' ) ) {
 			$configurations = array_merge( $configurations, $_configs );
 
 			return $configurations;
+=======
+				 * Total Review count option config.   
+				 */
+				$_configs[] = array(
+					'name'       => 'shop-ratings-product-archive',
+					'parent'     => ASTRA_THEME_SETTINGS . '[shop-product-structure]',
+					'default'    => astra_get_option( 'shop-ratings-product-archive' ),
+					'linked'     => 'ratings',
+					'type'       => 'sub-control',
+					'control'    => 'ast-selector',
+					'section'    => 'woocommerce_product_catalog',
+					'priority'   => 10,
+					'title'      => __( 'Review Count', 'astra' ),
+					'choices'    => array(
+						'default'      => __( 'Default', 'astra' ),
+						'count_string' => __( 'Count + Text', 'astra' ),
+					),
+					'transport'  => 'postMessage',
+					'responsive' => false,
+					'renderAs'   => 'text',
+				);
+
+				/**
+				 * Option: Shop add to cart action notice.
+				 */
+				$_configs[] = array(
+					'name'     => 'shop-add-to-cart-action-notice',
+					'parent'   => ASTRA_THEME_SETTINGS . '[shop-product-structure]',
+					'type'     => 'sub-control',
+					'control'  => 'ast-description',
+					'section'  => 'woocommerce_product_catalog',
+					'priority' => 10,
+					'label'    => '',
+					'linked'   => 'add_cart',
+					'help'     => __( 'Please publish the changes and see result on the frontend.<br />[Slide in cart requires Cart added inside Header Builder]', 'astra' ),
+				);
+
+				// Learn More link if Astra Pro is not activated.
+				if ( astra_showcase_upgrade_notices() ) {
+					$_configs[] = array(
+						'name'     => ASTRA_THEME_SETTINGS . '[ast-woo-shop-pro-items]',
+						'type'     => 'control',
+						'control'  => 'ast-upgrade',
+						'campaign' => 'woocommerce',
+						'renderAs' => 'list',
+						'choices'  => array(
+							'two'   => array(
+								'title' => __( 'More shop design layouts', 'astra' ),
+							),
+							'three' => array(
+								'title' => __( 'Shop toolbar structure', 'astra' ),
+							),
+							'five'  => array(
+								'title' => __( 'Offcanvas product filters', 'astra' ),
+							),
+							'six'   => array(
+								'title' => __( 'Products quick view', 'astra' ),
+							),
+							'seven' => array(
+								'title' => __( 'Shop pagination', 'astra' ),
+							),
+							'eight' => array(
+								'title' => __( 'More typography options', 'astra' ),
+							),
+							'nine'  => array(
+								'title' => __( 'More color options', 'astra' ),
+							),
+							'ten'   => array(
+								'title' => __( 'More spacing options', 'astra' ),
+							),
+							'four'  => array(
+								'title' => __( 'Box shadow design options', 'astra' ),
+							),
+							'one'   => array(
+								'title' => __( 'More design controls', 'astra' ),
+							),
+						),
+						'section'  => 'woocommerce_product_catalog',
+						'default'  => '',
+						'priority' => 999,
+						'title'    => __( 'Optimize your WooCommerce store for maximum profit with enhanced features', 'astra' ),
+						'divider'  => array( 'ast_class' => 'ast-top-section-divider' ),
+						'context'  => array(),
+					);
+				}
+
+				$configurations = array_merge( $configurations, $_configs );
+
+				return $configurations;
+>>>>>>> bb56ea5 (projet final)
 
 		}
 	}

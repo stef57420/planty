@@ -28,7 +28,10 @@ class Astra_Admin_Ajax {
 	/**
 	 * Instance
 	 *
+<<<<<<< HEAD
 	 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var null $instance
 	 * @since 4.0.0
 	 */
@@ -63,11 +66,24 @@ class Astra_Admin_Ajax {
 	 * @since 4.0.0
 	 */
 	public function __construct() {
+<<<<<<< HEAD
 		$this->errors = array(
 			'permission' => esc_html__( 'Sorry, you are not allowed to do this operation.', 'astra' ),
 			'nonce'      => esc_html__( 'Nonce validation failed', 'astra' ),
 			'default'    => esc_html__( 'Sorry, something went wrong.', 'astra' ),
 			'invalid'    => esc_html__( 'No post data found!', 'astra' ),
+=======
+		add_action(
+			'init',
+			function() {
+				$this->errors = array(
+					'permission' => esc_html__( 'Sorry, you are not allowed to do this operation.', 'astra' ),
+					'nonce'      => esc_html__( 'Nonce validation failed', 'astra' ),
+					'default'    => esc_html__( 'Sorry, something went wrong.', 'astra' ),
+					'invalid'    => esc_html__( 'No post data found!', 'astra' ),
+				);
+			}
+>>>>>>> bb56ea5 (projet final)
 		);
 
 		add_action( 'wp_ajax_ast_disable_pro_notices', array( $this, 'disable_astra_pro_notices' ) );

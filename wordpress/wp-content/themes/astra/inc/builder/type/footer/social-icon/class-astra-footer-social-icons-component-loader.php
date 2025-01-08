@@ -3,8 +3,11 @@
  * Social Icons Styling Loader for Astra theme.
  *
  * @package     Astra Builder
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2020, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       Astra 3.0.0
  */

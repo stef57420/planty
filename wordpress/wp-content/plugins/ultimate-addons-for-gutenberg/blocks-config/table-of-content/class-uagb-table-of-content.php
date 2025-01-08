@@ -279,6 +279,12 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 			$page_url,
 			$attributes
 		) {
+<<<<<<< HEAD
+=======
+			$enable_collapsible_list = isset( $attributes['enableCollapsableList'] ) ? (bool) $attributes['enableCollapsableList'] : false;
+			$nesting_level           = isset( $attributes['collapsibleListDepth'] ) ? intval( $attributes['collapsibleListDepth'] ) : 5;
+		
+>>>>>>> bb56ea5 (projet final)
 			$toc           = '<ol class="uagb-toc__list">';
 			$last_level    = '';
 			$parent_level  = '';
@@ -292,9 +298,49 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 				5 => 0,
 				6 => 0,
 			);
+<<<<<<< HEAD
 
 			foreach ( $nested_heading_list as $anchor => $heading ) {
 
+=======
+		
+			if ( $enable_collapsible_list ) {
+				$has_children  = array_fill( 0, count( $nested_heading_list ), false );
+				$depth_mapping = array_fill( 0, count( $nested_heading_list ), 0 );
+		
+				// Calculate depth and children mapping.
+				$stack                = array();
+				$nested_heading_count = count( $nested_heading_list );
+
+				foreach ( $nested_heading_list as $anchor => $heading ) {
+					$level = $heading['heading']['level'];
+				
+					// Calculate depth.
+					$stack_count = count( $stack );
+					while ( ! empty( $stack ) && $stack[ $stack_count - 1 ]['level'] >= $level ) {
+						array_pop( $stack );
+						$stack_count = count( $stack );  // Update the stack count after popping an element.
+					}
+					$depth_mapping[ $anchor ] = $stack_count + 1;
+					$stack[]                  = array(
+						'level' => $level,
+						'index' => $anchor,
+					);
+				
+					// Check for children.
+					for ( $i = $anchor + 1; $i < $nested_heading_count; $i++ ) {
+						if ( $nested_heading_list[ $i ]['heading']['level'] > $level ) {
+							$has_children[ $anchor ] = true;
+							break;
+						} elseif ( $nested_heading_list[ $i ]['heading']['level'] <= $level ) {
+							break;
+						}
+					}
+				}               
+			}
+		
+			foreach ( $nested_heading_list as $anchor => $heading ) {
+>>>>>>> bb56ea5 (projet final)
 				$level = $heading['heading']['level'];
 				$title = $heading['heading']['content'];
 				$id    = $heading['heading']['id'];
@@ -312,6 +358,7 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 				}
 
 				if ( ! empty( $last_level ) ) {
+<<<<<<< HEAD
 
 					if ( $level > $last_level ) {
 
@@ -335,14 +382,46 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 
 						} elseif ( $level === $parent_level ) {
 
+=======
+					if ( $level > $last_level ) {
+						$toc .= '<ul class="uagb-toc__list">';
+						$current_depth ++;
+						$depth_array[ $level ] = $current_depth;
+					} elseif ( $level === $last_level && $level !== $parent_level ) {
+						$toc                  .= '<li class="uagb-toc__list">';
+						$depth_array[ $level ] = $current_depth;
+					} elseif ( $level < $last_level ) {
+						$closing = absint( $current_depth - $depth_array[ $level ] );
+
+						if ( $level > $parent_level ) {
+							$toc          .= str_repeat( '</li></ul>', $closing );
+							$current_depth = absint( $current_depth - $closing );
+						} elseif ( $level === $parent_level ) {
+>>>>>>> bb56ea5 (projet final)
 							$toc .= str_repeat( '</li></ul>', $closing );
 							$toc .= '</li>';
 						}
 					}
 				}
 
+<<<<<<< HEAD
 				$toc .= sprintf( '<li class="uagb-toc__list"><a href="#%s" class="uagb-toc-link__trigger">%s</a>', esc_attr( $id ), esc_html( $title ) );
 
+=======
+				if ( $enable_collapsible_list ) {
+					$toc .= sprintf(
+						'<li class="uagb-toc__list %s">%s<a href="#%s" class="uagb-toc-link__trigger">%s</a>',
+						( $has_children[ $anchor ] && $depth_mapping[ $anchor ] <= $nesting_level ) ? 'uagb-toc__list--expandable' : '',
+						( $has_children[ $anchor ] && $depth_mapping[ $anchor ] <= $nesting_level ) ? '<span class="list-open" role="button" tabindex="0" aria-expanded="true"></span>' : '',
+						esc_attr( $id ),
+						esc_html( $title )
+					);
+				} else {
+					$toc .= sprintf( '<li class="uagb-toc__list"><a href="#%s" class="uagb-toc-link__trigger">%s</a>', esc_attr( $id ), esc_html( $title ) );
+				}
+				
+		
+>>>>>>> bb56ea5 (projet final)
 				$last_level = $level;
 			}
 
@@ -445,6 +524,11 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 			$uagb_toc_options         = get_post_meta( $post->ID, '_uagb_toc_options', true );
 			$uagb_toc_version         = ! empty( $uagb_toc_options['_uagb_toc_version'] ) ? $uagb_toc_options['_uagb_toc_version'] : '';
 			$uagb_toc_heading_content = ! empty( $uagb_toc_options['_uagb_toc_headings'] ) ? $uagb_toc_options['_uagb_toc_headings'] : '';
+<<<<<<< HEAD
+=======
+			$enable_collapsible_list  = isset( $attributes['enableCollapsableList'] ) ? (bool) $attributes['enableCollapsableList'] : false;
+			$initialCollapse          = isset( $attributes['initialCollapse'] ) ? (bool) $attributes['initialCollapse'] : false;
+>>>>>>> bb56ea5 (projet final)
 
 			if ( empty( $uagb_toc_heading_content ) || UAGB_ASSET_VER !== $uagb_toc_version ) {
 				global $_wp_current_template_content;
@@ -479,6 +563,10 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 				return $value;
 			};
 
+<<<<<<< HEAD
+=======
+			$has_content   = ( $uagb_toc_heading_content && count( $uagb_toc_heading_content ) > 0 && count( array_filter( $attributes['mappingHeaders'], $mapping_header_func ) ) > 0 );
+>>>>>>> bb56ea5 (projet final)
 			$desktop_class = '';
 			$tab_class     = '';
 			$mob_class     = '';
@@ -515,8 +603,21 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 					array_push( $zindex_wrap, $zindex_mobile );
 				}
 			}
+<<<<<<< HEAD
 
 			$wrap = array(
+=======
+			$allowed_span_attr = array(
+				'span' => array(
+					'class'         => true,
+					'role'          => true,
+					'tabindex'      => true,
+					'aria-expanded' => true,
+				),
+			);
+			$allowed_span_attr = array_merge( wp_kses_allowed_html( 'post' ), $allowed_span_attr );
+			$wrap              = array(
+>>>>>>> bb56ea5 (projet final)
 				'wp-block-uagb-table-of-contents',
 				'uagb-toc__align-' . $attributes['align'],
 				'uagb-toc__columns-' . $attributes['tColumnsDesktop'],
@@ -527,6 +628,10 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 				$tab_class,
 				$mob_class,
 				$zindex_extention_enabled ? 'uag-blocks-common-selector' : '',
+<<<<<<< HEAD
+=======
+				( ( true === $attributes['enableCollapsableList'] ) ? 'uagb-toc__collapse--list' : '' ),
+>>>>>>> bb56ea5 (projet final)
 			);
 
 			ob_start();
@@ -554,15 +659,32 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 							<?php
 						}
 						?>
+<<<<<<< HEAD
 					<?php if ( $uagb_toc_heading_content && count( $uagb_toc_heading_content ) > 0 && count( array_filter( $attributes['mappingHeaders'], $mapping_header_func ) ) > 0 ) { ?>
 					<div class="uagb-toc__list-wrap">
 						<?php
 							echo wp_kses_post(
+=======
+						<?php
+						if ( $has_content && $enable_collapsible_list && ! $initialCollapse && ! is_customize_preview() ) {
+							echo '<div class="uagb-toc__loader"></div>';
+						}
+						?>
+					<?php if ( $uagb_toc_heading_content && count( $uagb_toc_heading_content ) > 0 && count( array_filter( $attributes['mappingHeaders'], $mapping_header_func ) ) > 0 ) { ?>
+					<div class="uagb-toc__list-wrap <?php echo $enable_collapsible_list && $has_content && ! is_customize_preview() ? 'uagb-toc__list-hidden' : ''; ?>">
+						<?php
+							echo wp_kses(
+>>>>>>> bb56ea5 (projet final)
 								$this->table_of_contents_render_list(
 									$this->table_of_contents_linear_to_nested_heading_list( $uagb_toc_heading_content ),
 									get_permalink( $post->ID ),
 									$attributes
+<<<<<<< HEAD
 								)
+=======
+								),
+								$allowed_span_attr
+>>>>>>> bb56ea5 (projet final)
 							);
 						?>
 					</div>
@@ -975,6 +1097,21 @@ if ( ! class_exists( 'UAGB_Table_Of_Content' ) ) {
 										'type'    => 'string',
 										'default' => 'left',
 									),
+<<<<<<< HEAD
+=======
+									'collapsibleListDepth' => array(
+										'type'    => 'number',
+										'default' => 5,
+									),
+									'enableCollapsableList' => array(
+										'type'    => 'boolean',
+										'default' => false,
+									),
+									'initiallyCollapseList' => array(
+										'type'    => 'boolean',
+										'default' => false,
+									),
+>>>>>>> bb56ea5 (projet final)
 								)
 							),
 							'render_callback' => array( $this, 'render_table_of_contents' ),

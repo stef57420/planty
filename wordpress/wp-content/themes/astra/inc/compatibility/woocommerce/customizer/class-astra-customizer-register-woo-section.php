@@ -3,8 +3,11 @@
  * Register customizer panels & sections fro Woocommerce.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.1.0
  * @since       1.4.6 Chnaged to using Astra_Customizer API

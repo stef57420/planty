@@ -3,8 +3,11 @@
  * [Header] options for astra theme.
  *
  * @package     Astra Header Footer Builder
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2020, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       3.0.0
  */

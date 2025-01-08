@@ -45,6 +45,10 @@
 				"text": true
 			}
 		},
+<<<<<<< HEAD
+=======
+		"shadow": true,
+>>>>>>> bb56ea5 (projet final)
 		"spacing": {
 			"margin": [ "top", "bottom" ],
 			"padding": true,

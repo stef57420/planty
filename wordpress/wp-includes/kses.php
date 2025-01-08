@@ -2526,6 +2526,10 @@ function safecss_filter_attr( $css, $deprecated = '' ) {
 			'list-style-type',
 			'object-fit',
 			'object-position',
+<<<<<<< HEAD
+=======
+			'opacity',
+>>>>>>> bb56ea5 (projet final)
 			'overflow',
 			'vertical-align',
 			'writing-mode',

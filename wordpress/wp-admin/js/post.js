@@ -343,9 +343,15 @@ jQuery( function($) {
 		}
 	}).filter(':visible').find('.wp-tab-first').trigger( 'focus' );
 
+<<<<<<< HEAD
 	// Set the heartbeat interval to 15 seconds if post lock dialogs are enabled.
 	if ( wp.heartbeat && $('#post-lock-dialog').length ) {
 		wp.heartbeat.interval( 15 );
+=======
+	// Set the heartbeat interval to 10 seconds if post lock dialogs are enabled.
+	if ( wp.heartbeat && $('#post-lock-dialog').length ) {
+		wp.heartbeat.interval( 10 );
+>>>>>>> bb56ea5 (projet final)
 	}
 
 	// The form is being submitted by the user.
@@ -434,6 +440,7 @@ jQuery( function($) {
 		$previewField.val('');
 	});
 
+<<<<<<< HEAD
 	// This code is meant to allow tabbing from Title to Post content.
 	$('#title').on( 'keydown.editor-focus', function( event ) {
 		var editor;
@@ -453,6 +460,8 @@ jQuery( function($) {
 		}
 	});
 
+=======
+>>>>>>> bb56ea5 (projet final)
 	// Auto save new posts after a title is typed.
 	if ( $( '#auto_draft' ).val() ) {
 		$( '#title' ).on( 'blur', function() {
@@ -678,8 +687,15 @@ jQuery( function($) {
 			'li.popular-category > label input[type="checkbox"]',
 			function() {
 				var t = $(this), c = t.is(':checked'), id = t.val();
+<<<<<<< HEAD
 				if ( id && t.parents('#taxonomy-'+taxonomy).length )
 					$('#in-' + taxonomy + '-' + id + ', #in-popular-' + taxonomy + '-' + id).prop( 'checked', c );
+=======
+				if ( id && t.parents('#taxonomy-'+taxonomy).length ) {
+					$('input[id^="in-' + taxonomy + '-' + id + '"]').prop('checked', c);
+					$('input#in-popular-' + taxonomy + '-' + id).prop('checked', c);
+				}
+>>>>>>> bb56ea5 (projet final)
 			}
 		);
 

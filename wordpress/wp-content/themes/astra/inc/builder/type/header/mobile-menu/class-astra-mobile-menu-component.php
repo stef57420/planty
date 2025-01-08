@@ -3,8 +3,11 @@
  * Header Navigation Menu component.
  *
  * @package     Astra Builder
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2020, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       Astra 3.0.0
  */
@@ -101,7 +104,11 @@ class Astra_Mobile_Menu_Component {
 
 		// To add default alignment for navigation which can be added through any third party plugin.
 		// Do not add any CSS from theme except header alignment.
+<<<<<<< HEAD
 		echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
+=======
+		echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+>>>>>>> bb56ea5 (projet final)
 
 		if ( is_customize_preview() ) {
 			Astra_Builder_UI_Controller::render_customizer_edit_button();
@@ -121,6 +128,7 @@ class Astra_Mobile_Menu_Component {
 
 			// Adding rel="nofollow" for duplicate menu render.
 			$mobile_menu_markup = $astra_builder->nofollow_markup( $theme_location, $mobile_menu_markup );
+<<<<<<< HEAD
 			echo $mobile_menu_markup;
 		} else {
 			echo '<div class="main-header-bar-navigation">';
@@ -132,12 +140,31 @@ class Astra_Mobile_Menu_Component {
 					'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
 					'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
 				)
+=======
+			echo do_shortcode( $mobile_menu_markup );
+		} else {
+			echo '<div class="main-header-bar-navigation">';
+			echo '<nav ';
+			echo wp_kses_post(
+				astra_attr(
+					'site-navigation',
+					array(
+						'id'         => 'ast-' . esc_attr( $device ) . '-site-navigation',
+						'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
+						'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
+					)
+				) 
+>>>>>>> bb56ea5 (projet final)
 			);
 			echo '>';
 			$mobile_menu_markup = wp_page_menu( $fallback_menu_args );
 			// Adding rel="nofollow" for duplicate menu render.
 			$mobile_menu_markup = $astra_builder->nofollow_markup( $theme_location, $mobile_menu_markup );
+<<<<<<< HEAD
 			echo $mobile_menu_markup;
+=======
+			echo do_shortcode( $mobile_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 			echo '</nav>';
 			echo '</div>';
 		}

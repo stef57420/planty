@@ -341,8 +341,12 @@ if ( ! class_exists( 'Astra_LearnDash' ) ) :
 				}
 
 				$supported_post_types = Astra_Posts_Structure_Loader::get_supported_post_types();
+<<<<<<< HEAD
 				$post_type            = strval( get_post_type() );
 
+=======
+				$post_type            = astra_get_post_type();
+>>>>>>> bb56ea5 (projet final)
 
 				if ( in_array( $post_type, $supported_post_types ) ) {
 					$dynamic_sidebar_layout = '';
@@ -409,7 +413,11 @@ if ( ! class_exists( 'Astra_LearnDash' ) ) :
 				}
 
 				$supported_post_types = Astra_Posts_Structure_Loader::get_supported_post_types();
+<<<<<<< HEAD
 				$post_type            = strval( get_post_type() );
+=======
+				$post_type            = astra_get_post_type();
+>>>>>>> bb56ea5 (projet final)
 
 				if ( in_array( $post_type, $supported_post_types ) ) {
 					$dynamic_sidebar_layout = '';

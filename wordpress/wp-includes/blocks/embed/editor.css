@@ -7,6 +7,12 @@
   display:flex;
   justify-content:center;
 }
+<<<<<<< HEAD
+=======
+.wp-block-embed .wp-block-embed__placeholder-input{
+  flex:1 1 auto;
+}
+>>>>>>> bb56ea5 (projet final)
 .wp-block-embed .components-placeholder__error{
   word-break:break-word;
 }

@@ -31,6 +31,21 @@
 		},
 		"interactivity": {
 			"clientNavigation": true
+<<<<<<< HEAD
+=======
+		},
+		"__experimentalBorder": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true,
+			"__experimentalDefaultControls": {
+				"radius": true,
+				"color": true,
+				"width": true,
+				"style": true
+			}
+>>>>>>> bb56ea5 (projet final)
 		}
 	},
 	"style": "wp-block-comment-template"

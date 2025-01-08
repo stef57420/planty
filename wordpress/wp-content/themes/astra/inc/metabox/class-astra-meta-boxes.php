@@ -3,8 +3,11 @@
  * Post Meta Box
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -525,8 +528,19 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 						break;
 
 					case 'FILTER_DEFAULT':
+<<<<<<< HEAD
 							$meta_value = filter_input( INPUT_POST, $key, FILTER_DEFAULT ); // phpcs:ignore WordPressVIPMinimum.Security.PHPFilterFunctions.RestrictedFilter -- Default filter after all other cases, keeping this filter for backward compatibility of PRO options.
 						break;
+=======
+						/**
+						 * @psalm-suppress TooManyArguments
+						 * @psalm-suppress PossiblyInvalidArgument
+						 */
+						$meta_value = apply_filters( 'astra_php_default_filter_input', ! empty( $_POST[ $key ] ) ? sanitize_text_field( wp_unslash( $_POST[ $key ] ) ) : '', $key );
+						/** @psalm-suppress PossiblyInvalidArgument */
+						break;
+						
+>>>>>>> bb56ea5 (projet final)
 				}
 
 				// Store values.
@@ -611,6 +625,10 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 			);
 			$page_bg_dynamic_title = ( $post_type ? $bg_updated_title : __( 'Page Background', 'astra' ) );
 			$global_palette        = astra_get_option( 'global-color-palette' );
+<<<<<<< HEAD
+=======
+			$reorder_color_seq     = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+>>>>>>> bb56ea5 (projet final)
 
 			/* Created a new array specifically designed for storing post types that don't require Astra's meta settings.*/
 			$register_astra_metabox = ! in_array( $post_type, array( 'wp_block' ), true );
@@ -651,7 +669,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					'color_addon_enabled'            => ( $astra_ext_extension_class_exists && Astra_Ext_Extension::is_active( 'colors-and-background' ) ) ? true : false,
 					'site_page_bg_meta_default'      => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => $apply_new_default_values ? 'var(--ast-global-color-4)' : '',
+=======
+							'background-color'      => $apply_new_default_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -695,7 +717,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					),
 					'content_page_bg_meta_default'   => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -709,7 +735,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'tablet'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -723,7 +753,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'mobile'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -743,6 +777,10 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					'surface_color_help_text'        => __( 'Enabling this option will override global > colors > surface color options', 'astra' ),
 					'page_bg_dynamic_title'          => $page_bg_dynamic_title,
 					'global_color_palette'           => $global_palette,
+<<<<<<< HEAD
+=======
+					'color_palette_labels'           => Astra_Global_Palette::get_palette_labels(),
+>>>>>>> bb56ea5 (projet final)
 				)
 			);
 
@@ -1301,6 +1339,10 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 			);
 
 			$apply_new_default_values = astra_button_default_padding_updated();
+<<<<<<< HEAD
+=======
+			$reorder_color_seq        = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+>>>>>>> bb56ea5 (projet final)
 			register_post_meta(
 				'',
 				'ast-page-background-meta',
@@ -1440,7 +1482,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					),
 					'default'       => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => $apply_new_default_values ? 'var(--ast-global-color-4)' : '',
+=======
+							'background-color'      => $apply_new_default_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -1625,7 +1671,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					),
 					'default'       => array(
 						'desktop' => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -1639,7 +1689,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'tablet'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -1653,7 +1707,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 							'overlay-gradient'      => '',
 						),
 						'mobile'  => array(
+<<<<<<< HEAD
 							'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+							'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 							'background-image'      => '',
 							'background-repeat'     => 'repeat',
 							'background-position'   => 'center center',
@@ -1679,6 +1737,10 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 		public static function post_meta_options() {
 			$palette_css_var_prefix   = Astra_Global_Palette::get_css_variable_prefix();
 			$apply_new_default_values = astra_button_default_padding_updated();
+<<<<<<< HEAD
+=======
+			$reorder_color_seq        = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+>>>>>>> bb56ea5 (projet final)
 			self::$meta_option        = apply_filters(
 				'astra_meta_box_options',
 				array(
@@ -1742,7 +1804,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					'ast-page-background-meta'      => array(
 						'default'  => array(
 							'desktop' => array(
+<<<<<<< HEAD
 								'background-color'      => $apply_new_default_values ? 'var(--ast-global-color-4)' : '',
+=======
+								'background-color'      => $apply_new_default_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 								'background-image'      => '',
 								'background-repeat'     => 'repeat',
 								'background-position'   => 'center center',
@@ -1789,7 +1855,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 					'ast-content-background-meta'   => array(
 						'default'  => array(
 							'desktop' => array(
+<<<<<<< HEAD
 								'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+								'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 								'background-image'      => '',
 								'background-repeat'     => 'repeat',
 								'background-position'   => 'center center',
@@ -1803,7 +1873,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 								'overlay-gradient'      => '',
 							),
 							'tablet'  => array(
+<<<<<<< HEAD
 								'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+								'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 								'background-image'      => '',
 								'background-repeat'     => 'repeat',
 								'background-position'   => 'center center',
@@ -1817,7 +1891,11 @@ if ( ! class_exists( 'Astra_Meta_Boxes' ) ) {
 								'overlay-gradient'      => '',
 							),
 							'mobile'  => array(
+<<<<<<< HEAD
 								'background-color'      => 'var(' . $palette_css_var_prefix . '5)',
+=======
+								'background-color'      => $reorder_color_seq ? 'var(' . $palette_css_var_prefix . '4)' : 'var(' . $palette_css_var_prefix . '5)',
+>>>>>>> bb56ea5 (projet final)
 								'background-image'      => '',
 								'background-repeat'     => 'repeat',
 								'background-position'   => 'center center',

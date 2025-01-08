@@ -133,7 +133,11 @@ class WP_REST_Widgets_Controller extends WP_REST_Controller {
 	 * @since 5.8.0
 	 *
 	 * @param WP_REST_Request $request Full details about the request.
+<<<<<<< HEAD
 	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
+=======
+	 * @return WP_REST_Response Response object.
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public function get_items( $request ) {
 		$this->retrieve_widgets();

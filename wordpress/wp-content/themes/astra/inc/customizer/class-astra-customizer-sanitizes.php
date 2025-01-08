@@ -3,8 +3,11 @@
  * Astra Theme Customizer Sanitize.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -29,7 +32,10 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 		/**
 		 * Instance
 		 *
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var object
 		 */
 		private static $instance;
@@ -73,13 +79,24 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 					'value' => isset( $input['value'] ) && isset( $svg_icons[ $input['value'] ] ) ? $input['value'] : '',
 				);
 			}
+<<<<<<< HEAD
 
+=======
+			/* Strip code starts */
+>>>>>>> bb56ea5 (projet final)
 			return array(
 				'type'  => 'custom',
 				'value' => isset( $input['value'] ) ? self::sanitize_svg_code( $input['value'] ) : '',
 			);
+<<<<<<< HEAD
 		}
 
+=======
+			/* Strip code ends */
+		}
+
+		/* Strip code starts */
+>>>>>>> bb56ea5 (projet final)
 		/**
 		 * Sanitizes SVG Code string.
 		 *
@@ -143,6 +160,7 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 
 			$content = substr( $content, $start, ( $end - $start + 6 ) );
 
+<<<<<<< HEAD
 			// If the server's PHP version is 8 or up, make sure to disable the ability to load external entities.
 			$php_version_under_eight = version_compare( PHP_VERSION, '8.0.0', '<' );
 			if ( $php_version_under_eight ) {
@@ -170,6 +188,28 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 			}
 
 			// Sanitize elements.
+=======
+			// Suppress the errors.
+			libxml_use_internal_errors( true );
+
+			// Load the SVG content using SimpleXML.
+			$xml = simplexml_load_string( $content, 'SimpleXMLElement', LIBXML_NOENT );
+			if ( $xml === false ) {
+				return '';
+			}
+
+			// Sanitize elements.
+			/** @psalm-suppress PossiblyNullPropertyFetch */
+			$dom = dom_import_simplexml( $xml )->ownerDocument;
+			/** @psalm-suppress PossiblyNullPropertyAssignment */
+			$dom->formatOutput = false;
+			/** @psalm-suppress PossiblyNullPropertyAssignment */
+			$dom->preserveWhiteSpace = false;
+			/** @psalm-suppress PossiblyNullPropertyAssignment */
+			$dom->strictErrorChecking = false;
+
+			/** @psalm-suppress PossiblyNullReference */
+>>>>>>> bb56ea5 (projet final)
 			$elements = $dom->getElementsByTagName( '*' );
 			for ( $index = $elements->length - 1; $index >= 0; $index-- ) {
 				$current_element = $elements->item( $index );
@@ -217,6 +257,7 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 			$sanitized = $dom->saveXML( $dom->documentElement, LIBXML_NOEMPTYTAG );
 
 			// Restore defaults.
+<<<<<<< HEAD
 			if ( $php_version_under_eight && isset( $libxml_disable_entity_loader ) ) {
 				libxml_disable_entity_loader( $libxml_disable_entity_loader );
 			}
@@ -225,6 +266,13 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 			return $sanitized;
 		}
 
+=======
+			libxml_use_internal_errors( false );
+
+			return $sanitized;
+		}
+		/* Strip code ends */
+>>>>>>> bb56ea5 (projet final)
 
 		/**
 		 * Sanitize Integer
@@ -629,7 +677,12 @@ if ( ! class_exists( 'Astra_Customizer_Sanitizes' ) ) {
 
 			// Get list of choices from the control
 			// associated with the setting.
+<<<<<<< HEAD
 			$choices    = $setting->manager->get_control( $setting->id )->choices;
+=======
+			$choices = $setting->manager->get_control( $setting->id )->choices;
+
+>>>>>>> bb56ea5 (projet final)
 			$input_keys = $input;
 
 			foreach ( $input_keys as $key => $value ) {

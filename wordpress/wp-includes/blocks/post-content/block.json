@@ -7,15 +7,40 @@
 	"description": "Displays the contents of a post or page.",
 	"textdomain": "default",
 	"usesContext": [ "postId", "postType", "queryId" ],
+<<<<<<< HEAD
+=======
+	"example": {
+		"viewportWidth": 350
+	},
+>>>>>>> bb56ea5 (projet final)
 	"supports": {
 		"align": [ "wide", "full" ],
 		"html": false,
 		"layout": true,
+<<<<<<< HEAD
+=======
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true,
+			"__experimentalDefaultControls": {
+				"backgroundImage": true
+			}
+		},
+>>>>>>> bb56ea5 (projet final)
 		"dimensions": {
 			"minHeight": true
 		},
 		"spacing": {
+<<<<<<< HEAD
 			"blockGap": true
+=======
+			"blockGap": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"margin": false,
+				"padding": false
+			}
+>>>>>>> bb56ea5 (projet final)
 		},
 		"color": {
 			"gradients": true,
@@ -39,5 +64,9 @@
 			}
 		}
 	},
+<<<<<<< HEAD
+=======
+	"style": "wp-block-post-content",
+>>>>>>> bb56ea5 (projet final)
 	"editorStyle": "wp-block-post-content-editor"
 }

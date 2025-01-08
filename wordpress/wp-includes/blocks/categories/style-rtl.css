@@ -9,4 +9,11 @@
 }
 .wp-block-categories.wp-block-categories-dropdown.aligncenter{
   text-align:center;
+<<<<<<< HEAD
+=======
+}
+.wp-block-categories .wp-block-categories__label{
+  display:block;
+  width:100%;
+>>>>>>> bb56ea5 (projet final)
 }

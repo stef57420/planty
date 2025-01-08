@@ -176,6 +176,13 @@ function wpcf7_admin_enqueue_scripts( $hook_suffix ) {
 					)
 				),
 			),
+<<<<<<< HEAD
+=======
+			'configValidator' => array(
+				'errors' => array(),
+				'docUrl' => WPCF7_ConfigValidator::get_doc_link(),
+			),
+>>>>>>> bb56ea5 (projet final)
 		) );
 
 		if (
@@ -185,12 +192,21 @@ function wpcf7_admin_enqueue_scripts( $hook_suffix ) {
 			$config_validator = new WPCF7_ConfigValidator( $post );
 			$config_validator->restore();
 
+<<<<<<< HEAD
 			$wpcf7_obj = array_merge( $wpcf7_obj, array(
 				'configValidator' => array(
 					'errors' => $config_validator->collect_error_messages(),
 					'docUrl' => WPCF7_ConfigValidator::get_doc_link(),
 				),
 			) );
+=======
+			$wpcf7_obj['configValidator'] = array_merge(
+				$wpcf7_obj['configValidator'],
+				array(
+					'errors' => $config_validator->collect_error_messages(),
+				)
+			);
+>>>>>>> bb56ea5 (projet final)
 		}
 	}
 

@@ -671,6 +671,10 @@
     display: inline-block;
 }
 .ast-palette-label-wrap {
+<<<<<<< HEAD
+=======
+    display: inline-block;
+>>>>>>> bb56ea5 (projet final)
     text-align: center;
     color: #9CA3AF;
     overflow: hidden;
@@ -685,6 +689,10 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb56ea5 (projet final)
 .ast-color-palette-wrap.active {
     box-shadow: 0px 12px 20px -8px rgb(30 41 59 / 16%);
 }
@@ -810,8 +818,11 @@ section.ast-palette-presets-inner-wrap:last-child {
 
 .ast-color-picker-custom-tooltip[data-title]::after {
 	content: attr(data-title);
+<<<<<<< HEAD
     min-width: 3em;
     max-width: 10em;
+=======
+>>>>>>> bb56ea5 (projet final)
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -836,6 +847,13 @@ section.ast-palette-presets-inner-wrap:last-child {
     transform: translate(-50%,-0.5em);
 }
 
+<<<<<<< HEAD
+=======
+.ast-single-palette-wrap > :last-child .ast-color-picker-custom-tooltip[data-title]::after {
+    left: -16px;
+}
+
+>>>>>>> bb56ea5 (projet final)
 .ast-color-picker-custom-tooltip-wrapper {
 	position: relative;
 }
@@ -1806,6 +1824,14 @@ input[type="text"].select2-search__field {
   border-bottom: 1px solid var(--ast-customizer-color-7);
 }
 
+<<<<<<< HEAD
+=======
+/* To remove extra spacing for customizer button */
+#customize-theme-controls .accordion-section-title button.accordion-trigger {
+  max-height: fit-content;
+}
+
+>>>>>>> bb56ea5 (projet final)
 .wp-core-ui #customize-controls .control-section:hover > .accordion-section-title,
 .wp-core-ui #customize-controls .control-section .accordion-section-title:hover,
 .wp-core-ui #customize-controls .control-section .accordion-section-title:focus,
@@ -4289,6 +4315,18 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.ast-customizer-select-multi .ast-multi-select__input-container {
+    padding: 0;
+    margin: 0;
+}
+
+.ast-customizer-select-multi .ast-multi-select__input-container input {
+    min-height: min-content;
+}
+
+>>>>>>> bb56ea5 (projet final)
 .ast-customizer-select-multi .ast-multi-select__input-container input:focus{
     box-shadow: none;
 }
@@ -4298,6 +4336,7 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .ast-customizer-select-multi .ast-multi-select__value-container {
+<<<<<<< HEAD
     overflow-x: hidden;
     flex-wrap: nowrap;
     padding-left: 10px;
@@ -4315,6 +4354,14 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
     background: linear-gradient(90deg, rgba(247,247,247,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
     pointer-events: none;
     z-index: 1;
+=======
+    padding-top: 4px;
+    padding-bottom: 4px;
+    overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 30px;
+    gap: 4px;
+>>>>>>> bb56ea5 (projet final)
 }
 
 .ast-customizer-select-multi:after {
@@ -4325,7 +4372,12 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
     margin-right: 15px;
     pointer-events: none;
     z-index: 1;
+<<<<<<< HEAD
     top: 13px;
+=======
+    top: 50%;
+    translate: 0 -50%;
+>>>>>>> bb56ea5 (projet final)
     right: 0;
 }
 
@@ -4334,8 +4386,12 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .ast-customizer-select-multi .ast-multi-select__multi-value {
+<<<<<<< HEAD
     margin-top: 0;
     margin-bottom: 0;
+=======
+    margin: 0;
+>>>>>>> bb56ea5 (projet final)
     font-size: 14px;
     padding: 2px 5px 2px 5px;
     min-width: auto;
@@ -4416,7 +4472,11 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
 }
 
 .customize-control-ast-color-palette .ast-field-settings-modal {
+<<<<<<< HEAD
 	z-index: 11;
+=======
+  z-index: 11;
+>>>>>>> bb56ea5 (projet final)
 }
 
 .ast-field-settings-modal .customize-control-ast-divider:first-child {
@@ -4427,7 +4487,12 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
   width: 100%;
 }
 
+<<<<<<< HEAD
 .ast-group-tabs, .ast-tab-content {
+=======
+.ast-group-tabs,
+.ast-tab-content {
+>>>>>>> bb56ea5 (projet final)
   position: relative;
 }
 
@@ -4436,7 +4501,12 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
   border-bottom: 1px solid #ddd;
 }
 
+<<<<<<< HEAD
 .ast-group-list:before, .ast-group-list:after {
+=======
+.ast-group-list:before,
+.ast-group-list:after {
+>>>>>>> bb56ea5 (projet final)
   content: "";
   display: table;
   border-collapse: collapse;
@@ -4467,7 +4537,12 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
   /*padding-top: 15px;*/
 }
 
+<<<<<<< HEAD
 .ast-group-tabs .ui-widget-content.iris-slider-offset, .ast-group-tabs .ui-widget-content.iris-slider-offset-alpha {
+=======
+.ast-group-tabs .ui-widget-content.iris-slider-offset,
+.ast-group-tabs .ui-widget-content.iris-slider-offset-alpha {
+>>>>>>> bb56ea5 (projet final)
   overflow: inherit;
 }
 
@@ -4562,9 +4637,16 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
   padding-right: 16px;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .ast-control-wrap .ast-color-picker-alpha {
     margin-left: -5px;
     margin-right: -5px;
+=======
+
+.ast-control-wrap .ast-color-picker-alpha {
+  margin-left: -5px;
+  margin-right: -5px;
+>>>>>>> bb56ea5 (projet final)
 }
 
 .ast-field-settings-modal .customize-control:first-child {
@@ -4775,18 +4857,29 @@ li#customize-control-astra-settings-header-preset-style .customizer-text {
  * Divider compatibility CSS for setting group.
  */
 .ast-top-divider.customize-control-ast-settings-group .ast-toggle-desc-wrap .ast-adv-toggle-icon {
+<<<<<<< HEAD
     top: 23px;
+=======
+  top: 23px;
+>>>>>>> bb56ea5 (projet final)
 }
 
 /**
  * Responsive slider control inside settings-group, case: body-font, headings-font.
  */
+<<<<<<< HEAD
  .ast-fields-wrap .customize-control-ast-responsive-slider .ast-slider-wrap > label,
  .ast-fields-wrap .customize-control-ast-selector .ast-slider-wrap > label {
     display: inline-block;
 }
 
 
+=======
+.ast-fields-wrap .customize-control-ast-responsive-slider .ast-slider-wrap>label,
+.ast-fields-wrap .customize-control-ast-selector .ast-slider-wrap>label {
+  display: inline-block;
+}
+>>>>>>> bb56ea5 (projet final)
 .customize-control-ast-slider .wrapper {
   display: flex;
 }

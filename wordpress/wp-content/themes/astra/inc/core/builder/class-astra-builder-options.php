@@ -395,6 +395,10 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 	 */
 	$defaults['transparent-header-main-sep']       = ( false === astra_get_transparent_header_default_value() ) ? '' : 0;
 	$defaults['transparent-header-main-sep-color'] = '';
+<<<<<<< HEAD
+=======
+	$reorder_color_seq                             = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+>>>>>>> bb56ea5 (projet final)
 
 	/**
 	 * Header > Sticky Defaults.
@@ -486,7 +490,11 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 	);
 	$defaults['hbb-footer-bg-obj-responsive'] = array(
 		'desktop' => array(
+<<<<<<< HEAD
 			'background-color'      => $apply_new_default_color_typo_values ? 'var(--ast-global-color-5)' : '#eeeeee',
+=======
+			'background-color'      => $apply_new_default_color_typo_values ? ( $reorder_color_seq ? 'var(--ast-global-color-4)' : 'var(--ast-global-color-5)' ) : '#eeeeee',
+>>>>>>> bb56ea5 (projet final)
 			'background-image'      => '',
 			'background-repeat'     => 'repeat',
 			'background-position'   => 'center center',
@@ -560,7 +568,11 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 			'overlay-gradient'      => '',
 		),
 	);
+<<<<<<< HEAD
 	$defaults['hbb-footer-top-border-color']  = $blog_update ? '#eaeaea' : 'var(--ast-global-color-6)';
+=======
+	$defaults['hbb-footer-top-border-color']  = $blog_update ? '#eaeaea' : 'var(--ast-global-color-subtle-background, --ast-global-color-6)';
+>>>>>>> bb56ea5 (projet final)
 	$defaults['hbb-footer-separator']         = 1;
 
 	/**
@@ -671,7 +683,11 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 	/**
 	 * Footer Copyright.
 	 */
+<<<<<<< HEAD
 	$defaults['footer-copyright-editor']              = 'Copyright [copyright] [current_year] [site_title] | Powered by [theme_author]';
+=======
+	$defaults['footer-copyright-editor']              = __( 'Copyright [copyright] [current_year] [site_title] | Powered by [theme_author]', 'astra' );
+>>>>>>> bb56ea5 (projet final)
 	$defaults['footer-copyright-color']               = $apply_new_default_color_typo_values ? 'var(--ast-global-color-3)' : '';
 	$defaults['line-height-section-footer-copyright'] = 2;
 	$defaults['footer-copyright-alignment']           = array(
@@ -819,6 +835,10 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 	);
 	$defaults['off-canvas-close-color']             = '#3a3a3a';
 	$defaults['mobile-header-type']                 = 'dropdown';
+<<<<<<< HEAD
+=======
+	$defaults['off-canvas-move-body']               = false;
+>>>>>>> bb56ea5 (projet final)
 	$defaults['off-canvas-inner-spacing']           = '';
 	$defaults['footer-menu-layout']                 = array(
 		'desktop' => 'horizontal',
@@ -989,6 +1009,11 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 	 */
 	$update_colors_for_starter_library = Astra_Dynamic_CSS::astra_4_4_0_compatibility();
 	$update_color_for_forms_ui         = Astra_Dynamic_CSS::astra_4_6_0_compatibility();
+<<<<<<< HEAD
+=======
+	$color_palette_reorganize          = Astra_Dynamic_CSS::astra_4_8_9_compatibility();
+
+>>>>>>> bb56ea5 (projet final)
 	if ( $update_color_for_forms_ui ) {
 		$color_palette_7 = '#D1D5DB';
 	} else {
@@ -1000,10 +1025,17 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 			'#045cb4',
 			'#1e293b',
 			'#334155',
+<<<<<<< HEAD
 			$update_colors_for_starter_library ? '#F0F5FA' : '#f9fafb',
 			'#FFFFFF',
 			$color_palette_7,
 			$update_colors_for_starter_library ? '#111111' : '#cbd5e1',
+=======
+			$color_palette_reorganize ? '#FFFFFF' : ( $update_colors_for_starter_library ? '#F0F5FA' : '#f9fafb' ),
+			$color_palette_reorganize ? ( $update_colors_for_starter_library ? '#F0F5FA' : '#f9fafb' ) : '#FFFFFF',
+			$color_palette_reorganize ? ( $update_colors_for_starter_library ? '#111111' : '#cbd5e1' ) : $color_palette_7,
+			$color_palette_reorganize ? $color_palette_7 : ( $update_colors_for_starter_library ? '#111111' : '#cbd5e1' ),
+>>>>>>> bb56ea5 (projet final)
 			$update_colors_for_starter_library ? '#111111' : '#94a3b8',
 		),
 	)
@@ -1014,10 +1046,17 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 			'#3a3a3a',
 			'#3a3a3a',
 			'#4B4F58',
+<<<<<<< HEAD
 			'#F5F5F5',
 			'#FFFFFF',
 			'#E5E5E5',
 			'#424242',
+=======
+			$color_palette_reorganize ? '#FFFFFF' : '#F5F5F5',
+			$color_palette_reorganize ? '#F5F5F5' : '#FFFFFF',
+			$color_palette_reorganize ? '#424242' : '#E5E5E5',
+			$color_palette_reorganize ? '#E5E5E5' : '#424242',
+>>>>>>> bb56ea5 (projet final)
 			'#000000',
 		),
 	);
@@ -1051,7 +1090,11 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 			'overlay-gradient'      => '',
 		),
 		'tablet'  => array(
+<<<<<<< HEAD
 			'background-color'      => $apply_new_default_color_typo_values ? 'var(--ast-global-color-5)' : '',
+=======
+			'background-color'      => $apply_new_default_color_typo_values ? ( $reorder_color_seq ? 'var(--ast-global-color-4)' : 'var(--ast-global-color-5)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 			'background-image'      => '',
 			'background-repeat'     => 'repeat',
 			'background-position'   => 'center center',
@@ -1096,13 +1139,21 @@ function astra_hf_builder_customizer_defaults( $defaults ) {
 
 	$defaults['header-mobile-menu-h-bg-color-responsive'] = array(
 		'desktop' => '',
+<<<<<<< HEAD
 		'tablet'  => $apply_new_default_color_typo_values ? 'var(--ast-global-color-4)' : '',
+=======
+		'tablet'  => $apply_new_default_color_typo_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 		'mobile'  => '',
 	);
 
 	$defaults['header-mobile-menu-a-bg-color-responsive'] = array(
 		'desktop' => '',
+<<<<<<< HEAD
 		'tablet'  => $apply_new_default_color_typo_values ? 'var(--ast-global-color-4)' : '',
+=======
+		'tablet'  => $apply_new_default_color_typo_values ? ( $reorder_color_seq ? 'var(--ast-global-color-5)' : 'var(--ast-global-color-4)' ) : '',
+>>>>>>> bb56ea5 (projet final)
 		'mobile'  => '',
 	);
 

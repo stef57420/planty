@@ -29,7 +29,13 @@ function astra_font_size_rem( size, with_rem, device ) {
 			body_font_size['tablet'] 	= ( body_font_size['tablet'] != '' ) ? body_font_size['tablet'] : body_font_size['desktop'];
 			body_font_size['mobile'] 	= ( body_font_size['mobile'] != '' ) ? body_font_size['mobile'] : body_font_size['tablet'];
 
+<<<<<<< HEAD
 			css += 'font-size: ' + ( size / body_font_size[device] ) + 'rem;';
+=======
+			if ( body_font_size[ device + '-unit' ] === 'px' ) {
+				css += 'font-size: ' + ( size / body_font_size[device] ) + 'rem;';
+			}
+>>>>>>> bb56ea5 (projet final)
 		}
 	}
 
@@ -105,15 +111,26 @@ function astra_responsive_font_size( control, selector, dispatchCustomEvent = fa
 				control = control.replace( '[', '-' );
 				control = control.replace( ']', '' );
 
+<<<<<<< HEAD
 				var fontSize = '',
 					tabletFontSize = '',
 					mobileFontSize = '',
 					css_property = 'font-size';
+=======
+				var css_property = 'font-size',
+					fontSize = value['desktop-unit'] == 'px' ? astra_font_size_rem( value.desktop, true, 'desktop' ) : '',
+					tabletFontSize = '',
+					mobileFontSize = '';
+>>>>>>> bb56ea5 (projet final)
 
 				jQuery( 'style#' + control + '-' + css_property ).remove();
 
 				if ( '' != value.desktop ) {
+<<<<<<< HEAD
 					fontSize = 'font-size: ' + value.desktop + ( undefined == value['desktop-unit'] ? 'px' : value['desktop-unit'] );
+=======
+					fontSize = fontSize || 'font-size: ' + value.desktop + ( undefined == value['desktop-unit'] ? 'px' : value['desktop-unit'] );
+>>>>>>> bb56ea5 (projet final)
 				}
 				if ( '' != value.tablet ) {
 					tabletFontSize = 'font-size: ' + value.tablet + ( undefined == value['tablet-unit'] ? 'px' : value['tablet-unit'] );
@@ -122,10 +139,13 @@ function astra_responsive_font_size( control, selector, dispatchCustomEvent = fa
 					mobileFontSize = 'font-size: ' + value.mobile + ( undefined == value['mobile-unit'] ? 'px' : value['mobile-unit'] );
 				}
 
+<<<<<<< HEAD
 				if( value['desktop-unit'] == 'px' ) {
 					fontSize = astra_font_size_rem( value.desktop, true, 'desktop' );
 				}
 
+=======
+>>>>>>> bb56ea5 (projet final)
 				// Concat and append new <style>.
 				jQuery( 'head' ).append(
 					'<style id="' + control + '-' + css_property + '">'
@@ -136,7 +156,11 @@ function astra_responsive_font_size( control, selector, dispatchCustomEvent = fa
 				);
 
 				if ( dispatchCustomEvent ) {
+<<<<<<< HEAD
 					let styleGuideUpdatedEvent = new CustomEvent('AstraStyleGuideElementUpdated', {
+=======
+					let styleGuideUpdatedEvent = new CustomEvent( 'AstraStyleGuideElementUpdated', {
+>>>>>>> bb56ea5 (projet final)
 						'detail': {
 							'value': {
 								'desktop': value.desktop + ( undefined == value['desktop-unit'] ? 'px' : value['desktop-unit'] ),
@@ -593,6 +617,7 @@ function astra_border_spacing_advanced_css( section, selector ) {
 	wp.customize( 'astra-settings[' + section + '-border-width]', function( setting ) {
 		setting.bind( function( border ) {
 			var dynamicStyle = selector + ' {';
+<<<<<<< HEAD
 			dynamicStyle += border.top ? 'border-top-style: solid;' : '';
 			dynamicStyle += border.right ? 'border-right-style: solid;' : '';
 			dynamicStyle += border.bottom ? 'border-bottom-style: solid;' : '';
@@ -601,25 +626,69 @@ function astra_border_spacing_advanced_css( section, selector ) {
 			dynamicStyle += 'border-right-width:'  + border.right + 'px;';
 			dynamicStyle += 'border-left-width:'   + border.left + 'px;';
 			dynamicStyle += 'border-bottom-width:'   + border.bottom + 'px;';
+=======
+			if ( border.top ) {
+				dynamicStyle += 'border-top-style: solid;';
+				dynamicStyle += 'border-top-width: ' + border.top + 'px;';
+			}
+			if ( border.right ) {
+				dynamicStyle += 'border-right-style: solid;';
+				dynamicStyle += 'border-right-width: ' + border.right + 'px;';
+			}
+			if ( border.bottom ) {
+				dynamicStyle += 'border-bottom-style: solid;';
+				dynamicStyle += 'border-bottom-width: ' + border.bottom + 'px;';
+			}
+			if ( border.left ) {
+				dynamicStyle += 'border-left-style: solid;';
+				dynamicStyle += 'border-left-width: ' + border.left + 'px;';
+			}
+>>>>>>> bb56ea5 (projet final)
 			dynamicStyle += '} ';
 			astra_add_dynamic_css( 'astra-settings[' + section + '-border-width]', dynamicStyle );
 		} );
 	} );
+<<<<<<< HEAD
 	wp.customize( 'astra-settings[' + section + '-border-radius]', function( setting ) {
 		setting.bind( function( border ) {
 			if ( border.top === '' && border.right === '' && border.bottom === '' || border.left === '' ) {
+=======
+
+	wp.customize( 'astra-settings[' + section + '-border-radius]', function( setting ) {
+		setting.bind( function( border ) {
+			if ( !border.top && !border.right && !border.bottom && !border.left ) {
+>>>>>>> bb56ea5 (projet final)
 				wp.customize.preview.send( 'refresh' );
 				return;
 			}
 			var dynamicStyle = selector + ' {';
+<<<<<<< HEAD
 			dynamicStyle += 'border-top-left-radius:'  + border.top + 'px;';
 			dynamicStyle += 'border-top-right-radius:'  + border.right + 'px;';
 			dynamicStyle += 'border-bottom-left-radius:'   + border.left + 'px;';
 			dynamicStyle += 'border-bottom-right-radius:'   + border.bottom + 'px;';
+=======
+			if ( border.top !== '' ) {
+				dynamicStyle += 'border-top-left-radius: ' + border.top + 'px;';
+			}
+			if ( border.right !== '' ) {
+				dynamicStyle += 'border-top-right-radius: ' + border.right + 'px;';
+			}
+			if ( border.left !== '' ) {
+				dynamicStyle += 'border-bottom-left-radius: ' + border.left + 'px;';
+			}
+			if ( border.bottom !== '' ) {
+				dynamicStyle += 'border-bottom-right-radius: ' + border.bottom + 'px;';
+			}
+>>>>>>> bb56ea5 (projet final)
 			dynamicStyle += '} ';
 			astra_add_dynamic_css( 'astra-settings[' + section + '-border-radius]', dynamicStyle );
 		} );
 	} );
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb56ea5 (projet final)
 	astra_css( 'astra-settings[' + section + '-border-color]', 'border-color', selector );
 	astra_builder_advanced_css( section, selector );
 }
@@ -2777,6 +2846,15 @@ function hasWordPressWidgetBlockEditor() {
 			} );
 		} );
 
+<<<<<<< HEAD
+=======
+		wp.customize( 'astra-settings[shop-ratings-product-archive]', function( setting ) {
+			setting.bind( function( value ) {
+				wp.customize.preview.send( 'refresh' );
+			} );
+		} );
+
+>>>>>>> bb56ea5 (projet final)
 		wp.customize( 'astra-settings[single-product-payment-text]', function( setting ) {
 			setting.bind( function( text ) {
 				const paymentText = document.querySelector('.ast-single-product-payments legend');

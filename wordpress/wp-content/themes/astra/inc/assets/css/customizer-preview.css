@@ -192,7 +192,10 @@ body.customize-partial-edit-shortcuts-shown .customize-partial-edit-shortcut but
     line-height: 1em;
 }
 
+<<<<<<< HEAD
 /* Hide Scroll to Top button for non Astra theme customizer previews */
 body:not(.astra-theme) #ast-scroll-top {
     display: none;
 }
+=======
+>>>>>>> bb56ea5 (projet final)

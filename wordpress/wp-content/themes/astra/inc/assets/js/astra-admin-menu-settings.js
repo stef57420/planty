@@ -19,7 +19,10 @@
 		 * Binds events for the Astra Theme.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _bind
 		 */
 		_bind: function()

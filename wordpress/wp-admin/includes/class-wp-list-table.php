@@ -625,7 +625,11 @@ class WP_List_Table {
 
 		echo "</select>\n";
 
+<<<<<<< HEAD
 		submit_button( __( 'Apply' ), 'action', '', false, array( 'id' => "doaction$two" ) );
+=======
+		submit_button( __( 'Apply' ), 'action', 'bulk_action', false, array( 'id' => "doaction$two" ) );
+>>>>>>> bb56ea5 (projet final)
 		echo "\n";
 	}
 
@@ -1718,7 +1722,11 @@ class WP_List_Table {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Generates the table rows.
+=======
+	 * Generates the list table rows.
+>>>>>>> bb56ea5 (projet final)
 	 *
 	 * @since 3.1.0
 	 */

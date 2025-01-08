@@ -3,7 +3,10 @@
  * Astra Pro Customizer Section
  *
  * @package   Astra
+<<<<<<< HEAD
  * @copyright Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link      https://wpastra.com/
  * @since     Astra 1.0.10
  */
@@ -29,7 +32,10 @@ if ( ! class_exists( 'Astra_Pro_Customizer' ) ) {
 		 * The type of customize section being rendered.
 		 *
 		 * @since  1.0.10
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var    string
 		 */
 		public $type = 'astra-pro';
@@ -38,7 +44,10 @@ if ( ! class_exists( 'Astra_Pro_Customizer' ) ) {
 		 * Custom pro button URL.
 		 *
 		 * @since  1.0.10
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @var    string
 		 */
 		public $pro_url = '';
@@ -47,7 +56,10 @@ if ( ! class_exists( 'Astra_Pro_Customizer' ) ) {
 		 * Add custom parameters to pass to the JS via JSON.
 		 *
 		 * @since  1.0.10
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @return string
 		 */
 		public function json() {
@@ -60,7 +72,10 @@ if ( ! class_exists( 'Astra_Pro_Customizer' ) ) {
 		 * Outputs the Underscore.js template.
 		 *
 		 * @since  1.0.10
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @return void
 		 */
 		protected function render_template() {

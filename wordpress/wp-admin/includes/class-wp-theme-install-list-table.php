@@ -230,6 +230,12 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Generates the list table rows.
+	 *
+	 * @since 3.1.0
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public function display_rows() {
 		$themes = $this->items;

@@ -20,7 +20,10 @@ if ( ! class_exists( 'Astra_WP_Async_Request' ) ) {
 		 * (default value: 'wp')
 		 *
 		 * @var string
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $prefix = 'wp';
 
@@ -30,7 +33,10 @@ if ( ! class_exists( 'Astra_WP_Async_Request' ) ) {
 		 * (default value: 'async_request')
 		 *
 		 * @var string
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $action = 'async_request';
 
@@ -38,7 +44,10 @@ if ( ! class_exists( 'Astra_WP_Async_Request' ) ) {
 		 * Identifier
 		 *
 		 * @var mixed
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $identifier;
 
@@ -48,7 +57,10 @@ if ( ! class_exists( 'Astra_WP_Async_Request' ) ) {
 		 * (default value: array())
 		 *
 		 * @var array
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $data = array();
 

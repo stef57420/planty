@@ -70,6 +70,10 @@ __webpack_require__.d(__webpack_exports__, {
   isNumberInput: () => (/* reexport */ isNumberInput),
   isPhrasingContent: () => (/* reexport */ isPhrasingContent),
   isRTL: () => (/* reexport */ isRTL),
+<<<<<<< HEAD
+=======
+  isSelectionForward: () => (/* reexport */ isSelectionForward),
+>>>>>>> bb56ea5 (projet final)
   isTextContent: () => (/* reexport */ isTextContent),
   isTextField: () => (/* reexport */ isTextField),
   isVerticalEdge: () => (/* reexport */ isVerticalEdge),
@@ -1967,6 +1971,10 @@ function removeInvalidHTML(HTML, schema, inline) {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb56ea5 (projet final)
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/dom/build-module/data-transfer.js
 /**
  * Gets all files from a DataTransfer object.

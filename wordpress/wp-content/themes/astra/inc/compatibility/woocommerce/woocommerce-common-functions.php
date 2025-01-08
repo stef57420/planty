@@ -5,8 +5,11 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.1.0
  */
@@ -55,7 +58,11 @@ if ( ! function_exists( 'astra_woo_shop_parent_category' ) ) :
 				global $product;
 				$product_categories = function_exists( 'wc_get_product_category_list' ) ? wc_get_product_category_list( get_the_ID(), ';', '', '' ) : $product->get_categories( ';', '', '' );
 
+<<<<<<< HEAD
 				$product_categories = htmlspecialchars_decode( wp_strip_all_tags( $product_categories ) );
+=======
+				$product_categories = html_entity_decode( wp_strip_all_tags( $product_categories ) );
+>>>>>>> bb56ea5 (projet final)
 				if ( $product_categories ) {
 					list( $parent_cat ) = explode( ';', $product_categories );
 					echo apply_filters( 'astra_woo_shop_product_categories', esc_html( $parent_cat ), get_the_ID() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -340,7 +347,11 @@ function astra_has_pro_woocommerce_addon() {
  * @return boolean false if it is an existing user, true if not.
  */
 function astra_cart_color_default_icon_old_header() {
+<<<<<<< HEAD
 	$astra_settings = get_option( ASTRA_THEME_SETTINGS );
+=======
+	$astra_settings = astra_get_options();
+>>>>>>> bb56ea5 (projet final)
 	return apply_filters( 'astra_support_default_cart_color_in_old_header', isset( $astra_settings['can-reflect-cart-color-in-old-header'] ) ? false : true ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 }
 
@@ -369,11 +380,18 @@ if ( ! function_exists( 'astra_get_wc_endpoints_title' ) ) {
 	 */
 	function astra_get_wc_endpoints_title( $title ) {
 		if ( class_exists( 'WooCommerce' ) && is_wc_endpoint_url() && is_account_page() ) {
+<<<<<<< HEAD
 			$endpoint         = WC()->query->get_current_endpoint();
 			$action           = isset( $_GET['action'] ) ? $_GET['action'] : '';
 			$sanitized_action = is_string( $action ) ? sanitize_text_field( wp_unslash( $action ) ) : '';
 
 			$ep_title = $endpoint ? WC()->query->get_endpoint_title( $endpoint, $sanitized_action ) : '';
+=======
+			$endpoint = WC()->query->get_current_endpoint();
+			$action   = isset( $_GET['action'] ) && is_string( $_GET['action'] ) ? sanitize_text_field( wp_unslash( $_GET['action'] ) ) : '';
+
+			$ep_title = $endpoint ? WC()->query->get_endpoint_title( $endpoint, $action ) : '';
+>>>>>>> bb56ea5 (projet final)
 
 			if ( $ep_title ) {
 				return $ep_title;
@@ -390,17 +408,57 @@ if ( ! function_exists( 'astra_woocommerce_get_cart_url' ) ) {
 	/**
 	 * Filters and returns the WooCommerce cart URL for compatibility with WooCommerce 9.3.0.
 	 *
+<<<<<<< HEAD
 	 * @param string $cart_url WooCommerce cart page URL.
+=======
+	 * @param null|string $cart_url WooCommerce cart page URL.
+>>>>>>> bb56ea5 (projet final)
 	 *
 	 * @return string Returns the filtered WooCommerce cart page URL.
 	 *
 	 * @since 4.8.3
 	 */
+<<<<<<< HEAD
 	function astra_woocommerce_get_cart_url( $cart_url ) {
+=======
+	function astra_woocommerce_get_cart_url( $cart_url = null ) {
+>>>>>>> bb56ea5 (projet final)
 		// Check if WooCommerce function exists.
 		if ( function_exists( 'wc_get_page_permalink' ) ) {
 			$cart_url = wc_get_page_permalink( 'cart' );
 		}
+<<<<<<< HEAD
 		return $cart_url;
+=======
+
+		if ( $cart_url === null ) {
+			$cart_url = wc_get_cart_url();
+		}
+
+		/**
+		 * Applies filters to the WooCommerce cart URL and returns the filtered URL.
+		 *
+		 * @param string $cart_url The WooCommerce cart URL.
+		 *
+		 * @return string The filtered WooCommerce cart URL.
+		 *
+		 * @since 4.8.10
+		 */
+		return apply_filters( 'astra_woocommerce_get_cart_url', $cart_url );
+	}
+}
+
+if ( ! function_exists( 'astra_wc_is_star_rating_compatibility' ) ) {
+	/**
+	 * Checks if star rating compatibility is enabled.
+	 *
+	 * @return bool Returns true if star rating compatibility is enabled, false otherwise.
+	 *
+	 * @since 4.8.10
+	 */
+	function astra_wc_is_star_rating_compatibility() {
+		$astra_settings = astra_get_options();
+		return apply_filters( 'astra_get_option_star-rating-comp', isset( $astra_settings['star-rating-comp'] ) );
+>>>>>>> bb56ea5 (projet final)
 	}
 }

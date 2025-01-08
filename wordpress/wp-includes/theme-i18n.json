@@ -1,5 +1,9 @@
 {
 	"title": "Style variation name",
+<<<<<<< HEAD
+=======
+	"description": "Style variation description",
+>>>>>>> bb56ea5 (projet final)
 	"settings": {
 		"typography": {
 				"fontSizes": [

@@ -16,6 +16,7 @@ msgctxt "block title"
 msgid "Spectra AI"
 msgstr "IA Spectra"
 
+<<<<<<< HEAD
 #: lib/zip-ai/classes/sidebar-configurations.php:265
 msgid "You have no credits left."
 msgstr "Vous n‘avez plus de crédits."
@@ -25,6 +26,17 @@ msgid "Invalid auth token."
 msgstr "Jeton d‘authentification invalide."
 
 #: lib/zip-ai/classes/sidebar-configurations.php:185
+=======
+#: lib/zip-ai/classes/sidebar-configurations.php:270
+msgid "You have no credits left."
+msgstr "Vous n‘avez plus de crédits."
+
+#: lib/zip-ai/classes/sidebar-configurations.php:269
+msgid "Invalid auth token."
+msgstr "Jeton d‘authentification invalide."
+
+#: lib/zip-ai/classes/sidebar-configurations.php:187
+>>>>>>> bb56ea5 (projet final)
 msgid "The message array was not supplied"
 msgstr "Le tableau de messages n’a pas été fourni"
 
@@ -85,7 +97,11 @@ msgstr "Vous n’êtes pas autorisé à effectuer cette action."
 #: lib/gutenberg-templates/inc/importer/plugin.php:269
 #: lib/gutenberg-templates/inc/importer/plugin.php:273
 #: lib/gutenberg-templates/inc/importer/plugin.php:436
+<<<<<<< HEAD
 #: lib/zip-ai/classes/sidebar-configurations.php:250
+=======
+#: lib/zip-ai/classes/sidebar-configurations.php:255
+>>>>>>> bb56ea5 (projet final)
 msgid "Something went wrong"
 msgstr "Un problème est survenu"
 
@@ -104,6 +120,10 @@ msgstr "Un problème est survenu"
 #: lib/gutenberg-templates/inc/importer/template-kit-importer.php:43
 #: lib/gutenberg-templates/inc/importer/template-kit-importer.php:109
 #: lib/gutenberg-templates/inc/traits/upgrade.php:33
+<<<<<<< HEAD
+=======
+#: lib/zipwp-images/classes/zipwp-images-api.php:263
+>>>>>>> bb56ea5 (projet final)
 msgid "You are not allowed to perform this action"
 msgstr "Vous n’avez pas l’autorisation d’effectuer cette action"
 
@@ -129,7 +149,11 @@ msgstr "Échec de l‘action"
 
 #: lib/gutenberg-templates/inc/api/blocks.php:93
 #: lib/gutenberg-templates/inc/api/category.php:93
+<<<<<<< HEAD
 #: lib/gutenberg-templates/inc/api/description.php:107
+=======
+#: lib/gutenberg-templates/inc/api/description.php:112
+>>>>>>> bb56ea5 (projet final)
 #: lib/gutenberg-templates/inc/api/favorite.php:135
 #: lib/gutenberg-templates/inc/api/images.php:113
 #: lib/gutenberg-templates/inc/api/keywords.php:107
@@ -139,12 +163,22 @@ msgstr "Échec de l‘action"
 #: lib/gutenberg-templates/inc/api/sites.php:93
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:138
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:197
+<<<<<<< HEAD
+=======
+#: lib/nps-survey/classes/nps-survey-script.php:270
+#: lib/nps-survey/classes/nps-survey-script.php:351
+#: lib/zipwp-images/classes/zipwp-images-api.php:169
+>>>>>>> bb56ea5 (projet final)
 msgid "Nonce verification failed."
 msgstr "La vérification du nonce a échoué."
 
 #: lib/gutenberg-templates/inc/api/blocks.php:70
 #: lib/gutenberg-templates/inc/api/category.php:70
+<<<<<<< HEAD
 #: lib/gutenberg-templates/inc/api/description.php:87
+=======
+#: lib/gutenberg-templates/inc/api/description.php:92
+>>>>>>> bb56ea5 (projet final)
 #: lib/gutenberg-templates/inc/api/do-it-later.php:69
 #: lib/gutenberg-templates/inc/api/favorite.php:96
 #: lib/gutenberg-templates/inc/api/images.php:93
@@ -156,11 +190,20 @@ msgstr "La vérification du nonce a échoué."
 #: lib/gutenberg-templates/inc/api/settings.php:92
 #: lib/gutenberg-templates/inc/api/sites.php:70
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:77
+<<<<<<< HEAD
+=======
+#: lib/nps-survey/classes/nps-survey-script.php:249
+#: lib/zipwp-images/classes/zipwp-images-api.php:92
+>>>>>>> bb56ea5 (projet final)
 msgid "Sorry, you are not allowed to do that."
 msgstr "Désolé, vous n’êtes pas autorisé à le faire."
 
 #: lib/class-uagb-ast-block-templates.php:65
+<<<<<<< HEAD
 #: lib/gutenberg-templates/inc/importer/plugin.php:990
+=======
+#: lib/gutenberg-templates/inc/importer/plugin.php:992
+>>>>>>> bb56ea5 (projet final)
 #: lib/gutenberg-templates/dist/main.js:2
 msgid "Design Library"
 msgstr "Bibliothèque de design"
@@ -239,12 +282,20 @@ msgstr "Extension d’animations"
 msgid "Heads up!"
 msgstr "Attention !"
 
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:957
+=======
+#: classes/class-uagb-init-blocks.php:966
+>>>>>>> bb56ea5 (projet final)
 msgid "Invalid request"
 msgstr "Demande invalide"
 
 #: classes/class-uagb-init-blocks.php:378
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:522
+=======
+#: classes/class-uagb-init-blocks.php:525
+>>>>>>> bb56ea5 (projet final)
 msgid "User is not authenticated!"
 msgstr "Le compte n‘est pas authentifié !"
 
@@ -315,6 +366,7 @@ msgstr "Une erreur s’est produite lors de la suppression de la police."
 msgid "400"
 msgstr "400"
 
+<<<<<<< HEAD
 #: classes/class-uagb-admin.php:397
 msgid "View Log"
 msgstr "Voir le journal"
@@ -368,6 +420,53 @@ msgid "Log file not found."
 msgstr "Fichier journal introuvable."
 
 #: classes/class-uagb-admin.php:88
+=======
+#: classes/class-uagb-admin.php:372
+msgid "View Log"
+msgstr "Voir le journal"
+
+#: classes/class-uagb-admin.php:372
+msgid "Your Spectra database is now up-to-date. Your website will continue to function as before."
+msgstr "Votre base de données Spectra est maintenant à jour. Votre site continuera à fonctionner comme avant."
+
+#: classes/class-uagb-admin.php:371
+msgid "Update Successful!"
+msgstr "Mise à jour réussie !"
+
+#: classes/class-uagb-admin.php:346
+msgid "Great! This should only take a few minutes. Thanks for hanging in there."
+msgstr "Super ! Cela ne devrait prendre que quelques minutes. Merci d’avoir patienté."
+
+#: classes/class-uagb-admin.php:345
+msgid "Spectra database update in progress"
+msgstr "Mise à jour de la base de données Spectra en cours"
+
+#: classes/class-uagb-admin.php:320
+msgid "Learn More About This"
+msgstr "En savoir plus sur le sujet"
+
+#: classes/class-uagb-admin.php:318
+msgid "Update Spectra Database"
+msgstr "Mise à jour de la base de données Spectra"
+
+#: classes/class-uagb-admin.php:317
+msgid "To be on the safer side, please be sure to back up your site before updating."
+msgstr "Pour plus de sécurité, veuillez vous assurez d’avoir sauvegardé votre site avant de mettre à jour."
+
+#: classes/class-uagb-admin.php:316
+msgid "We've detected that some of your pages were created with an older version of Spectra. To ensure your designs remain unaffected, we recommend updating the Spectra database now. Updating the Spectra database will not impact any other parts of your website."
+msgstr "Nous avons détecté que certaines de vos pages ont été créées avec une ancienne version de Spectra. Pour que vos créations ne soient pas affectées, nous vous recommandons de mettre à jour la base de données Spectra dès maintenant. La mise à jour de la base de données Spectra n’aura aucun impact sur les autres parties de votre site."
+
+#: classes/class-uagb-admin.php:315
+msgid "Spectra database update required"
+msgstr "Mise à jour de la base de données Spectra requise"
+
+#: classes/class-uagb-admin.php:141
+msgid "Log file not found."
+msgstr "Fichier journal introuvable."
+
+#: classes/class-uagb-admin.php:108
+>>>>>>> bb56ea5 (projet final)
 msgid "Migration started successfully."
 msgstr "La migration a bien commencé."
 
@@ -4097,7 +4196,11 @@ msgid "Copyright"
 msgstr "Copyright"
 
 #: blocks-config/uagb-controls/spectra-icons-v6-0.php:5045
+<<<<<<< HEAD
 #: lib/zip-ai/sidebar/build/sidebar-app.js:1
+=======
+#: lib/zip-ai/sidebar/build/sidebar-app.js:3
+>>>>>>> bb56ea5 (projet final)
 msgid "Copy"
 msgstr "Copier"
 
@@ -5394,7 +5497,11 @@ msgstr "Constructeur de fenêtre surgissante"
 
 #. translators: %1$s: Opening Strong Tag, %2$s: Closing Strong Tag, %3$s Anchor
 #. Tag with Star Symbol Codes.
+<<<<<<< HEAD
 #: admin-core/inc/admin-menu.php:525
+=======
+#: admin-core/inc/admin-menu.php:530
+>>>>>>> bb56ea5 (projet final)
 msgid "Enjoyed %1$sSpectra%2$s? Please leave us a %3$s rating. We really appreciate your support!"
 msgstr "Vous avez apprécié %1$sSpectra%2$s ? Veuillez nous laisser une évaluation de %3$s. Nous apprécions vraiment votre soutien !"
 
@@ -5454,12 +5561,20 @@ msgstr "Ce bloc vous autorise à ajouter une fenêtre surgissante modale."
 msgid "Modal"
 msgstr "Fenêtre modale"
 
+<<<<<<< HEAD
 #: admin-core/inc/admin-menu.php:289 admin-core/assets/build/dashboard-app.js:5
+=======
+#: admin-core/inc/admin-menu.php:288 admin-core/assets/build/dashboard-app.js:7
+>>>>>>> bb56ea5 (projet final)
 msgid "Activate"
 msgstr "Activer"
 
 #: blocks-config/popup-builder/class-uagb-popup-builder.php:264
+<<<<<<< HEAD
 #: admin-core/assets/build/dashboard-app.js:5
+=======
+#: admin-core/assets/build/dashboard-app.js:6
+>>>>>>> bb56ea5 (projet final)
 msgid "Popup"
 msgstr "Fenêtre surgissante"
 
@@ -5501,7 +5616,11 @@ msgstr "Compteur"
 msgid "Add Your Title Here…"
 msgstr "Ajoutez votre titre ici…"
 
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:806
+=======
+#: classes/class-uagb-init-blocks.php:815
+>>>>>>> bb56ea5 (projet final)
 msgid ""
 "Use custom class added in block's advanced settings to target your desired block. Examples:\n"
 "\t\t.my-class {text-align: center;} // my-class is a custom selector"
@@ -5908,7 +6027,11 @@ msgid "Spectra <p>Rollback to Previous Version</p>"
 msgstr "Spectra <p>Revenir à la version précédente</p>"
 
 #. translators: %s: html tags
+<<<<<<< HEAD
 #: classes/class-uagb-loader.php:394
+=======
+#: classes/class-uagb-loader.php:386
+>>>>>>> bb56ea5 (projet final)
 msgid "The %1$sSpectra%2$s plugin requires %1$sGutenberg%2$s plugin installed & activated."
 msgstr "L’extension %1$sSpectra%2$s nécessite l’extension %1$sGutenberg%2$s installé et activé."
 
@@ -5927,11 +6050,16 @@ msgstr "Désolé, vous ne pouvez pas lister les ressources."
 
 #: admin-core/ajax/common-settings.php:164
 #: admin-core/ajax/common-settings.php:754
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:539
+=======
+#: classes/class-uagb-init-blocks.php:542
+>>>>>>> bb56ea5 (projet final)
 msgid "Successfully saved data!"
 msgstr "Données bien enregistrées !"
 
 #: admin-core/ajax/common-settings.php:180
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:1065
 msgid "No post data found!"
 msgstr "Aucune donnée de publication trouvée !"
@@ -5945,6 +6073,21 @@ msgid "Nonce validation failed"
 msgstr "Échec de validation du nonce"
 
 #: admin-core/ajax/ajax-errors.php:59
+=======
+#: classes/class-uagb-init-blocks.php:1074
+msgid "No post data found!"
+msgstr "Aucune donnée de publication trouvée !"
+
+#: admin-core/ajax/ajax-errors.php:84
+msgid "Sorry, something went wrong."
+msgstr "Désolé, quelque chose s’est mal passé."
+
+#: admin-core/ajax/ajax-errors.php:83
+msgid "Nonce validation failed"
+msgstr "Échec de validation du nonce"
+
+#: admin-core/ajax/ajax-errors.php:82
+>>>>>>> bb56ea5 (projet final)
 msgid "Sorry, you are not allowed to do this operation."
 msgstr "Désolé, vous n’êtes pas autorisé à effectuer cette opération."
 
@@ -5952,8 +6095,13 @@ msgstr "Désolé, vous n’êtes pas autorisé à effectuer cette opération."
 #: ultimate-addons-for-gutenberg.php admin-core/inc/admin-menu.php:147
 #: admin-core/inc/admin-menu.php:148 admin-core/inc/admin-menu.php:159
 #: admin-core/inc/admin-menu.php:169 admin-core/inc/admin-menu.php:183
+<<<<<<< HEAD
 #: admin-core/inc/admin-menu.php:194 admin-core/inc/admin-menu.php:274
 #: classes/class-uagb-init-blocks.php:576
+=======
+#: admin-core/inc/admin-menu.php:194 admin-core/inc/admin-menu.php:273
+#: classes/class-uagb-init-blocks.php:579 classes/class-uagb-nps-notice.php:176
+>>>>>>> bb56ea5 (projet final)
 msgid "Spectra"
 msgstr "Spectra"
 
@@ -6018,7 +6166,11 @@ msgstr "Sélecteur de date"
 msgid "Toggle"
 msgstr "Permuter"
 
+<<<<<<< HEAD
 #: blocks-config/taxonomy-list/class-uagb-taxonomy-list.php:708
+=======
+#: blocks-config/taxonomy-list/class-uagb-taxonomy-list.php:716
+>>>>>>> bb56ea5 (projet final)
 #: includes/blocks/forms-select/block.php:15
 msgid "Select"
 msgstr "Sélectionner"
@@ -6050,6 +6202,10 @@ msgid "Hidden"
 msgstr "Masqué"
 
 #: includes/blocks/forms/attributes.php:174
+<<<<<<< HEAD
+=======
+#: includes/blocks/forms/frontend.js.php:50
+>>>>>>> bb56ea5 (projet final)
 msgid "Please fill up the above captcha."
 msgstr "Veuillez remplir le captcha ci-dessus."
 
@@ -6059,6 +6215,10 @@ msgstr "Une erreur s’est produite lors de l’envoi du formulaire. Veuillez v�
 
 #: blocks-config/forms/class-uagb-forms.php:429
 #: includes/blocks/forms/attributes.php:70
+<<<<<<< HEAD
+=======
+#: includes/blocks/forms/frontend.js.php:46
+>>>>>>> bb56ea5 (projet final)
 msgid "Form Submission"
 msgstr "Soumission du formulaire"
 
@@ -6066,7 +6226,11 @@ msgstr "Soumission du formulaire"
 msgid "The form has been submitted Successfully!"
 msgstr "Le formulaire a bien été envoyé !"
 
+<<<<<<< HEAD
 #: includes/blocks/forms/attributes.php:35
+=======
+#: includes/blocks/forms/attributes.php:35 lib/nps-survey/dist/main.js:1
+>>>>>>> bb56ea5 (projet final)
 msgid "Submit"
 msgstr "Envoyer"
 
@@ -6102,17 +6266,29 @@ msgstr "Titre de la publication"
 msgid "Content Timeline Child"
 msgstr "Contenu enfant de la chronologie"
 
+<<<<<<< HEAD
 #: classes/class-uagb-admin.php:188
 msgid "Error occurred, The version selected is invalid. Try selecting different version."
 msgstr "Une erreur s’est produite, la version sélectionnée n’est pas valide. Essayez de sélectionner une version différente."
 
 #: classes/class-uagb-admin.php:175 classes/class-uagb-admin.php:206
+=======
+#: classes/class-uagb-admin.php:208
+msgid "Error occurred, The version selected is invalid. Try selecting different version."
+msgstr "Une erreur s’est produite, la version sélectionnée n’est pas valide. Essayez de sélectionner une version différente."
+
+#: classes/class-uagb-admin.php:195 classes/class-uagb-admin.php:226
+>>>>>>> bb56ea5 (projet final)
 #: admin-core/assets/build/dashboard-app.js:1
 #: admin-core/assets/build/dashboard-app.js:3
 msgid "Rollback to Previous Version"
 msgstr "Revenir à la version précédente"
 
+<<<<<<< HEAD
 #: classes/class-uagb-admin.php:104 classes/class-uagb-admin.php:174
+=======
+#: classes/class-uagb-admin.php:124 classes/class-uagb-admin.php:194
+>>>>>>> bb56ea5 (projet final)
 msgid "You do not have permission to access this page."
 msgstr "Vous n’avez pas le droit d’accéder à cette page."
 
@@ -6231,8 +6407,13 @@ msgstr "Livre"
 msgid "Cloud"
 msgstr "Nuage"
 
+<<<<<<< HEAD
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:646
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:650
+=======
+#: blocks-config/table-of-content/class-uagb-table-of-content.php:703
+#: blocks-config/table-of-content/class-uagb-table-of-content.php:707
+>>>>>>> bb56ea5 (projet final)
 #: includes/blocks/table-of-contents/attributes.php:18
 #: dist/blocks-placeholder.js:38
 msgid "Table Of Contents"
@@ -6308,6 +6489,10 @@ msgid "Twitter"
 msgstr "Twitter"
 
 #: blocks-config/uagb-controls/spectra-icons-v6-3.php:1137
+<<<<<<< HEAD
+=======
+#: lib/zipwp-images/dist/main.js:1
+>>>>>>> bb56ea5 (projet final)
 msgid "Square"
 msgstr "Carré"
 
@@ -6383,11 +6568,19 @@ msgid "Image"
 msgstr "Image"
 
 #: classes/class-uagb-fse-fonts-compatibility.php:165
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:721
 msgid "Default"
 msgstr "Par défaut"
 
 #: classes/class-uagb-init-blocks.php:865 classes/class-uagb-rest-api.php:318
+=======
+#: classes/class-uagb-init-blocks.php:724
+msgid "Default"
+msgstr "Par défaut"
+
+#: classes/class-uagb-init-blocks.php:874 classes/class-uagb-rest-api.php:318
+>>>>>>> bb56ea5 (projet final)
 #: classes/class-uagb-rest-api.php:333
 msgid "None"
 msgstr "Aucune"
@@ -6401,7 +6594,11 @@ msgstr "Séparateur"
 msgid "Heading"
 msgstr "En-tête"
 
+<<<<<<< HEAD
 #: blocks-config/table-of-content/class-uagb-table-of-content.php:934
+=======
+#: blocks-config/table-of-content/class-uagb-table-of-content.php:991
+>>>>>>> bb56ea5 (projet final)
 #: includes/blocks/table-of-contents/attributes.php:19
 msgid "Add a header to begin generating the table of contents"
 msgstr "Ajoutez un titre pour commencer la génération de la table des matières"
@@ -6418,11 +6615,19 @@ msgstr "Nonce WordPress non validé."
 msgid "Table of Contents"
 msgstr "Table des matières"
 
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:941
 msgid "You have not added any Gravity Forms yet."
 msgstr "Vous n’avez pas encore ajouté de formulaire Gravity Forms."
 
 #: classes/class-uagb-init-blocks.php:509
+=======
+#: classes/class-uagb-init-blocks.php:950
+msgid "You have not added any Gravity Forms yet."
+msgstr "Vous n’avez pas encore ajouté de formulaire Gravity Forms."
+
+#: classes/class-uagb-init-blocks.php:512
+>>>>>>> bb56ea5 (projet final)
 msgid "Please select a valid Gravity Form."
 msgstr "Veuillez sélectionner un formulaire Gravity Form."
 
@@ -6430,6 +6635,7 @@ msgstr "Veuillez sélectionner un formulaire Gravity Form."
 msgid "Marketing Button"
 msgstr "Bouton marketing"
 
+<<<<<<< HEAD
 #: classes/class-uagb-init-blocks.php:559
 msgid "Please select a valid Contact Form 7."
 msgstr "Veuillez sélectionner un formulaire Contact Form 7."
@@ -6444,6 +6650,22 @@ msgid "Select Form"
 msgstr "Sélectionner un formulaire"
 
 #: classes/class-uagb-helper.php:443
+=======
+#: classes/class-uagb-init-blocks.php:562
+msgid "Please select a valid Contact Form 7."
+msgstr "Veuillez sélectionner un formulaire Contact Form 7."
+
+#: classes/class-uagb-init-blocks.php:917
+msgid "You have not added any Contact Form 7 yet."
+msgstr "Vous n’avez pas encore ajouté de formulaire Contact Form 7."
+
+#: classes/class-uagb-init-blocks.php:903
+#: classes/class-uagb-init-blocks.php:936
+msgid "Select Form"
+msgstr "Sélectionner un formulaire"
+
+#: classes/class-uagb-helper.php:458
+>>>>>>> bb56ea5 (projet final)
 msgid "Full"
 msgstr "Plein"
 
@@ -6452,7 +6674,11 @@ msgid "Blockquote"
 msgstr "Citation"
 
 #. translators: %s: html tags
+<<<<<<< HEAD
 #: classes/class-uagb-admin.php:416
+=======
+#: classes/class-uagb-admin.php:391
+>>>>>>> bb56ea5 (projet final)
 msgid "Spectra requires&nbsp;%3$sBlock Editor%4$s. You can change your editor settings to Block Editor from&nbsp;%1$shere%2$s. Plugin is currently NOT RUNNING."
 msgstr "Spectra nécessite  %3$sl’éditeur de blocs%4$s. Vous pouvez modifier les réglages de votre éditeur dans l’éditeur de bloc par %1$sici%2$s. L’extension n’est pas en fonctionnement pour le moment."
 
@@ -6477,6 +6703,7 @@ msgstr "Colonne"
 msgid "Advanced Columns"
 msgstr "Colonnes avancées"
 
+<<<<<<< HEAD
 #: classes/class-uagb-admin.php:303
 msgid "I already did"
 msgstr "Je l’ai déjà fait"
@@ -6489,6 +6716,8 @@ msgstr "Non, peut-être plus tard"
 msgid "Ok, you deserve it"
 msgstr "Ok, vous le méritez"
 
+=======
+>>>>>>> bb56ea5 (projet final)
 #: includes/blocks/call-to-action/block.php:16 dist/blocks-placeholder.js:12
 msgid "Call To Action"
 msgstr "Appel à l’action"
@@ -6542,7 +6771,11 @@ msgstr "Chronologie de contenu"
 msgid "Post Grid"
 msgstr "Grille de publications"
 
+<<<<<<< HEAD
 #: admin-core/inc/admin-menu.php:288
+=======
+#: admin-core/inc/admin-menu.php:287
+>>>>>>> bb56ea5 (projet final)
 msgid "Activated"
 msgstr "Activé"
 
@@ -6582,6 +6815,10 @@ msgstr "https://www.brainstormforce.com"
 msgid "Brainstorm Force"
 msgstr "Brainstorm Force"
 
+<<<<<<< HEAD
 #: classes/class-uagb-loader.php:397
+=======
+#: classes/class-uagb-loader.php:389
+>>>>>>> bb56ea5 (projet final)
 msgid "Install Gutenberg"
 msgstr "Installer Gutenberg"

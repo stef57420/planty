@@ -23,6 +23,12 @@
 		"level": {
 			"type": "number",
 			"default": 2
+<<<<<<< HEAD
+=======
+		},
+		"levelOptions": {
+			"type": "array"
+>>>>>>> bb56ea5 (projet final)
 		}
 	},
 	"supports": {

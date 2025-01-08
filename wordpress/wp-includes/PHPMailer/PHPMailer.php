@@ -13,7 +13,11 @@
  * @copyright 2012 - 2020 Marcus Bointon
  * @copyright 2010 - 2012 Jim Jagielski
  * @copyright 2004 - 2009 Andy Prevost
+<<<<<<< HEAD
  * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+=======
+ * @license   https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html GNU Lesser General Public License
+>>>>>>> bb56ea5 (projet final)
  * @note      This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -152,8 +156,12 @@ class PHPMailer
      * Only supported in simple alt or alt_inline message types
      * To generate iCal event structures, use classes like EasyPeasyICS or iCalcreator.
      *
+<<<<<<< HEAD
      * @see http://sprain.ch/blog/downloads/php-class-easypeasyics-create-ical-files-with-php/
      * @see http://kigkonsult.se/iCalcreator/
+=======
+     * @see https://kigkonsult.se/iCalcreator/
+>>>>>>> bb56ea5 (projet final)
      *
      * @var string
      */
@@ -358,7 +366,11 @@ class PHPMailer
     public $AuthType = '';
 
     /**
+<<<<<<< HEAD
      * SMTP SMTPXClient command attibutes
+=======
+     * SMTP SMTPXClient command attributes
+>>>>>>> bb56ea5 (projet final)
      *
      * @var array
      */
@@ -468,7 +480,11 @@ class PHPMailer
      * Only applicable when sending via SMTP.
      *
      * @see https://en.wikipedia.org/wiki/Variable_envelope_return_path
+<<<<<<< HEAD
      * @see http://www.postfix.org/VERP_README.html Postfix VERP info
+=======
+     * @see https://www.postfix.org/VERP_README.html Postfix VERP info
+>>>>>>> bb56ea5 (projet final)
      *
      * @var bool
      */
@@ -551,10 +567,17 @@ class PHPMailer
      * The function that handles the result of the send email action.
      * It is called out by send() for each email sent.
      *
+<<<<<<< HEAD
      * Value can be any php callable: http://www.php.net/is_callable
      *
      * Parameters:
      *   bool $result        result of the send action
+=======
+     * Value can be any php callable: https://www.php.net/is_callable
+     *
+     * Parameters:
+     *   bool $result           result of the send action
+>>>>>>> bb56ea5 (projet final)
      *   array   $to            email addresses of the recipients
      *   array   $cc            cc email addresses
      *   array   $bcc           bcc email addresses
@@ -757,7 +780,11 @@ class PHPMailer
      *
      * @var string
      */
+<<<<<<< HEAD
     const VERSION = '6.9.1';
+=======
+    const VERSION = '6.9.2';
+>>>>>>> bb56ea5 (projet final)
 
     /**
      * Error severity: message only, continue processing.
@@ -903,7 +930,11 @@ class PHPMailer
         }
         //Is this a PSR-3 logger?
         if ($this->Debugoutput instanceof \Psr\Log\LoggerInterface) {
+<<<<<<< HEAD
             $this->Debugoutput->debug($str);
+=======
+            $this->Debugoutput->debug(rtrim($str, "\r\n"));
+>>>>>>> bb56ea5 (projet final)
 
             return;
         }
@@ -1072,7 +1103,11 @@ class PHPMailer
      * be modified after calling this function), addition of such addresses is delayed until send().
      * Addresses that have been added already return false, but do not throw exceptions.
      *
+<<<<<<< HEAD
      * @param string $kind    One of 'to', 'cc', 'bcc', or 'ReplyTo'
+=======
+     * @param string $kind    One of 'to', 'cc', 'bcc', or 'Reply-To'
+>>>>>>> bb56ea5 (projet final)
      * @param string $address The email address
      * @param string $name    An optional username associated with the address
      *
@@ -1212,7 +1247,11 @@ class PHPMailer
      * Uses the imap_rfc822_parse_adrlist function if the IMAP extension is available.
      * Note that quotes in the name part are removed.
      *
+<<<<<<< HEAD
      * @see http://www.andrew.cmu.edu/user/agreen1/testing/mrbs/web/Mail/RFC822.php A more careful implementation
+=======
+     * @see https://www.andrew.cmu.edu/user/agreen1/testing/mrbs/web/Mail/RFC822.php A more careful implementation
+>>>>>>> bb56ea5 (projet final)
      *
      * @param string $addrstr The address list string
      * @param bool   $useimap Whether to use the IMAP extension to parse the list
@@ -1407,7 +1446,10 @@ class PHPMailer
                  *  * IPv6 literals: 'first.last@[IPv6:a1::]'
                  * Not all of these will necessarily work for sending!
                  *
+<<<<<<< HEAD
                  * @see       http://squiloople.com/2009/12/20/email-address-validation/
+=======
+>>>>>>> bb56ea5 (projet final)
                  * @copyright 2009-2010 Michael Rushton
                  * Feel free to use and redistribute this code. But please keep this copyright notice.
                  */
@@ -1736,9 +1778,14 @@ class PHPMailer
         //This sets the SMTP envelope sender which gets turned into a return-path header by the receiver
         //A space after `-f` is optional, but there is a long history of its presence
         //causing problems, so we don't use one
+<<<<<<< HEAD
         //Exim docs: http://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html
         //Sendmail docs: http://www.sendmail.org/~ca/email/man/sendmail.html
         //Qmail docs: http://www.qmail.org/man/man8/qmail-inject.html
+=======
+        //Exim docs: https://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html
+        //Sendmail docs: https://www.sendmail.org/~ca/email/man/sendmail.html
+>>>>>>> bb56ea5 (projet final)
         //Example problem: https://www.drupal.org/node/1057954
 
         //PHP 5.6 workaround
@@ -1903,7 +1950,11 @@ class PHPMailer
     /**
      * Send mail using the PHP mail() function.
      *
+<<<<<<< HEAD
      * @see http://www.php.net/manual/en/book.mail.php
+=======
+     * @see https://www.php.net/manual/en/book.mail.php
+>>>>>>> bb56ea5 (projet final)
      *
      * @param string $header The message headers
      * @param string $body   The message body
@@ -1933,9 +1984,14 @@ class PHPMailer
         //This sets the SMTP envelope sender which gets turned into a return-path header by the receiver
         //A space after `-f` is optional, but there is a long history of its presence
         //causing problems, so we don't use one
+<<<<<<< HEAD
         //Exim docs: http://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html
         //Sendmail docs: http://www.sendmail.org/~ca/email/man/sendmail.html
         //Qmail docs: http://www.qmail.org/man/man8/qmail-inject.html
+=======
+        //Exim docs: https://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html
+        //Sendmail docs: https://www.sendmail.org/~ca/email/man/sendmail.html
+>>>>>>> bb56ea5 (projet final)
         //Example problem: https://www.drupal.org/node/1057954
         //CVE-2016-10033, CVE-2016-10045: Don't pass -f if characters will be escaped.
 
@@ -3636,7 +3692,11 @@ class PHPMailer
      * without breaking lines within a character.
      * Adapted from a function by paravoid.
      *
+<<<<<<< HEAD
      * @see http://www.php.net/manual/en/function.mb-encode-mimeheader.php#60283
+=======
+     * @see https://www.php.net/manual/en/function.mb-encode-mimeheader.php#60283
+>>>>>>> bb56ea5 (projet final)
      *
      * @param string $str       multi-byte text to wrap encode
      * @param string $linebreak string to use as linefeed/end-of-line
@@ -3692,7 +3752,11 @@ class PHPMailer
     /**
      * Encode a string using Q encoding.
      *
+<<<<<<< HEAD
      * @see http://tools.ietf.org/html/rfc2047#section-4.2
+=======
+     * @see https://www.rfc-editor.org/rfc/rfc2047#section-4.2
+>>>>>>> bb56ea5 (projet final)
      *
      * @param string $str      the text to encode
      * @param string $position Where the text is going to be used, see the RFC for what that means
@@ -4230,7 +4294,11 @@ class PHPMailer
             $result = $_SERVER['SERVER_NAME'];
         } elseif (function_exists('gethostname') && gethostname() !== false) {
             $result = gethostname();
+<<<<<<< HEAD
         } elseif (php_uname('n') !== false) {
+=======
+        } elseif (php_uname('n') !== '') {
+>>>>>>> bb56ea5 (projet final)
             $result = php_uname('n');
         }
         if (!static::isValidHost($result)) {
@@ -4255,7 +4323,11 @@ class PHPMailer
             empty($host)
             || !is_string($host)
             || strlen($host) > 256
+<<<<<<< HEAD
             || !preg_match('/^([a-zA-Z\d.-]*|\[[a-fA-F\d:]+\])$/', $host)
+=======
+            || !preg_match('/^([a-z\d.-]*|\[[a-f\d:]+\])$/i', $host)
+>>>>>>> bb56ea5 (projet final)
         ) {
             return false;
         }
@@ -4269,8 +4341,13 @@ class PHPMailer
             //Is it a valid IPv4 address?
             return filter_var($host, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4) !== false;
         }
+<<<<<<< HEAD
         //Is it a syntactically valid hostname (when embeded in a URL)?
         return filter_var('http://' . $host, FILTER_VALIDATE_URL) !== false;
+=======
+        //Is it a syntactically valid hostname (when embedded in a URL)?
+        return filter_var('https://' . $host, FILTER_VALIDATE_URL) !== false;
+>>>>>>> bb56ea5 (projet final)
     }
 
     /**
@@ -4681,7 +4758,11 @@ class PHPMailer
      * Multi-byte-safe pathinfo replacement.
      * Drop-in replacement for pathinfo(), but multibyte- and cross-platform-safe.
      *
+<<<<<<< HEAD
      * @see http://www.php.net/manual/en/function.pathinfo.php#107461
+=======
+     * @see https://www.php.net/manual/en/function.pathinfo.php#107461
+>>>>>>> bb56ea5 (projet final)
      *
      * @param string     $path    A filename or path, does not need to exist as a file
      * @param int|string $options Either a PATHINFO_* constant,

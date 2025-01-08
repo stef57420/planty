@@ -1,5 +1,73 @@
 *** Astra Changelog ***
 
+<<<<<<< HEAD
+=======
+2025-01-07 - version 4.8.10
+* Improvement: Enhanced the design of WooCommerce product rating stars for a more polished appearance.
+* Improvement: Added compatibility with the Dokan plugin.
+* Improvement: Social Icons - Introduced a new filter `astra_social_icon_attribute_rel` to modify the rel attribute for social links.
+* Improvement: Added filter to modify WooCommerce cart URL.
+* Fix: Resolved an issue where global colors were not displaying correctly in the editor and was affecting the frontend layout.
+* Fix: Ensure that the text and link colors in the Cover Block editor are applied correctly without being overridden by the theme's global text colors.
+* Fix: Resolved customizer conflict with Kadence WooCommerce Email Designer plugin.
+* Fix: Resolved color inheritance issues between off-canvas, and transparent header on responsive devices.
+
+2024-12-31 - version 4.8.9
+* New: Added an option to move/shift body content when the Off Canvas menu opens.
+* Improvement: Updated color picker labels to use meaningful names like "Brand" and "Primary Color" instead of generic names like "Color 1" and "Color 2," improving usability and clarity.
+* Improvement: Enhanced performance for Astra Customizer options for faster execution.
+* Improvement: Accessibility improvements for menu navigation by addressing cross-browser compatibility fixes.
+* Fix: Resolved an issue where the quantity updater input in the mini cart failed to display correctly when the Variation Swatches plugin was active, ensuring it now appears as expected after adding products.
+* Fix: Resolved global headings font extra options not reflecting in the Customizer.
+* Fix: Resolved issue where Astra fullwidth container width overriding Spectra container width.
+
+2024-12-16 - version 4.8.8
+* New: Pro header and footer elements are now visible in the Header / Footer builder, showcasing premium Astra Pro elements.
+* New: Social Icons - Added Bluesky to the list of social profile icons available in the header builder.
+* New: Introduce filter `astra_nps_survey_disable` to disable NPS.
+* Improvement: Made the default footer copyright text translatable for better localization support.
+* Fix: Resolved font size rendering issue caused by the body font size customizer setting when units other than pixels were used.
+* Fix: Resolved issue with product category names displaying encoded characters by decoding them properly.
+* Fix: Resolved translation issues with Site Builder strings.
+* Fix: Resolved an issue where `_load_textdomain_just_in_time` function was incorrectly triggered for the `astra` text domain.
+
+2024-11-26 - version 4.8.7
+* New: Integrated NPS Survey library in Astra to gather user feedback.
+* Fix: Resolved submenu toggle button issue in the mobile header with Omnisend plugin active.
+* Fix: Corrected social icon labels to ensure full text appears in the aria-label.
+* Fix: Resolved an issue where the Cover block's inner content width was not functioning correctly when the Site Layouts module was enabled.
+* Fix: Inconsistent behavior for menu alignment in footer Builder when Inner Elements Layout is set to Inline.
+* Fix: Resolved an issue where font options were not displaying correctly in some browsers.
+
+2024-11-15 - version 4.8.6
+* Fix: Resolved issue where certain classes were incorrectly wrapped in double quotes in the markup due to esc_html encoding.
+* Fix: Customizer - Resolved an issue where in the Astra customizer panels would get an additional spacing.
+* Fix: Incorrect `%astra%` placeholder shown in translatable version with the TranslatePress plugin.
+
+2024-11-12 - version 4.8.5
+* Fix: Resolved blank screen on Astra Dashboard and Site Builder on staging or multisite environments.
+* Fix: Resolved fatal error for review count function when product is not found.
+
+2024-11-11 - version 4.8.4
+* New: Introduce a new control to display the product total review count on the product archive page.
+* Improvement: Added filters to allow toggling between URLs and local paths for webfont loading to resolve CORS issues.
+* Improvement: Enabled support for reordering of opened meta and structure elements within the customizer.
+* Improvement: Conversion of 'px' to 'rem' is now working for responsive devices heading as well.
+* Improvement: WooCommerce – Display the product thumbnail image on catalog pages instead of the original image when the "Swap Image" option is enabled for Product Image Hover Style.
+* Compatibility with WordPress 6.7.
+* Fix: Gravity forms select2 fields stylings overridden by theme style. 
+* Fix: Alignment issue of Spectra boxed container with Astra.
+* Fix: String Translations not working correctly for Astra Customizer settings.
+* Fix: Featured image not displaying on the shop page with Layout 2, while it works on product category archives.
+* Fix: Ensure global typography body text color is applied to paragraphs within the cover block.
+* Fix: Resolved an issue where header rows post meta settings were causing the header to disappear.
+* Fix: Resolved conflict with Starter Templates buttons group bottom spacing.
+* Fix: Infinite loop when `Load Google Fonts Locally` option is enabled.
+* Fix: Resolved style inconsistencies on category archive pages when no posts/items are present.
+* Fix: Resolved issue where shortcodes were wrapped in unnecessary <p> tags, ensuring proper formatting in HTML widget content.
+* Fix: Resolved issue causing warnings in Astra when WPML is active.
+
+>>>>>>> bb56ea5 (projet final)
 2024-10-07 - version 4.8.3
 * New: Added a separate option to set custom page width.
 * Improvement: Implemented the "autocomplete" attribute for the comment form fields in Astra.

@@ -17,6 +17,12 @@
 			"type": "number",
 			"default": 1
 		},
+<<<<<<< HEAD
+=======
+		"levelOptions": {
+			"type": "array"
+		},
+>>>>>>> bb56ea5 (projet final)
 		"showPrefix": {
 			"type": "boolean",
 			"default": true
@@ -55,6 +61,21 @@
 		},
 		"interactivity": {
 			"clientNavigation": true
+<<<<<<< HEAD
+=======
+		},
+		"__experimentalBorder": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true,
+			"__experimentalDefaultControls": {
+				"radius": true,
+				"color": true,
+				"width": true,
+				"style": true
+			}
+>>>>>>> bb56ea5 (projet final)
 		}
 	},
 	"style": "wp-block-query-title"

@@ -153,6 +153,19 @@ class WP_Textdomain_Registry {
 	 * @param string $path   Language directory path.
 	 */
 	public function set_custom_path( $domain, $path ) {
+<<<<<<< HEAD
+=======
+		// If just-in-time loading was triggered before, reset the entry so it can be tried again.
+
+		if ( isset( $this->all[ $domain ] ) ) {
+			$this->all[ $domain ] = array_filter( $this->all[ $domain ] );
+		}
+
+		if ( empty( $this->current[ $domain ] ) ) {
+			unset( $this->current[ $domain ] );
+		}
+
+>>>>>>> bb56ea5 (projet final)
 		$this->custom_paths[ $domain ] = rtrim( $path, '/' );
 	}
 
@@ -182,8 +195,13 @@ class WP_Textdomain_Registry {
 		 * @since 6.5.0
 		 *
 		 * @param null|array $files List of translation files. Default null.
+<<<<<<< HEAD
 		 * @param string $path The path from which translation files are being fetched.
 		 **/
+=======
+		 * @param string     $path  The path from which translation files are being fetched.
+		 */
+>>>>>>> bb56ea5 (projet final)
 		$files = apply_filters( 'pre_get_language_files_from_path', null, $path );
 
 		if ( null !== $files ) {
@@ -336,7 +354,11 @@ class WP_Textdomain_Registry {
 		 * If no path is found for the given locale and a custom path has been set
 		 * using load_plugin_textdomain/load_theme_textdomain, use that one.
 		 */
+<<<<<<< HEAD
 		if ( 'en_US' !== $locale && isset( $this->custom_paths[ $domain ] ) ) {
+=======
+		if ( isset( $this->custom_paths[ $domain ] ) ) {
+>>>>>>> bb56ea5 (projet final)
 			$fallback_location = rtrim( $this->custom_paths[ $domain ], '/' ) . '/';
 			$this->set( $domain, $locale, $fallback_location );
 			return $fallback_location;

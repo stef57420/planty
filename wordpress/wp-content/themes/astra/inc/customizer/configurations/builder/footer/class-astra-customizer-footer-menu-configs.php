@@ -3,8 +3,11 @@
  * Astra Theme Customizer Configuration Builder.
  *
  * @package     astra-builder
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       3.0.0
  */

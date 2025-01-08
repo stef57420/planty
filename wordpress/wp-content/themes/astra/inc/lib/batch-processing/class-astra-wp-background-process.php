@@ -21,7 +21,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		 * (default value: 'background_process')
 		 *
 		 * @var string
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $action = 'background_process';
 
@@ -31,7 +34,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		 * (default value: 0)
 		 *
 		 * @var int
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $start_time = 0;
 
@@ -39,7 +45,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		 * Cron_hook_identifier
 		 *
 		 * @var mixed
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $cron_hook_identifier;
 
@@ -47,7 +56,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		 * Cron_interval_identifier
 		 *
 		 * @var mixed
+<<<<<<< HEAD
 		 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 		 */
 		protected $cron_interval_identifier;
 
@@ -67,7 +79,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		/**
 		 * Dispatch
 		 *
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @return void
 		 */
 		public function dispatch() {
@@ -146,6 +161,10 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		 * @return string
 		 */
 		protected function generate_key( $length = 64 ) {
+<<<<<<< HEAD
+=======
+			// file deepcode ignore InsecureHash: This is the external library.
+>>>>>>> bb56ea5 (projet final)
 			$unique  = md5( microtime() . rand() );
 			$prepend = $this->identifier . '_batch_';
 
@@ -187,21 +206,34 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		protected function is_queue_empty() {
 			global $wpdb;
 
+<<<<<<< HEAD
 			$table  = $wpdb->options;
 			$column = 'option_name';
 
 			if ( is_multisite() ) {
 				$table  = $wpdb->sitemeta;
 				$column = 'meta_key';
+=======
+			$wpdb->ast_db_table  = $wpdb->options;
+			$wpdb->ast_db_column = 'option_name';
+
+			if ( is_multisite() ) {
+				$wpdb->ast_db_table  = $wpdb->sitemeta;
+				$wpdb->ast_db_column = 'meta_key';
+>>>>>>> bb56ea5 (projet final)
 			}
 
 			$key = $wpdb->esc_like( $this->identifier . '_batch_' ) . '%';
 
+<<<<<<< HEAD
 			$count = $wpdb->get_var( $wpdb->prepare( "
 			SELECT COUNT(*)
 			FROM {$table}
 			WHERE {$column} LIKE %s
 		", $key ) );
+=======
+			$count = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM {$wpdb->ast_db_table} WHERE {$wpdb->ast_db_column} LIKE %s ", $key ) );
+>>>>>>> bb56ea5 (projet final)
 
 			return ( $count > 0 ) ? false : true;
 		}
@@ -258,6 +290,7 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		protected function get_batch() {
 			global $wpdb;
 
+<<<<<<< HEAD
 			$table        = $wpdb->options;
 			$column       = 'option_name';
 			$key_column   = 'option_id';
@@ -268,10 +301,23 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 				$column       = 'meta_key';
 				$key_column   = 'meta_id';
 				$value_column = 'meta_value';
+=======
+			$wpdb->ast_db_table        = $wpdb->options;
+			$wpdb->ast_db_column       = 'option_name';
+			$wpdb->ast_db_key_column   = 'option_id';
+			$value_column              = 'option_value';
+
+			if ( is_multisite() ) {
+				$wpdb->ast_db_table        = $wpdb->sitemeta;
+				$wpdb->ast_db_column       = 'meta_key';
+				$wpdb->ast_db_key_column   = 'meta_id';
+				$value_column              = 'meta_value';
+>>>>>>> bb56ea5 (projet final)
 			}
 
 			$key = $wpdb->esc_like( $this->identifier . '_batch_' ) . '%';
 
+<<<<<<< HEAD
 			$query = $wpdb->get_row( $wpdb->prepare( "
 			SELECT *
 			FROM {$table}
@@ -282,6 +328,12 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 
 			$batch       = new stdClass();
 			$batch->key  = $query->$column;
+=======
+			$query = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$wpdb->ast_db_table} WHERE {$wpdb->ast_db_column} LIKE %s ORDER BY {$wpdb->ast_db_key_column} ASC LIMIT 1", $key ) );
+
+			$batch       = new stdClass();
+			$batch->key  = $query->{$wpdb->ast_db_column};
+>>>>>>> bb56ea5 (projet final)
 			$batch->data = maybe_unserialize( $query->$value_column );
 
 			return $batch;
@@ -406,9 +458,14 @@ if ( ! class_exists( 'Astra_WP_Background_Process' ) ) {
 		}
 
 		/**
+<<<<<<< HEAD
 		 * Schedule cron healthcheck
 		 *
 		 * @access public
+=======
+		 * Schedule cron health check
+		 *
+>>>>>>> bb56ea5 (projet final)
 		 * @param mixed $schedules Schedules.
 		 * @return mixed
 		 */

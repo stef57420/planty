@@ -238,6 +238,14 @@ if ( ! class_exists( 'UAGB_WebFont_Loader' ) ) {
 			// Get the remote URL contents.
 			$this->remote_styles = $this->get_remote_url_contents();
 
+<<<<<<< HEAD
+=======
+			// Early return, if remote style is not there
+			if ( ! isset( $this->remote_styles ) ) {
+				return '';
+			}
+
+>>>>>>> bb56ea5 (projet final)
 			// Get an array of locally-hosted files.
 			$files = $this->get_local_files_from_css();
 

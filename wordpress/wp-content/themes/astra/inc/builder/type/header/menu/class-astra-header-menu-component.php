@@ -3,8 +3,11 @@
  * Menu for Astra theme.
  *
  * @package     astra-builder
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       3.0.0
  */
@@ -117,7 +120,11 @@ class Astra_Header_Menu_Component {
 
 		// To add default alignment for navigation which can be added through any third party plugin.
 		// Do not add any CSS from theme except header alignment.
+<<<<<<< HEAD
 		echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>';
+=======
+		echo '<div ' . astra_attr( 'ast-main-header-bar-alignment' ) . '>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+>>>>>>> bb56ea5 (projet final)
 
 		if ( is_customize_preview() ) {
 			Astra_Builder_UI_Controller::render_customizer_edit_button();
@@ -138,17 +145,32 @@ class Astra_Header_Menu_Component {
 
 			// Adding rel="nofollow" for duplicate menu render.
 			$nav_menu_markup = $astra_builder->nofollow_markup( $theme_location, $nav_menu_markup );
+<<<<<<< HEAD
 			echo $nav_menu_markup;
+=======
+			echo do_shortcode( $nav_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 			/** @psalm-suppress ArgumentTypeCoercion */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
 		} else {
 				echo '<div class="main-header-bar-navigation ast-flex-1">';
 					echo '<nav ';
+<<<<<<< HEAD
 					echo astra_attr(
 						'site-navigation',
 						array(
 							'id'         => esc_attr( $theme_location ) . '-site-navigation',
 							'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
 							'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
+=======
+					echo wp_kses_post(
+						astra_attr(
+							'site-navigation',
+							array(
+								'id'         => esc_attr( $theme_location ) . '-site-navigation',
+								'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
+								'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
+							)
+>>>>>>> bb56ea5 (projet final)
 						)
 					);
 					echo '>';
@@ -158,7 +180,11 @@ class Astra_Header_Menu_Component {
 					// Adding rel="nofollow" for duplicate menu render.
 					$nav_menu_markup = $astra_builder->nofollow_markup( $theme_location, $nav_menu_markup );
 
+<<<<<<< HEAD
 					echo $nav_menu_markup;
+=======
+					echo do_shortcode( $nav_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 					/** @psalm-suppress ArgumentTypeCoercion */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
 					echo '</nav>';
 				echo '</div>';

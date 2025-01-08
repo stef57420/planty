@@ -2,7 +2,11 @@
   margin:auto;
 }
 
+<<<<<<< HEAD
 .wp-block-search .wp-block-search__button{
+=======
+.wp-block-search :where(.wp-block-search__button){
+>>>>>>> bb56ea5 (projet final)
   align-items:center;
   border-radius:initial;
   display:flex;
@@ -10,6 +14,12 @@
   justify-content:center;
   text-align:center;
 }
+<<<<<<< HEAD
 .wp-block-search__components-button-group{
   margin-top:10px;
+=======
+
+.wp-block-search__inspector-controls .components-base-control{
+  margin-bottom:0;
+>>>>>>> bb56ea5 (projet final)
 }

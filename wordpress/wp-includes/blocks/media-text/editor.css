@@ -21,7 +21,11 @@
   width:100% !important;
 }
 
+<<<<<<< HEAD
 .wp-block-media-text.is-image-fill .components-placeholder.has-illustration,.wp-block-media-text.is-image-fill .editor-media-container__resizer{
+=======
+.wp-block-media-text.is-image-fill .components-placeholder.has-illustration,.wp-block-media-text.is-image-fill .editor-media-container__resizer,.wp-block-media-text.is-image-fill-element .components-placeholder.has-illustration,.wp-block-media-text.is-image-fill-element .editor-media-container__resizer{
+>>>>>>> bb56ea5 (projet final)
   height:100% !important;
 }
 

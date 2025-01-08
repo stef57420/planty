@@ -194,7 +194,11 @@ class WP_Plugins_List_Table extends WP_List_Table {
 		if ( $screen->in_admin( 'network' ) ) {
 			update_site_option( 'recently_activated', $recently_activated );
 		} else {
+<<<<<<< HEAD
 			update_option( 'recently_activated', $recently_activated );
+=======
+			update_option( 'recently_activated', $recently_activated, false );
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		$plugin_info = get_site_transient( 'update_plugins' );
@@ -694,6 +698,13 @@ class WP_Plugins_List_Table extends WP_List_Table {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * Generates the list table rows.
+	 *
+	 * @since 3.1.0
+	 *
+>>>>>>> bb56ea5 (projet final)
 	 * @global string $status
 	 */
 	public function display_rows() {
@@ -1594,7 +1605,11 @@ class WP_Plugins_List_Table extends WP_List_Table {
 		}
 
 		printf(
+<<<<<<< HEAD
 			'<div class="requires"><p>%1$s</p><p>%2$s</p></div>',
+=======
+			'<div class="requires"><p>%1$s</p>%2$s</div>',
+>>>>>>> bb56ea5 (projet final)
 			$requires,
 			$notice
 		);

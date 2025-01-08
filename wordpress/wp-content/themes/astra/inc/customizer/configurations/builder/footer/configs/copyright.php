@@ -2,9 +2,13 @@
 /**
  * Copyright footer Configuration.
  *
+<<<<<<< HEAD
  * @author      Astra
  * @package     Astra
  * @copyright   Copyright (c) 2023, Astra
+=======
+ * @package     Astra
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       4.5.2
  */
@@ -162,5 +166,9 @@ function astra_copyright_footer_configuration() {
 }
 
 if ( Astra_Builder_Customizer::astra_collect_customizer_builder_data() ) {
+<<<<<<< HEAD
 	astra_copyright_footer_configuration();
+=======
+	add_action( 'init', 'astra_copyright_footer_configuration', 10, 0 );
+>>>>>>> bb56ea5 (projet final)
 }

@@ -424,7 +424,11 @@ function populate_options( array $options = array() ) {
 		'rss_use_excerpt'                 => 0,
 		'mailserver_url'                  => 'mail.example.com',
 		'mailserver_login'                => 'login@example.com',
+<<<<<<< HEAD
 		'mailserver_pass'                 => 'password',
+=======
+		'mailserver_pass'                 => '',
+>>>>>>> bb56ea5 (projet final)
 		'mailserver_port'                 => 110,
 		'default_category'                => 1,
 		'default_comment_status'          => 'open',

@@ -33,7 +33,10 @@
 		 * Initializes logic for font controls.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _initFonts
 		 */
 		_initFonts: function()
@@ -64,7 +67,10 @@
 		 * Initializes logic for a single font control.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _initFont
 		 */
 		_initFont: function()
@@ -88,7 +94,10 @@
 		 * Callback for when a font control changes.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _fontSelectChange
 		 */
 		_fontSelectChange: function()
@@ -160,7 +169,10 @@
 		 * font family control changes.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _setFontWeightOptions
 		 * @param {Boolean} init Whether or not we're initializing this font weight control.
 		 */

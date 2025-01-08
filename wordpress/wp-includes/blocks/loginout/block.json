@@ -17,8 +17,22 @@
 			"default": true
 		}
 	},
+<<<<<<< HEAD
 	"supports": {
 		"className": true,
+=======
+	"example": {
+		"viewportWidth": 350
+	},
+	"supports": {
+		"className": true,
+		"color": {
+			"background": true,
+			"text": false,
+			"gradients": true,
+			"link": true
+		},
+>>>>>>> bb56ea5 (projet final)
 		"spacing": {
 			"margin": true,
 			"padding": true,
@@ -40,8 +54,22 @@
 				"fontSize": true
 			}
 		},
+<<<<<<< HEAD
 		"interactivity": {
 			"clientNavigation": true
 		}
 	}
+=======
+		"__experimentalBorder": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true
+		},
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"style": "wp-block-loginout"
+>>>>>>> bb56ea5 (projet final)
 }

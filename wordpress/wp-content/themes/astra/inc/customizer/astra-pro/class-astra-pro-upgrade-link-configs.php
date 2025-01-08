@@ -3,8 +3,11 @@
  * Register customizer Aspra Pro Section.
  *
  * @package   Astra
+<<<<<<< HEAD
  * @author    Astra
  * @copyright Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link      https://wpastra.com/
  * @since     Astra 1.0.10
  */
@@ -32,7 +35,11 @@ if ( ! class_exists( 'Astra_Pro_Upgrade_Link_Configs' ) ) {
 					'type'             => 'section',
 					'ast_type'         => 'astra-pro',
 					'title'            => esc_html__( 'More Options Available in Astra Pro!', 'astra' ),
+<<<<<<< HEAD
 					'pro_url'          => htmlspecialchars_decode( astra_get_pro_url( 'https://wpastra.com/pricing/', 'customizer', 'free-theme', 'main-cta' ) ),
+=======
+					'pro_url'          => esc_url( astra_get_upgrade_url( 'pricing' ) ),
+>>>>>>> bb56ea5 (projet final)
 					'priority'         => 1,
 					'section_callback' => 'Astra_Pro_Customizer',
 				),

@@ -3,12 +3,20 @@
  * Icons for Astra theme.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2020, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       Astra 3.3.0
  */
 
+<<<<<<< HEAD
+=======
+defined( 'ABSPATH' ) || exit;
+
+>>>>>>> bb56ea5 (projet final)
 /**
  * Icons Initial Setup
  *
@@ -34,7 +42,11 @@ class Astra_Icons {
 	 * @return boolean should be svg or font.
 	 */
 	public static function is_svg_icons() {
+<<<<<<< HEAD
 		$astra_settings = get_option( ASTRA_THEME_SETTINGS, array() );
+=======
+		$astra_settings = astra_get_options();
+>>>>>>> bb56ea5 (projet final)
 		return apply_filters( 'astra_is_svg_icons', isset( $astra_settings['can-update-astra-icons-svg'] ) ? $astra_settings['can-update-astra-icons-svg'] : true );
 	}
 

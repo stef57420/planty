@@ -3,8 +3,11 @@
  * Heading Colors Options for Astra theme.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2020, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       Astra 2.1.4
  */
@@ -196,6 +199,7 @@ if ( ! class_exists( 'Astra_Heading_Colors_Configs' ) ) {
 				 * Option: Outline Button Font Size
 				 */
 
+<<<<<<< HEAD
 				 array(
 					 'name'              => 'secondary-font-size-button',
 					 'parent'            => ASTRA_THEME_SETTINGS . '[secondary-button-text-typography]',
@@ -231,6 +235,43 @@ if ( ! class_exists( 'Astra_Heading_Colors_Configs' ) ) {
 						 ),
 					 ),
 				 ),
+=======
+				array(
+					'name'              => 'secondary-font-size-button',
+					'parent'            => ASTRA_THEME_SETTINGS . '[secondary-button-text-typography]',
+					'type'              => 'sub-control',
+					'control'           => 'ast-responsive-slider',
+					'sanitize_callback' => array( 'Astra_Customizer_Sanitizes', 'sanitize_responsive_slider' ),
+					'section'           => 'section-buttons',
+					'transport'         => 'postMessage',
+					'title'             => __( 'Font Size', 'astra' ),
+					'priority'          => 3,
+					'default'           => astra_get_option( 'secondary-font-size-button' ),
+					'suffix'            => array( 'px', 'em', 'vw', 'rem' ),
+					'input_attrs'       => array(
+						'px'  => array(
+							'min'  => 0,
+							'step' => 1,
+							'max'  => 200,
+						),
+						'em'  => array(
+							'min'  => 0,
+							'step' => 0.01,
+							'max'  => 20,
+						),
+						'vw'  => array(
+							'min'  => 0,
+							'step' => 0.1,
+							'max'  => 25,
+						),
+						'rem' => array(
+							'min'  => 0,
+							'step' => 0.1,
+							'max'  => 20,
+						),
+					),
+				),
+>>>>>>> bb56ea5 (projet final)
 
 				/**
 				* Option: Button Font Extras

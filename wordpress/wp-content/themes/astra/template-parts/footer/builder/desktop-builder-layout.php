@@ -10,6 +10,7 @@
 
 ?>
 <footer
+<<<<<<< HEAD
 <?php 
 echo astra_attr(
 	'footer',
@@ -20,6 +21,20 @@ echo astra_attr(
 			astra_get_footer_classes()
 		),
 	)
+=======
+<?php
+echo wp_kses_post(
+	astra_attr(
+		'footer',
+		array(
+			'id'    => 'colophon',
+			'class' => join(
+				' ',
+				astra_get_footer_classes()
+			),
+		)
+	) 
+>>>>>>> bb56ea5 (projet final)
 );
 ?>
 >

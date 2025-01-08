@@ -25,7 +25,12 @@
 				"sticky": "",
 				"inherit": true,
 				"taxQuery": null,
+<<<<<<< HEAD
 				"parents": []
+=======
+				"parents": [],
+				"format": []
+>>>>>>> bb56ea5 (projet final)
 			}
 		},
 		"tagName": {
@@ -40,6 +45,10 @@
 			"default": false
 		}
 	},
+<<<<<<< HEAD
+=======
+	"usesContext": [ "postType" ],
+>>>>>>> bb56ea5 (projet final)
 	"providesContext": {
 		"queryId": "queryId",
 		"query": "query",

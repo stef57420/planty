@@ -48,10 +48,18 @@
 		},
 		"__experimentalBorder": {
 			"color": true,
+<<<<<<< HEAD
+=======
+			"radius": true,
+>>>>>>> bb56ea5 (projet final)
 			"style": true,
 			"width": true,
 			"__experimentalDefaultControls": {
 				"color": true,
+<<<<<<< HEAD
+=======
+				"radius": true,
+>>>>>>> bb56ea5 (projet final)
 				"style": true,
 				"width": true
 			}

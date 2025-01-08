@@ -3,8 +3,11 @@
  * Account for Astra theme.
  *
  * @package     astra-builder
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       3.0.0
  */
@@ -103,11 +106,16 @@ if ( ! class_exists( 'Astra_Header_Account_Component' ) ) {
 
 				// Adding rel="nofollow" for duplicate menu render.
 				$account_menu_markup = $astra_builder->nofollow_markup( $theme_location, $account_menu_markup );
+<<<<<<< HEAD
 				echo $account_menu_markup;
+=======
+				echo do_shortcode( $account_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 			} elseif ( $enable_woo_menu ) {
 				echo '<div class="ast-hf-account-menu-wrap ast-main-header-bar-alignment">';
 					echo '<div class="account-main-header-bar-navigation">';
 						echo '<nav ';
+<<<<<<< HEAD
 						echo astra_attr(
 							'account-woo-navigation',
 							array(
@@ -116,6 +124,18 @@ if ( ! class_exists( 'Astra_Header_Account_Component' ) ) {
 						);
 						echo ' class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" aria-label="' . esc_attr__( 'Account Woo Navigation', 'astra' ) . '">';
 				
+=======
+						echo wp_kses_post(
+							astra_attr(
+								'account-woo-navigation',
+								array(
+									'id' => 'account-woo-navigation',
+								)
+							)
+						);
+						echo ' class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" aria-label="' . esc_attr__( 'Account Woo Navigation', 'astra' ) . '">';
+
+>>>>>>> bb56ea5 (projet final)
 				ob_start();
 				if ( class_exists( 'woocommerce' ) ) {
 					?>
@@ -132,7 +152,11 @@ if ( ! class_exists( 'Astra_Header_Account_Component' ) ) {
 
 				// Adding rel="nofollow" for duplicate menu render.
 				$account_menu_markup = $astra_builder->nofollow_markup( $theme_location, $account_menu_markup );
+<<<<<<< HEAD
 				echo $account_menu_markup;
+=======
+				echo wp_kses_post( $account_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 						echo '</nav>';
 					echo '</div>';
 				echo '</div>';
@@ -140,12 +164,23 @@ if ( ! class_exists( 'Astra_Header_Account_Component' ) ) {
 				echo '<div class="ast-hf-account-menu-wrap ast-main-header-bar-alignment">';
 					echo '<div class="account-main-header-bar-navigation">';
 						echo '<nav ';
+<<<<<<< HEAD
 							echo astra_attr(
 								'site-navigation',
 								array(
 									'id'         => 'account-site-navigation',
 									'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
 									'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
+=======
+							echo wp_kses_post(
+								astra_attr(
+									'site-navigation',
+									array(
+										'id'         => 'account-site-navigation',
+										'class'      => 'site-navigation ast-flex-grow-1 navigation-accessibility',
+										'aria-label' => esc_attr__( 'Site Navigation', 'astra' ),
+									)
+>>>>>>> bb56ea5 (projet final)
 								)
 							);
 							echo '>';
@@ -153,7 +188,11 @@ if ( ! class_exists( 'Astra_Header_Account_Component' ) ) {
 
 							// Adding rel="nofollow" for duplicate menu render.
 							$account_menu_markup = $astra_builder->nofollow_markup( $theme_location, $account_menu_markup );
+<<<<<<< HEAD
 							echo $account_menu_markup;
+=======
+							echo wp_kses_post( $account_menu_markup );
+>>>>>>> bb56ea5 (projet final)
 						echo '</nav>';
 					echo '</div>';
 				echo '</div>';

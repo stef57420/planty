@@ -73,7 +73,11 @@ class WP_Object_Cache {
 	private $multisite;
 
 	/**
+<<<<<<< HEAD
 	 * Sets up object properties; PHP 5 style constructor.
+=======
+	 * Sets up object properties.
+>>>>>>> bb56ea5 (projet final)
 	 *
 	 * @since 2.0.8
 	 */
@@ -101,10 +105,16 @@ class WP_Object_Cache {
 	 *
 	 * @param string $name  Property to set.
 	 * @param mixed  $value Property value.
+<<<<<<< HEAD
 	 * @return mixed Newly-set property.
 	 */
 	public function __set( $name, $value ) {
 		return $this->$name = $value;
+=======
+	 */
+	public function __set( $name, $value ) {
+		$this->$name = $value;
+>>>>>>> bb56ea5 (projet final)
 	}
 
 	/**

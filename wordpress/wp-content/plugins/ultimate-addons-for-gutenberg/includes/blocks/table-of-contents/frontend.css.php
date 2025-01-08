@@ -136,6 +136,11 @@ if ( '' !== $attr['contentPaddingDesktop'] ) {
 	$selectors[' .uagb-toc__list-wrap ol.uagb-toc__list > li']['padding-bottom'] = 'calc( ' . UAGB_Helper::get_css_value( $attr['contentPaddingDesktop'], $attr['contentPaddingTypeDesktop'] ) . ' / 2 )';
 	$selectors[' .uagb-toc__list-wrap ul.uagb-toc__list > li']['padding-top']    = 'calc( ' . UAGB_Helper::get_css_value( $attr['contentPaddingDesktop'], $attr['contentPaddingTypeDesktop'] ) . ' / 2 )';
 	$selectors[' .uagb-toc__list-wrap ul.uagb-toc__list > li']['padding-bottom'] = 'calc( ' . UAGB_Helper::get_css_value( $attr['contentPaddingDesktop'], $attr['contentPaddingTypeDesktop'] ) . ' / 2 )';
+<<<<<<< HEAD
+=======
+	// Add the bottom padding to the unordered list that's a child of the expandable list.
+	$selectors[' .uagb-toc__list-wrap li.uagb-toc__list.uagb-toc__list--expandable > ul.uagb-toc__list']['padding-top'] = 'calc( ' . UAGB_Helper::get_css_value( $attr['contentPaddingDesktop'], $attr['contentPaddingTypeDesktop'] ) . ' / 2 )';
+>>>>>>> bb56ea5 (projet final)
 }
 
 if ( $attr['customWidth'] ) {
@@ -163,6 +168,10 @@ if ( $attr['disableBullets'] ) {
 	);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb56ea5 (projet final)
 $m_selectors = array(
 	' .uagb-toc__list-wrap ul li'                         => array(
 		'font-size' => UAGB_Helper::get_css_value( $attr['fontSizeMobile'], $attr['fontSizeType'] ),

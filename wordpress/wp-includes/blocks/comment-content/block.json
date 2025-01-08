@@ -35,6 +35,21 @@
 				"fontSize": true
 			}
 		},
+<<<<<<< HEAD
+=======
+		"__experimentalBorder": {
+			"radius": true,
+			"color": true,
+			"width": true,
+			"style": true,
+			"__experimentalDefaultControls": {
+				"radius": true,
+				"color": true,
+				"width": true,
+				"style": true
+			}
+		},
+>>>>>>> bb56ea5 (projet final)
 		"spacing": {
 			"padding": [ "horizontal", "vertical" ],
 			"__experimentalDefaultControls": {
@@ -42,5 +57,10 @@
 			}
 		},
 		"html": false
+<<<<<<< HEAD
 	}
+=======
+	},
+	"style": "wp-block-comment-content"
+>>>>>>> bb56ea5 (projet final)
 }

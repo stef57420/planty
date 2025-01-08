@@ -192,7 +192,13 @@ function block_core_page_list_render_nested_page_list( $open_submenus_on_click, 
 			$css_class .= ' menu-item-home';
 		}
 
+<<<<<<< HEAD
 		$title      = wp_kses_post( $page['title'] );
+=======
+		$title = wp_kses_post( $page['title'] );
+		$title = $title ? $title : __( '(no title)' );
+
+>>>>>>> bb56ea5 (projet final)
 		$aria_label = sprintf(
 			/* translators: Accessibility text. %s: Parent page title. */
 			__( '%s submenu' ),

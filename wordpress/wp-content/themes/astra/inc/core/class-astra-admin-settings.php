@@ -5,8 +5,11 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0
  */
@@ -106,7 +109,10 @@ if ( ! class_exists( 'Astra_Admin_Settings' ) ) {
 		/**
 		 * Add custom megamenu fields data to the menu.
 		 *
+<<<<<<< HEAD
 		 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @param int    $id menu item id.
 		 * @param object $item A single menu item.
 		 * @param int    $depth menu item depth.
@@ -165,7 +171,13 @@ if ( ! class_exists( 'Astra_Admin_Settings' ) ) {
 		 */
 		public static function register_notices() {
 			// Return if white labeled.
+<<<<<<< HEAD
 			if ( astra_is_white_labelled() || false === apply_filters( 'astra_showcase_starter_templates_notice', true ) ) {
+=======
+			/** @psalm-suppress RedundantCondition */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
+			if ( astra_is_white_labelled() || ! ASTRA_THEME_ORG_VERSION || false === apply_filters( 'astra_showcase_starter_templates_notice', true ) || ! Astra_Menu::is_promoting_starter_templates() ) {
+				/** @psalm-suppress RedundantCondition */ // phpcs:ignore Generic.Commenting.DocComment.MissingShort
+>>>>>>> bb56ea5 (projet final)
 				return;
 			}
 

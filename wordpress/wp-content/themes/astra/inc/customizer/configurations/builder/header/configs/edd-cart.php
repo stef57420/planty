@@ -2,9 +2,13 @@
 /**
  * EDD Cart Header Configuration.
  *
+<<<<<<< HEAD
  * @author      Astra
  * @package     Astra
  * @copyright   Copyright (c) 2023, Astra
+=======
+ * @package     Astra
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       4.5.2
  */
@@ -377,5 +381,9 @@ function astra_edd_cart_header_configuration( $configurations = array() ) {
 }
 
 if ( Astra_Builder_Customizer::astra_collect_customizer_builder_data() ) {
+<<<<<<< HEAD
 	astra_edd_cart_header_configuration();
+=======
+	add_action( 'init', 'astra_edd_cart_header_configuration', 10, 0 );
+>>>>>>> bb56ea5 (projet final)
 }

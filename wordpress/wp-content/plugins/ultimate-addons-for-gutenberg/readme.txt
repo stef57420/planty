@@ -4,8 +4,13 @@ Donate link: https://www.paypal.me/BrainstormForce
 Tags: gutenberg, blocks, gutenberg blocks, editor, block
 Requires at least: 5.6
 Requires PHP: 7.4
+<<<<<<< HEAD
 Tested up to: 6.6
 Stable tag: 2.16.3
+=======
+Tested up to: 6.7
+Stable tag: 2.18.0
+>>>>>>> bb56ea5 (projet final)
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -161,9 +166,15 @@ We understand the need for a quality product backed by dedicated support that ca
 <strong>CONNECT WITH OUR TEAM AND COMMUNITY 🌐</strong>
 
 <ul>
+<<<<<<< HEAD
 	<li><a href="https://www.facebook.com/groups/wpspectra" target="_blank" rel="">https://www.facebook.com/groups/wpspectra</a></li>
 	<li><a href="https://www.facebook.com/wpspectra" target="_blank" rel="">https://www.facebook.com/wpspectra</a></li>
 	<li><a href="https://twitter.com/wpspectra" target="_blank" rel="">https://twitter.com/wpspectra</a></li>
+=======
+	<li>Facebook Group: <a href="https://www.facebook.com/groups/wpastra" target="_blank" rel="">WordPress Web Creators by Astra</a></li>
+	<li>Facebook: <a href="https://www.facebook.com/wpspectra" target="_blank" rel="">Spectra</a></li>
+	<li>Twitter / X: <a href="https://twitter.com/wpspectra" target="_blank" rel="">Spectra</a></li>
+>>>>>>> bb56ea5 (projet final)
 </ul>
 
 <strong>WANT TO CONTRIBUTE TO THE PLUGIN? 🙋</strong>
@@ -215,6 +226,7 @@ Our external packages use [Rating Star Component](https://github.com/n49/react-s
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 2.16.3 - Saturday, 2nd November 2024 =
 * This update addressed a security bug. Props to zer0gh0st (D.Sim) for privately reporting it to our team. Please make sure you are using the latest version on your website.
 
@@ -237,6 +249,32 @@ Our external packages use [Rating Star Component](https://github.com/n49/react-s
 = 2.15.3 - Wednesday, 18th September 2024 =
 * Fix: Global - Resolved an issue causing the editor to freeze when the Info box and Separator blocks were used in the sync pattern.
 * Fix: Global - Resolved an issue wherein the Design Library would alter the appearance List and Heading blocks in the editor.
+=======
+= 2.18.0 - Wednesday, 11th December 2024 =
+* Improvement: Table Of Contents - Added a setting to enable collapsible list items.
+* Improvement: AI Assistant - Updated the AI Assistant to be aware of the saved page content.
+* Fix: Info Box - Resolved an issue wherein the overall alignment is not supported in RTL mode.
+* Fix: Image Gallery - Resolved an issue wherein the "Tiled" layout would not allow 2 or 3 columns.
+* Fix: Taxonomy List - Resolved an issue wherein plural forms would be incorrectly translated.
+* Fix: FSE - Corrected the query parameter in `get_block_templates()` function to properly handle template parts using the `slug__in` argument.
+* Fix: Global - Resolved an issue wherein the custom CSS would get special characters converted to unicode.
+* Fix: Global - Resolved an issue that would sometimes show a PHP warning for the font loader.
+
+= 2.17.0 - Monday, 25th November 2024 =
+* Feature: Added a free image search to the image media pickers.
+* Improvement: Instagram - Switched the Spectra Pro Instagram account linking to use business accounts.
+* Fix: Global - Resolved an issue wherein re-activating Spectra would always redirect to the Spectra dashboard.
+* Fix: Global - Resolved an issue wherein the editor strings would not be translatable.
+* Fix: Global - Corrected the translation loading timing to ensure translations load at the proper point in time.
+
+= 2.16.5 - Friday, 15th November 2024 =
+* This update addressed a security bug. Props to zer0gh0st (D.Sim) for privately reporting it to our team. Please make sure you are using the latest version on your website. 
+
+= 2.16.4 - Wednesday, 13th November 2024 =
+* Fix: Customizer - Resolved an issue wherein the Astra customizer panels would get an additional spacing when Spectra is active.
+* Fix: Buttons - Resolved an issue wherein the core buttons block could not be transformed to a Spectra buttons block.
+* Fix: Editor - Resolved an issue wherein tooltips would be spaced incorrectly in the block settings panels.
+>>>>>>> bb56ea5 (projet final)
 
 The full changelog is available [here](https://wpspectra.com/whats-new/).
 

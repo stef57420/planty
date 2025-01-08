@@ -63,7 +63,11 @@
             'astra-menu-h-color-preview',
             'astra-settings[header-mobile-menu-h-color-responsive]',
             'color',
+<<<<<<< HEAD
             selector + ' .menu-item:hover > .menu-link, ' + selector + ' .inline-on-mobile .menu-item:hover > .ast-menu-toggle'
+=======
+            selector + ' .main-header-menu .menu-item:hover > .menu-link, ' + selector + ' .inline-on-mobile .menu-item:hover > .ast-menu-toggle'
+>>>>>>> bb56ea5 (projet final)
         );
 
         // Menu Toggle -  Color
@@ -90,16 +94,26 @@
         );
 
         // Menu - Normal Background
+<<<<<<< HEAD
         astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu, ' + selector + ' .main-header-menu .sub-menu', 'desktop' );
         astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu, ' + selector + ' .main-header-menu .sub-menu', 'tablet' );
         astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu, ' + selector + ' .main-header-menu .sub-menu', 'mobile' );
+=======
+        astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu .menu-link, ' + selector + ' .main-header-menu .sub-menu', 'desktop' );
+        astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu .menu-link, ' + selector + ' .main-header-menu .sub-menu', 'tablet' );
+        astra_apply_responsive_background_css( 'astra-settings[header-mobile-menu-bg-obj-responsive]', selector + ' .main-header-menu .menu-link, ' + selector + ' .main-header-menu .sub-menu', 'mobile' );
+>>>>>>> bb56ea5 (projet final)
 
         // Menu - Hover Background
         astra_color_responsive_css(
             'astra-menu-bg-preview',
             'astra-settings[header-mobile-menu-h-bg-color-responsive]',
             'background',
+<<<<<<< HEAD
             selector + ' .menu-item:hover > .menu-link, ' + selector + ' .inline-on-mobile .menu-item:hover > .ast-menu-toggle'
+=======
+            selector + ' .main-header-menu .menu-item:hover > .menu-link, ' + selector + ' .inline-on-mobile .menu-item:hover > .ast-menu-toggle'
+>>>>>>> bb56ea5 (projet final)
         );
 
         // Menu - Active Background

@@ -148,8 +148,11 @@ class WP_Term_Query {
 	 *                                                   - 'id=>slug' Returns an associative array of term slugs,
 	 *                                                      keyed by term ID (`string[]`).
 	 *                                                   Default 'all'.
+<<<<<<< HEAD
 	 *     @type bool            $count                  Whether to return a term count. If true, will take precedence
 	 *                                                   over `$fields`. Default false.
+=======
+>>>>>>> bb56ea5 (projet final)
 	 *     @type string|string[] $name                   Name or array of names to return term(s) for.
 	 *                                                   Default empty.
 	 *     @type string|string[] $slug                   Slug or array of slugs to return term(s) for.
@@ -208,7 +211,10 @@ class WP_Term_Query {
 			'number'                 => '',
 			'offset'                 => '',
 			'fields'                 => 'all',
+<<<<<<< HEAD
 			'count'                  => false,
+=======
+>>>>>>> bb56ea5 (projet final)
 			'name'                   => '',
 			'slug'                   => '',
 			'term_taxonomy_id'       => '',
@@ -304,7 +310,11 @@ class WP_Term_Query {
 	 *
 	 * @param string|array $query Array or URL query string of parameters.
 	 * @return WP_Term[]|int[]|string[]|string Array of terms, or number of terms as numeric string
+<<<<<<< HEAD
 	 *                                         when 'count' is passed as a query var.
+=======
+	 *                                         when 'count' is passed to `$args['fields']`.
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public function query( $query ) {
 		$this->query_vars = wp_parse_args( $query );
@@ -346,7 +356,11 @@ class WP_Term_Query {
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
 	 * @return WP_Term[]|int[]|string[]|string Array of terms, or number of terms as numeric string
+<<<<<<< HEAD
 	 *                                         when 'count' is passed as a query var.
+=======
+	 *                                         when 'count' is passed to `$args['fields']`.
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public function get_terms() {
 		global $wpdb;
@@ -1170,12 +1184,19 @@ class WP_Term_Query {
 		if ( 'count' !== $args['fields'] && 'all_with_object_id' !== $args['fields'] ) {
 			$cache_args['fields'] = 'all';
 		}
+<<<<<<< HEAD
 		$taxonomies = (array) $args['taxonomy'];
+=======
+>>>>>>> bb56ea5 (projet final)
 
 		// Replace wpdb placeholder in the SQL statement used by the cache key.
 		$sql = $wpdb->remove_placeholder_escape( $sql );
 
+<<<<<<< HEAD
 		$key          = md5( serialize( $cache_args ) . serialize( $taxonomies ) . $sql );
+=======
+		$key          = md5( serialize( $cache_args ) . $sql );
+>>>>>>> bb56ea5 (projet final)
 		$last_changed = wp_cache_get_last_changed( 'terms' );
 		return "get_terms:$key:$last_changed";
 	}

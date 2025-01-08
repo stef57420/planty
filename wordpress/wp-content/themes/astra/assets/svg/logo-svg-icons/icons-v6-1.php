@@ -2,7 +2,10 @@
 /**
  * Font awesome icons array array file.
  *
+<<<<<<< HEAD
  * @author  Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @package Astra
  * @todo    If this icon file updates via grunt, it's default version is minified. But to get the icons label available on translate wordpress.org we need to unminify it. Use tool: https://beautifytools.com/php-beautifier.php
  */

@@ -36,7 +36,10 @@
 		 * when a setting changes.
 		 *
 		 * @since 1.0.0
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _initToggles
 		 */
 		_initToggles: function()
@@ -105,7 +108,10 @@
 		 * when a setting changes.
 		 *
 		 * @since x.x.x
+<<<<<<< HEAD
 		 * @access private
+=======
+>>>>>>> bb56ea5 (projet final)
 		 * @method _initSubControlsToggle
 		 * @return void
 		 */

@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+v.2.4.7- 31-October-2024
+Improvement: Generating business description based on the selected language.
+Improvement: Optimized styles for better readability and usability on smaller screens.
+
+>>>>>>> bb56ea5 (projet final)
 v.2.4.6 - 14-October-2024
 - New: Added source parameters to URLs redirecting to ZipWP for better tracking.
 

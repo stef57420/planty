@@ -2,9 +2,13 @@
 /**
  * Footer Builder Configuration.
  *
+<<<<<<< HEAD
  * @author      Astra
  * @package     Astra
  * @copyright   Copyright (c) 2023, Astra
+=======
+ * @package     Astra
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       4.5.2
  */
@@ -37,7 +41,11 @@ function astra_builder_footer_configuration( $configurations = array() ) {
 
 		Astra_Builder_Helper::$footer_desktop_items[ 'html-' . $index ] = array(
 			'name'    => 'HTML ' . $index,
+<<<<<<< HEAD
 			'icon'    => 'text',
+=======
+			'icon'    => 'editor-code',
+>>>>>>> bb56ea5 (projet final)
 			'section' => $footer_html_section,
 			'clone'   => defined( 'ASTRA_EXT_VER' ),
 			'type'    => 'html',
@@ -57,7 +65,11 @@ function astra_builder_footer_configuration( $configurations = array() ) {
 
 		Astra_Builder_Helper::$footer_desktop_items[ 'widget-' . $index ] = array(
 			'name'    => 'Widget ' . $index,
+<<<<<<< HEAD
 			'icon'    => 'wordpress',
+=======
+			'icon'    => 'screenoptions',
+>>>>>>> bb56ea5 (projet final)
 			'section' => $footer_widget_section,
 			'clone'   => defined( 'ASTRA_EXT_VER' ),
 			'type'    => 'widget',
@@ -90,7 +102,11 @@ function astra_builder_footer_configuration( $configurations = array() ) {
 
 		Astra_Builder_Helper::$footer_desktop_items[ 'button-' . $index ] = array(
 			'name'    => ( 1 === Astra_Builder_Helper::$num_of_footer_button ) ? 'Button' : 'Button ' . $index,
+<<<<<<< HEAD
 			'icon'    => 'admin-links',
+=======
+			'icon'    => 'button',
+>>>>>>> bb56ea5 (projet final)
 			'section' => $footer_button_section,
 			'clone'   => defined( 'ASTRA_EXT_VER' ),
 			'type'    => 'button',
@@ -335,5 +351,9 @@ function astra_builder_footer_configuration( $configurations = array() ) {
 }
 
 if ( Astra_Builder_Customizer::astra_collect_customizer_builder_data() ) {
+<<<<<<< HEAD
 	astra_builder_footer_configuration();
+=======
+	add_action( 'init', 'astra_builder_footer_configuration', 10, 0 );
+>>>>>>> bb56ea5 (projet final)
 }

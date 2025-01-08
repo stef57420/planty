@@ -224,12 +224,26 @@ class WP_Site_Health_Auto_Updates {
 		}
 
 		$check_dirs = array_unique( $check_dirs );
+<<<<<<< HEAD
+=======
+		$updater    = new WP_Automatic_Updater();
+		$checkout   = false;
+>>>>>>> bb56ea5 (projet final)
 
 		// Search all directories we've found for evidence of version control.
 		foreach ( $vcs_dirs as $vcs_dir ) {
 			foreach ( $check_dirs as $check_dir ) {
+<<<<<<< HEAD
 				// phpcs:ignore Generic.CodeAnalysis.AssignmentInCondition,Squiz.PHP.DisallowMultipleAssignments
 				if ( $checkout = @is_dir( rtrim( $check_dir, '\\/' ) . "/$vcs_dir" ) ) {
+=======
+				if ( ! $updater->is_allowed_dir( $check_dir ) ) {
+					continue;
+				}
+
+				$checkout = is_dir( rtrim( $check_dir, '\\/' ) . "/$vcs_dir" );
+				if ( $checkout ) {
+>>>>>>> bb56ea5 (projet final)
 					break 2;
 				}
 			}

@@ -3,8 +3,11 @@
  * Sidebar Manager functions
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       Astra 1.0.0
  */
@@ -68,7 +71,11 @@ if ( ! function_exists( 'astra_page_layout' ) ) {
 				}
 			} else {
 
+<<<<<<< HEAD
 				$post_type = strval( get_post_type() );
+=======
+				$post_type = astra_get_post_type();
+>>>>>>> bb56ea5 (projet final)
 				$layout    = '';
 
 				if ( in_array( $post_type, $supported_post_types ) ) {

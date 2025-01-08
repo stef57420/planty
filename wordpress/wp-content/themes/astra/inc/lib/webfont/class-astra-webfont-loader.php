@@ -19,7 +19,10 @@ class Astra_WebFont_Loader {
 	 * Use "woff" or "woff2".
 	 * This will change the user-agent user to make the request.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -28,7 +31,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The remote URL.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -37,7 +43,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Base path.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -46,7 +55,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Base URL.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -55,7 +67,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Subfolder name.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -65,7 +80,10 @@ class Astra_WebFont_Loader {
 	 * Current blog id.
 	 *
 	 * @multisite
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 4.6.0
 	 * @var int
 	 */
@@ -74,7 +92,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The fonts folder.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -83,7 +104,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The local stylesheet's path.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -92,7 +116,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The local stylesheet's URL.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -101,7 +128,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The remote CSS.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -110,7 +140,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * The final CSS.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @var string
 	 */
@@ -126,7 +159,10 @@ class Astra_WebFont_Loader {
 	 *
 	 * Get a new instance of the object for a new URL.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @param string $url The remote URL.
 	 */
@@ -143,7 +179,10 @@ class Astra_WebFont_Loader {
 	 *
 	 * Fallback to the remote URL if we were unable to write the file locally.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -169,7 +208,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the local stylesheet URL.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -187,7 +229,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get styles with fonts downloaded locally.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -204,6 +249,7 @@ class Astra_WebFont_Loader {
 
 		// Get an array of locally-hosted files.
 		$files = $this->get_local_files_from_css();
+<<<<<<< HEAD
 
 		// Convert paths to URLs.
 		foreach ( $files as $remote => $local ) {
@@ -212,6 +258,23 @@ class Astra_WebFont_Loader {
 				$this->get_base_url(),
 				$local
 			);
+=======
+	
+		$convert_to_url = apply_filters( 'astra_convert_fonts_to_url', true ); 
+	
+		foreach ( $files as $remote => $local ) {
+			if ( $convert_to_url ) {
+				$url = str_replace(
+					$this->get_base_path(),
+					$this->get_base_url(),
+					$local
+				);
+			} else {
+				$url = $local;
+			}
+	
+			$files[ $remote ] = apply_filters( 'astra_webfont_loader_file_url', $url, $remote, $local );
+>>>>>>> bb56ea5 (projet final)
 		}
 
 		$this->css = str_replace(
@@ -228,7 +291,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get local stylesheet contents.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string|false Returns the remote URL contents.
 	 */
@@ -252,7 +318,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get remote file contents.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string Returns the remote URL contents.
 	 */
@@ -291,7 +360,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Download files mentioned in our CSS locally.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return array Returns an array of remote URLs and their local counterparts.
 	 */
@@ -384,8 +456,11 @@ class Astra_WebFont_Loader {
 
 	/**
 	 * Get the font files and preload them.
+<<<<<<< HEAD
 	 *
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public function preload_local_fonts() {
 		// Make sure variables are set.
@@ -415,7 +490,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get font files from the CSS.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @param string $remote_styles Remote stylesheet data.
 	 *
@@ -485,7 +563,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Write the CSS to the filesystem.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string|false Returns the absolute path of the file on success, or false on fail.
 	 */
@@ -509,7 +590,11 @@ class Astra_WebFont_Loader {
 
 		// If we got this far, we need to write the file.
 		// Get the CSS.
+<<<<<<< HEAD
 		if ( ! $this->css ) {
+=======
+		if ( null === $this->css ) {
+>>>>>>> bb56ea5 (projet final)
 			$this->get_styles();
 		}
 
@@ -524,7 +609,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the stylesheet path.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -541,7 +629,10 @@ class Astra_WebFont_Loader {
 	 * This is a hash, generated from the site-URL, the wp-content path and the URL.
 	 * This way we can avoid issues with sites changing their URL, or the wp-content path etc.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -552,7 +643,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Set the font-format to be used.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @param string $format The format to be used. Use "woff" or "woff2".
 	 * @return void
@@ -564,7 +658,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Check if the local stylesheet exists.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return bool
 	 */
@@ -575,7 +672,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the base path.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -589,7 +689,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the base URL.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -603,7 +706,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the subfolder name.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return string
 	 */
@@ -617,7 +723,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Returns the current blog id if current WordPress setup is a multisite setup.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 4.6.0
 	 * @return void|int Returns integer if current WP setup is multisite.
 	 */
@@ -637,7 +746,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the folder for fonts.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return string
 	 */
 	public function get_fonts_folder() {
@@ -683,7 +795,10 @@ class Astra_WebFont_Loader {
 	 * This way font files will get updated regularly,
 	 * and we avoid edge cases where unused files remain in the server.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return void
 	 */
@@ -700,7 +815,10 @@ class Astra_WebFont_Loader {
 	 *
 	 * This runs as part of a cleanup routine.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return bool
 	 */
@@ -714,7 +832,10 @@ class Astra_WebFont_Loader {
 	/**
 	 * Get the filesystem.
 	 *
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @since 3.6.0
 	 * @return \WP_Filesystem_Base
 	 */

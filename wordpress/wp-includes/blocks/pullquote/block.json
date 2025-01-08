@@ -11,13 +11,21 @@
 			"type": "rich-text",
 			"source": "rich-text",
 			"selector": "p",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"citation": {
 			"type": "rich-text",
 			"source": "rich-text",
 			"selector": "cite",
+<<<<<<< HEAD
 			"__experimentalRole": "content"
+=======
+			"role": "content"
+>>>>>>> bb56ea5 (projet final)
 		},
 		"textAlign": {
 			"type": "string"
@@ -26,6 +34,16 @@
 	"supports": {
 		"anchor": true,
 		"align": [ "left", "right", "wide", "full" ],
+<<<<<<< HEAD
+=======
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true,
+			"__experimentalDefaultControls": {
+				"backgroundImage": true
+			}
+		},
+>>>>>>> bb56ea5 (projet final)
 		"color": {
 			"gradients": true,
 			"background": true,
@@ -35,6 +53,15 @@
 				"text": true
 			}
 		},
+<<<<<<< HEAD
+=======
+		"dimensions": {
+			"minHeight": true,
+			"__experimentalDefaultControls": {
+				"minHeight": false
+			}
+		},
+>>>>>>> bb56ea5 (projet final)
 		"spacing": {
 			"margin": true,
 			"padding": true

@@ -852,6 +852,10 @@ function parsePath(path) {
 ;// CONCATENATED MODULE: external ["wp","url"]
 const external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/history.js
+<<<<<<< HEAD
+=======
+/* wp:polyfill */
+>>>>>>> bb56ea5 (projet final)
 /**
  * External dependencies
  */

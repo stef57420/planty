@@ -46,6 +46,10 @@ astraToggleSetupPro = function( mobileHeaderType, body, menu_click_listeners ) {
 
 				if (!menu_click_listeners[i]) {
 					menu_click_listeners[i] = menu_toggle_all[i];
+<<<<<<< HEAD
+=======
+					menu_toggle_all[i].removeEventListener('click', astraNavMenuToggle);
+>>>>>>> bb56ea5 (projet final)
 					menu_toggle_all[i].addEventListener('click', astraNavMenuToggle, false);
 				}
 			}
@@ -64,7 +68,11 @@ astraToggleSetupPro = function( mobileHeaderType, body, menu_click_listeners ) {
                     if (astra_menu_toggle.length > 0) {
 
                         for (var j = 0; j < astra_menu_toggle.length; j++) {
+<<<<<<< HEAD
 
+=======
+                            astra_menu_toggle[j].removeEventListener('click', AstraToggleSubMenu);
+>>>>>>> bb56ea5 (projet final)
                             astra_menu_toggle[j].addEventListener('click', AstraToggleSubMenu, false);
                         }
                     }

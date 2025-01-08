@@ -1240,7 +1240,11 @@ function _set_cron_array( $cron, $wp_error = false ) {
 
 	$cron['version'] = 2;
 
+<<<<<<< HEAD
 	$result = update_option( 'cron', $cron );
+=======
+	$result = update_option( 'cron', $cron, true );
+>>>>>>> bb56ea5 (projet final)
 
 	if ( $wp_error && ! $result ) {
 		return new WP_Error(
@@ -1280,7 +1284,11 @@ function _upgrade_cron_array( $cron ) {
 
 	$new_cron['version'] = 2;
 
+<<<<<<< HEAD
 	update_option( 'cron', $new_cron );
+=======
+	update_option( 'cron', $new_cron, true );
+>>>>>>> bb56ea5 (projet final)
 
 	return $new_cron;
 }

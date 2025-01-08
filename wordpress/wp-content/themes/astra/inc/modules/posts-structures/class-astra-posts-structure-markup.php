@@ -3,8 +3,11 @@
  * Hero section layout for Astra theme.
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Brainstorm Force
  * @copyright   Copyright (c) 2022, Brainstorm Force
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://www.brainstormforce.com
  * @since       Astra 4.0.0
  */
@@ -48,7 +51,11 @@ class Astra_Posts_Structure_Markup {
 	 * @return string
 	 */
 	public function astra_archive_custom_title( $title ) {
+<<<<<<< HEAD
 		$post_type    = strval( get_post_type() );
+=======
+		$post_type    = astra_get_post_type();
+>>>>>>> bb56ea5 (projet final)
 		$custom_title = astra_get_option( 'ast-dynamic-archive-' . $post_type . '-custom-title', '' );
 		$title        = ! empty( $custom_title ) ? $custom_title : $title;
 		return $title;
@@ -84,12 +91,16 @@ class Astra_Posts_Structure_Markup {
 			}
 		}
 
+<<<<<<< HEAD
 		global $post;
 		if ( is_null( $post ) || is_search() ) {
 			return;
 		}
 
 		$post_type = $post->post_type;
+=======
+		$post_type = astra_get_post_type();
+>>>>>>> bb56ea5 (projet final)
 		$type      = is_singular( $post_type ) ? 'single' : 'archive';
 
 		$supported_post_types = Astra_Posts_Structure_Loader::get_supported_post_types();

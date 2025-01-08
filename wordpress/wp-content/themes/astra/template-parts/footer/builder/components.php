@@ -33,6 +33,7 @@ switch ( $astra_component_slug ) {
 		?>
 		<aside
 		<?php
+<<<<<<< HEAD
 		echo astra_attr(
 			'footer-widget-area-inner',
 			array(
@@ -40,6 +41,17 @@ switch ( $astra_component_slug ) {
 				'data-section' => 'sidebar-widgets-footer-widget-1',
 				'aria-label'   => 'Footer Widget 1',
 			)
+=======
+		echo wp_kses_post(
+			astra_attr(
+				'footer-widget-area-inner',
+				array(
+					'class'        => 'footer-widget-area widget-area site-footer-focus-item',
+					'data-section' => 'sidebar-widgets-footer-widget-1',
+					'aria-label'   => 'Footer Widget 1',
+				)
+			) 
+>>>>>>> bb56ea5 (projet final)
 		);
 		?>
 				>
@@ -56,6 +68,7 @@ switch ( $astra_component_slug ) {
 		?>
 		<aside
 		<?php
+<<<<<<< HEAD
 		echo astra_attr(
 			'footer-widget-area-inner',
 			array(
@@ -63,6 +76,17 @@ switch ( $astra_component_slug ) {
 				'data-section' => 'sidebar-widgets-footer-widget-2',
 				'aria-label'   => 'Footer Widget 2',
 			)
+=======
+		echo wp_kses_post(
+			astra_attr(
+				'footer-widget-area-inner',
+				array(
+					'class'        => 'footer-widget-area widget-area site-footer-focus-item',
+					'data-section' => 'sidebar-widgets-footer-widget-2',
+					'aria-label'   => 'Footer Widget 2',
+				)
+			) 
+>>>>>>> bb56ea5 (projet final)
 		);
 		?>
 		>
@@ -79,6 +103,7 @@ switch ( $astra_component_slug ) {
 		?>
 		<aside
 		<?php
+<<<<<<< HEAD
 		echo astra_attr(
 			'footer-widget-area-inner',
 			array(
@@ -86,6 +111,17 @@ switch ( $astra_component_slug ) {
 				'data-section' => 'sidebar-widgets-footer-widget-3',
 				'aria-label'   => 'Footer Widget 3',
 			)
+=======
+		echo wp_kses_post(
+			astra_attr(
+				'footer-widget-area-inner',
+				array(
+					'class'        => 'footer-widget-area widget-area site-footer-focus-item',
+					'data-section' => 'sidebar-widgets-footer-widget-3',
+					'aria-label'   => 'Footer Widget 3',
+				)
+			) 
+>>>>>>> bb56ea5 (projet final)
 		);
 		?>
 		>
@@ -102,6 +138,7 @@ switch ( $astra_component_slug ) {
 		?>
 		<aside
 		<?php
+<<<<<<< HEAD
 		echo astra_attr(
 			'footer-widget-area-inner',
 			array(
@@ -109,6 +146,17 @@ switch ( $astra_component_slug ) {
 				'data-section' => 'sidebar-widgets-footer-widget-4',
 				'aria-label'   => 'Footer Widget 4',
 			)
+=======
+		echo wp_kses_post(
+			astra_attr(
+				'footer-widget-area-inner',
+				array(
+					'class'        => 'footer-widget-area widget-area site-footer-focus-item',
+					'data-section' => 'sidebar-widgets-footer-widget-4',
+					'aria-label'   => 'Footer Widget 4',
+				)
+			) 
+>>>>>>> bb56ea5 (projet final)
 		);
 		?>
 		>

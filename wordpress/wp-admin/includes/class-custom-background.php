@@ -17,16 +17,26 @@ class Custom_Background {
 	/**
 	 * Callback for administration header.
 	 *
+<<<<<<< HEAD
 	 * @var callable
 	 * @since 3.0.0
+=======
+	 * @since 3.0.0
+	 * @var callable
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public $admin_header_callback;
 
 	/**
 	 * Callback for header div.
 	 *
+<<<<<<< HEAD
 	 * @var callable
 	 * @since 3.0.0
+=======
+	 * @since 3.0.0
+	 * @var callable
+>>>>>>> bb56ea5 (projet final)
 	 */
 	public $admin_image_div_callback;
 

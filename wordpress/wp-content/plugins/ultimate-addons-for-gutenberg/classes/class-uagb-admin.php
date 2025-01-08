@@ -42,13 +42,29 @@ if ( ! class_exists( 'UAGB_Admin' ) ) {
 				return;
 			}
 
+<<<<<<< HEAD
 			add_action( 'admin_enqueue_scripts', array( $this, 'reload_on_migration_complete' ) );
+=======
+			global $wp_customize;
+			/**
+			 * Conditionally load the scripts in the customizer.
+			 * If the customizer is not set, it means we are not in the customizer.
+			 * In that case load the script that will reload the page after migration is complete.
+			 */
+			if ( isset( $wp_customize ) && ! $wp_customize ) {
+				add_action( 'admin_enqueue_scripts', array( $this, 'reload_on_migration_complete' ) );
+			}
+>>>>>>> bb56ea5 (projet final)
 			add_action( 'wp_ajax_uag_migrate', array( $this, 'handle_migration_action_ajax' ) );
 
 			add_action( 'admin_notices', array( $this, 'register_notices' ) );
 			add_filter( 'wp_kses_allowed_html', array( $this, 'add_data_attributes' ), 10, 2 );
 			add_action( 'admin_enqueue_scripts', array( $this, 'notice_styles_scripts' ) );
 			add_action( 'admin_enqueue_scripts', array( $this, 'notice_styles_scripts_upgrade_pro' ) );
+<<<<<<< HEAD
+=======
+			add_action( 'admin_enqueue_scripts', array( $this, 'nps_visibility_script' ) );
+>>>>>>> bb56ea5 (projet final)
 			add_filter( 'rank_math/researches/toc_plugins', array( $this, 'toc_plugin' ) );
 			add_action( 'admin_init', array( $this, 'activation_redirect' ) );
 			add_action( 'admin_init', array( $this, 'update_old_user_option_by_url_params' ) );
@@ -60,6 +76,20 @@ if ( ! class_exists( 'UAGB_Admin' ) ) {
 		}
 
 		/**
+<<<<<<< HEAD
+=======
+		 * Enqueue NPS Survey popup visibility script.
+		 * 
+		 * @since 2.18.0
+		 * @return void
+		 */
+		public function nps_visibility_script() {
+			wp_enqueue_style( 'uag-nps-visibility-style', UAGB_URL . 'admin/assets/css/nps-visibility.css', array(), UAGB_VER );
+			wp_enqueue_script( 'uagb-nps-visibility', UAGB_URL . 'admin/assets/nps-visibility.js', array(), UAGB_VER, true );
+		}
+
+		/**
+>>>>>>> bb56ea5 (projet final)
 		 * Handle migration action AJAX.
 		 * 
 		 * @since 2.13.9
@@ -265,6 +295,7 @@ if ( ! class_exists( 'UAGB_Admin' ) ) {
 
 			$image_path = UAGB_URL . 'admin-core/assets/images/uag-logo.svg';
 
+<<<<<<< HEAD
 			Astra_Notices::add_notice(
 				array(
 					'id'                         => 'uagb-admin-rating',
@@ -310,6 +341,8 @@ if ( ! class_exists( 'UAGB_Admin' ) ) {
 				)
 			);
 
+=======
+>>>>>>> bb56ea5 (projet final)
 			if ( ! get_option( 'uag_migration_status', false ) && 'yes' === get_option( 'uagb-old-user-less-than-2' ) && 'in-progress' !== get_option( 'uag_migration_progress_status', '' ) ) {
 
 				Astra_Notices::add_notice(

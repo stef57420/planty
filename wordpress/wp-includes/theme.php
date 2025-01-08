@@ -786,7 +786,11 @@ function switch_theme( $stylesheet ) {
 	}
 
 	$nav_menu_locations = get_theme_mod( 'nav_menu_locations' );
+<<<<<<< HEAD
 	update_option( 'theme_switch_menu_locations', $nav_menu_locations );
+=======
+	update_option( 'theme_switch_menu_locations', $nav_menu_locations, true );
+>>>>>>> bb56ea5 (projet final)
 
 	if ( func_num_args() > 1 ) {
 		$stylesheet = func_get_arg( 1 );

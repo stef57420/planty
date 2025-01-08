@@ -3,8 +3,11 @@
  * Customizer Control: Customizer Link
  *
  * @package     Astra
+<<<<<<< HEAD
  * @author      Astra
  * @copyright   Copyright (c) 2020, Astra
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link        https://wpastra.com/
  * @since       1.0.0
  */
@@ -22,7 +25,10 @@ class Astra_Control_Customizer_Link extends WP_Customize_Control {
 	/**
 	 * The control type.
 	 *
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var string
 	 */
 	public $type = 'ast-customizer-link';

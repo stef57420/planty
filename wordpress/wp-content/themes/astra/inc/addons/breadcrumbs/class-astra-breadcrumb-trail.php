@@ -16,8 +16,11 @@
  *
  * @package   BreadcrumbTrail
  * @version   1.1.0
+<<<<<<< HEAD
  * @author    Justin Tadlock <justin@justintadlock.com>
  * @copyright Copyright (c) 2008 - 2017, Justin Tadlock
+=======
+>>>>>>> bb56ea5 (projet final)
  * @link      https://themehybrid.com/plugins/breadcrumb-trail
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -60,7 +63,10 @@ function astra_get_breadcrumb( $echo = true ) {
  * Returns or echo the breadcrumb depending upon the argument.
  *
  * @since  1.8.1
+<<<<<<< HEAD
  * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
  * @param  boolean $echo  Whether to echo or not.
  * @return string Selected Breadcrumb.
  */
@@ -135,7 +141,10 @@ function astra_breadcrumb_trail( $args = array() ) {
  * which should be used in theme templates.
  *
  * @since  1.8.1
+<<<<<<< HEAD
  * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
  * @param  boolean $echo  Whether to echo or not.
  * @return string Selected Breadcrumb.
  */
@@ -163,7 +172,10 @@ function astra_get_breadcrumb_trail( $echo = true ) {
  * Creates a breadcrumbs menu for the site based on the current page that's being viewed by the user.
  *
  * @since  0.6.0
+<<<<<<< HEAD
  * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
  */
 class Astra_Breadcrumb_Trail {
 
@@ -171,7 +183,10 @@ class Astra_Breadcrumb_Trail {
 	 * Array of items belonging to the current breadcrumb trail.
 	 *
 	 * @since  0.1.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var    array
 	 */
 	public $items = array();
@@ -180,7 +195,10 @@ class Astra_Breadcrumb_Trail {
 	 * Arguments used to build the breadcrumb trail.
 	 *
 	 * @since  0.1.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var    array
 	 */
 	public $args = array();
@@ -189,7 +207,10 @@ class Astra_Breadcrumb_Trail {
 	 * Array of text labels.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var    array
 	 */
 	public $labels = array();
@@ -198,7 +219,10 @@ class Astra_Breadcrumb_Trail {
 	 * Array of post types (key) and taxonomies (value) to use for single post views.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @var    array
 	 */
 	public $post_taxonomy = array();
@@ -210,7 +234,10 @@ class Astra_Breadcrumb_Trail {
 	 * We'll just return the trail HTML.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return string
 	 */
 	public function __toString() {
@@ -222,7 +249,10 @@ class Astra_Breadcrumb_Trail {
 	 * to create the array of breadcrumb items.
 	 *
 	 * @since  0.6.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  array   $args  {
 	 *     @type string    $container      Container HTML element. nav|div
 	 *     @type string    $before         String to output before breadcrumb menu.
@@ -276,7 +306,10 @@ class Astra_Breadcrumb_Trail {
 	 * Formats the HTML output for the breadcrumb trail.
 	 *
 	 * @since  0.6.0
+<<<<<<< HEAD
 	 * @access public
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return string
 	 */
 	public function trail() {
@@ -397,7 +430,11 @@ class Astra_Breadcrumb_Trail {
 			return $breadcrumb;
 		}
 
+<<<<<<< HEAD
 		echo $breadcrumb;
+=======
+		echo wp_kses_post( $breadcrumb );
+>>>>>>> bb56ea5 (projet final)
 	}
 
 	/* ====== Protected Methods ====== */
@@ -406,7 +443,10 @@ class Astra_Breadcrumb_Trail {
 	 * Sets the labels property.  Parses the inputted labels array with the defaults.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function set_labels() {
@@ -444,7 +484,10 @@ class Astra_Breadcrumb_Trail {
 	 * The taxonomy's terms are shown on the singular post view if set.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function set_post_taxonomy() {
@@ -464,7 +507,10 @@ class Astra_Breadcrumb_Trail {
 	 * a condition is met, a specific method is launched to add items to the `$items` array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_items() {
@@ -551,7 +597,10 @@ class Astra_Breadcrumb_Trail {
 	 * Gets front items based on $wp_rewrite->front.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_rewrite_front_items() {
@@ -566,7 +615,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the page/paged number to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_paged_items() {
@@ -589,7 +641,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the network (all sites) home page link to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_network_home_link() {
@@ -603,7 +658,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the current site's home page link to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_site_home_link() {
@@ -619,7 +677,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds items for the front page to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_front_page_items() {
@@ -645,7 +706,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds items for the posts page (i.e., is_home()) to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_blog_items() {
@@ -674,7 +738,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds singular post items to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_singular_items() {
@@ -711,7 +778,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for taxonomy term archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @global object $wp_rewrite
 	 * @return void
 	 */
@@ -819,7 +889,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for post type archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_post_type_archive_items() {
@@ -858,7 +931,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for user (author) archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @global object $wp_rewrite
 	 * @return void
 	 */
@@ -888,7 +964,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for minute + hour archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_minute_hour_archive_items() {
@@ -906,7 +985,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for minute archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_minute_archive_items() {
@@ -924,7 +1006,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for hour archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_hour_archive_items() {
@@ -942,7 +1027,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for day archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_day_archive_items() {
@@ -972,7 +1060,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for week archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_week_archive_items() {
@@ -1001,7 +1092,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for month archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_month_archive_items() {
@@ -1029,7 +1123,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for year archives.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_year_archive_items() {
@@ -1054,7 +1151,10 @@ class Astra_Breadcrumb_Trail {
 	 * defined in this class.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_default_archive_items() {
@@ -1072,7 +1172,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for search results.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_search_items() {
@@ -1089,7 +1192,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds the items to the trail items array for 404 pages.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @return void
 	 */
 	protected function add_404_items() {
@@ -1103,7 +1209,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds a specific post's parents to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  int    $post_id
 	 * @return void
 	 */
@@ -1146,7 +1255,10 @@ class Astra_Breadcrumb_Trail {
 	 * rewrite arguments and whether it has an archive page.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  int    $post_id
 	 * @return void
 	 */
@@ -1202,7 +1314,10 @@ class Astra_Breadcrumb_Trail {
 	 * match the 'has_archive' argument when it's set as a string instead of a boolean.
 	 *
 	 * @since  0.6.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  int    $slug  The post type archive slug to search for.
 	 * @return void
 	 */
@@ -1226,7 +1341,10 @@ class Astra_Breadcrumb_Trail {
 	 * Adds a post's terms from a specific taxonomy to the items array.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  int     $post_id  The ID of the post to get the terms for.
 	 * @param  string  $taxonomy The taxonomy to get the terms from.
 	 * @return void
@@ -1264,7 +1382,10 @@ class Astra_Breadcrumb_Trail {
 	 * normally be a "ghost" directory.  If any page matches the given path, it'll be added.
 	 *
 	 * @since  1.0.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  string $path The path (slug) to search for posts by.
 	 * @return void
 	 */
@@ -1357,7 +1478,10 @@ class Astra_Breadcrumb_Trail {
 	 * types.
 	 *
 	 * @since  0.6.0
+<<<<<<< HEAD
 	 * @access protected
+=======
+>>>>>>> bb56ea5 (projet final)
 	 * @param  int    $post_id ID of the post whose parents we want.
 	 * @param  string $path    Path of a potential parent page.
 	 * @param  array  $args    Mixed arguments for the menu.

@@ -25,6 +25,10 @@
  * @since 6.4.0 Added support for background.backgroundImage.
  * @since 6.5.0 Added support for background.backgroundPosition,
  *              background.backgroundRepeat and dimensions.aspectRatio.
+<<<<<<< HEAD
+=======
+ * @since 6.7.0 Added support for typography.writingMode.
+>>>>>>> bb56ea5 (projet final)
  */
 #[AllowDynamicProperties]
 final class WP_Style_Engine {
@@ -50,31 +54,56 @@ final class WP_Style_Engine {
 	 */
 	const BLOCK_STYLE_DEFINITIONS_METADATA = array(
 		'background' => array(
+<<<<<<< HEAD
 			'backgroundImage'    => array(
+=======
+			'backgroundImage'      => array(
+>>>>>>> bb56ea5 (projet final)
 				'property_keys' => array(
 					'default' => 'background-image',
 				),
 				'value_func'    => array( self::class, 'get_url_or_value_css_declaration' ),
 				'path'          => array( 'background', 'backgroundImage' ),
 			),
+<<<<<<< HEAD
 			'backgroundPosition' => array(
+=======
+			'backgroundPosition'   => array(
+>>>>>>> bb56ea5 (projet final)
 				'property_keys' => array(
 					'default' => 'background-position',
 				),
 				'path'          => array( 'background', 'backgroundPosition' ),
 			),
+<<<<<<< HEAD
 			'backgroundRepeat'   => array(
+=======
+			'backgroundRepeat'     => array(
+>>>>>>> bb56ea5 (projet final)
 				'property_keys' => array(
 					'default' => 'background-repeat',
 				),
 				'path'          => array( 'background', 'backgroundRepeat' ),
 			),
+<<<<<<< HEAD
 			'backgroundSize'     => array(
+=======
+			'backgroundSize'       => array(
+>>>>>>> bb56ea5 (projet final)
 				'property_keys' => array(
 					'default' => 'background-size',
 				),
 				'path'          => array( 'background', 'backgroundSize' ),
 			),
+<<<<<<< HEAD
+=======
+			'backgroundAttachment' => array(
+				'property_keys' => array(
+					'default' => 'background-attachment',
+				),
+				'path'          => array( 'background', 'backgroundAttachment' ),
+			),
+>>>>>>> bb56ea5 (projet final)
 		),
 		'color'      => array(
 			'text'       => array(
@@ -299,6 +328,15 @@ final class WP_Style_Engine {
 				),
 				'path'          => array( 'typography', 'letterSpacing' ),
 			),
+<<<<<<< HEAD
+=======
+			'writingMode'    => array(
+				'property_keys' => array(
+					'default' => 'writing-mode',
+				),
+				'path'          => array( 'typography', 'writingMode' ),
+			),
+>>>>>>> bb56ea5 (projet final)
 		),
 	);
 

@@ -224,7 +224,11 @@ p {
 	margin: 1.1em 0;
 }
 
+<<<<<<< HEAD
 .login h1.admin-email__heading {
+=======
+.login .admin-email__heading {
+>>>>>>> bb56ea5 (projet final)
 	border-bottom: 1px #f0f0f1 solid;
 	color: #50575e;
 	font-weight: normal;

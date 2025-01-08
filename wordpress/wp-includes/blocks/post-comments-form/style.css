@@ -28,7 +28,11 @@
 .wp-block-post-comments-form[style*=letter-spacing] :where(.comment-reply-title){
   letter-spacing:inherit;
 }
+<<<<<<< HEAD
 .wp-block-post-comments-form input[type=submit]{
+=======
+.wp-block-post-comments-form :where(input[type=submit]){
+>>>>>>> bb56ea5 (projet final)
   box-shadow:none;
   cursor:pointer;
   display:inline-block;

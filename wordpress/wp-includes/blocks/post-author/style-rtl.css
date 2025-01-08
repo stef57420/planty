@@ -1,4 +1,8 @@
 .wp-block-post-author{
+<<<<<<< HEAD
+=======
+  box-sizing:border-box;
+>>>>>>> bb56ea5 (projet final)
   display:flex;
   flex-wrap:wrap;
 }

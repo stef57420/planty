@@ -121,20 +121,39 @@ if ( ! function_exists( 'astra_theme_comment' ) ) {
 								astra_markup_open( 'ast-comment-data-wrap' );
 								astra_markup_open( 'ast-comment-meta-wrap' );
 								echo '<header ';
+<<<<<<< HEAD
 								echo astra_attr(
 									'comment-meta-author',
 									array(
 										'class' => 'ast-comment-meta ast-row ast-comment-author capitalize',
+=======
+								echo wp_kses_post(
+									astra_attr(
+										'commen-meta-author',
+										array(
+											'class' => 'ast-comment-meta ast-row ast-comment-author capitalize',
+										)
+>>>>>>> bb56ea5 (projet final)
 									)
 								);
 								echo '>';
 
 									printf(
+<<<<<<< HEAD
 										astra_markup_open(
 											'ast-comment-cite-wrap',
 											array(
 												'open'  => '<div %s>',
 												'class' => 'ast-comment-cite-wrap',
+=======
+										esc_attr(
+											astra_markup_open(
+												'ast-comment-cite-wrap',
+												array(
+													'open' => '<div %s>',
+													'class' => 'ast-comment-cite-wrap',
+												)
+>>>>>>> bb56ea5 (projet final)
 											)
 										) . '<cite><b class="fn">%1$s</b> %2$s</cite></div>',
 										get_comment_author_link(),

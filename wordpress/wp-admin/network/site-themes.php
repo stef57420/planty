@@ -143,7 +143,11 @@ if ( $action ) {
 			}
 	}
 
+<<<<<<< HEAD
 	update_option( 'allowedthemes', $allowed_themes );
+=======
+	update_option( 'allowedthemes', $allowed_themes, false );
+>>>>>>> bb56ea5 (projet final)
 	restore_current_blog();
 
 	wp_safe_redirect(

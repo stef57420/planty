@@ -5,7 +5,11 @@ Tags: contact form, schema-woven validation
 Tested up to: 6.7
 Requires at least: 6.6
 Requires PHP: 7.4
+<<<<<<< HEAD
 Stable tag: 6.0
+=======
+Stable tag: 6.0.2
+>>>>>>> bb56ea5 (projet final)
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +71,17 @@ Do you have questions or issues with Contact Form 7? Use these support channels 
 
 For more information, see [Releases](https://contactform7.com/category/releases/).
 
+<<<<<<< HEAD
+=======
+= 6.0.2 =
+
+* Removes unnecessary type declaration from nullable arguments to avoid deprecation warnings in PHP 8.4.
+
+= 6.0.1 =
+
+[https://contactform7.com/contact-form-7-601/](https://contactform7.com/contact-form-7-601/)
+
+>>>>>>> bb56ea5 (projet final)
 = 6.0 =
 
 [https://contactform7.com/contact-form-7-60/](https://contactform7.com/contact-form-7-60/)

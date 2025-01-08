@@ -259,8 +259,14 @@ var runtime = (function (exports) {
           throw arg;
         }
 
+<<<<<<< HEAD
         // Be forgiving, per 25.3.3.3.3 of the spec:
         // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+=======
+        // Be forgiving, per GeneratorResume behavior specified since ES2015:
+        // ES2015 spec, step 3: https://262.ecma-international.org/6.0/#sec-generatorresume
+        // Latest spec, step 2: https://tc39.es/ecma262/#sec-generatorresume
+>>>>>>> bb56ea5 (projet final)
         return doneResult();
       }
 
@@ -333,7 +339,11 @@ var runtime = (function (exports) {
     var method = delegate.iterator[methodName];
     if (method === undefined) {
       // A .throw or .return when the delegate iterator has no .throw
+<<<<<<< HEAD
       // method, or a missing .next mehtod, always terminate the
+=======
+      // method, or a missing .next method, always terminate the
+>>>>>>> bb56ea5 (projet final)
       // yield* loop.
       context.delegate = null;
 
@@ -487,7 +497,11 @@ var runtime = (function (exports) {
   };
 
   function values(iterable) {
+<<<<<<< HEAD
     if (iterable || iterable === "") {
+=======
+    if (iterable != null) {
+>>>>>>> bb56ea5 (projet final)
       var iteratorMethod = iterable[iteratorSymbol];
       if (iteratorMethod) {
         return iteratorMethod.call(iterable);
