@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Spectra &#8211; WordPress Gutenberg Blocks - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-14 07:25:59+0000\n"
+"PO-Revision-Date: 2025-01-12 10:43:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -140,8 +140,8 @@ msgstr "Échec de l‘action"
 #: lib/gutenberg-templates/inc/api/sites.php:93
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:138
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:197
-#: lib/nps-survey/classes/nps-survey-script.php:270
-#: lib/nps-survey/classes/nps-survey-script.php:351
+#: lib/nps-survey/classes/nps-survey-script.php:273
+#: lib/nps-survey/classes/nps-survey-script.php:354
 #: lib/zipwp-images/classes/zipwp-images-api.php:169
 msgid "Nonce verification failed."
 msgstr "La vérification du nonce a échoué."
@@ -160,7 +160,7 @@ msgstr "La vérification du nonce a échoué."
 #: lib/gutenberg-templates/inc/api/settings.php:92
 #: lib/gutenberg-templates/inc/api/sites.php:70
 #: lib/gutenberg-templates/inc/classes/ast-block-templates-zipwp-api.php:77
-#: lib/nps-survey/classes/nps-survey-script.php:249
+#: lib/nps-survey/classes/nps-survey-script.php:252
 #: lib/zipwp-images/classes/zipwp-images-api.php:92
 msgid "Sorry, you are not allowed to do that."
 msgstr "Désolé, vous n’êtes pas autorisé à le faire."
@@ -321,51 +321,51 @@ msgstr "Une erreur s’est produite lors de la suppression de la police."
 msgid "400"
 msgstr "400"
 
-#: classes/class-uagb-admin.php:372
+#: classes/class-uagb-admin.php:360
 msgid "View Log"
 msgstr "Voir le journal"
 
-#: classes/class-uagb-admin.php:372
+#: classes/class-uagb-admin.php:360
 msgid "Your Spectra database is now up-to-date. Your website will continue to function as before."
 msgstr "Votre base de données Spectra est maintenant à jour. Votre site continuera à fonctionner comme avant."
 
-#: classes/class-uagb-admin.php:371
+#: classes/class-uagb-admin.php:359
 msgid "Update Successful!"
 msgstr "Mise à jour réussie !"
 
-#: classes/class-uagb-admin.php:346
+#: classes/class-uagb-admin.php:334
 msgid "Great! This should only take a few minutes. Thanks for hanging in there."
 msgstr "Super ! Cela ne devrait prendre que quelques minutes. Merci d’avoir patienté."
 
-#: classes/class-uagb-admin.php:345
+#: classes/class-uagb-admin.php:333
 msgid "Spectra database update in progress"
 msgstr "Mise à jour de la base de données Spectra en cours"
 
-#: classes/class-uagb-admin.php:320
+#: classes/class-uagb-admin.php:308
 msgid "Learn More About This"
 msgstr "En savoir plus sur le sujet"
 
-#: classes/class-uagb-admin.php:318
+#: classes/class-uagb-admin.php:306
 msgid "Update Spectra Database"
 msgstr "Mise à jour de la base de données Spectra"
 
-#: classes/class-uagb-admin.php:317
+#: classes/class-uagb-admin.php:305
 msgid "To be on the safer side, please be sure to back up your site before updating."
 msgstr "Pour plus de sécurité, veuillez vous assurez d’avoir sauvegardé votre site avant de mettre à jour."
 
-#: classes/class-uagb-admin.php:316
+#: classes/class-uagb-admin.php:304
 msgid "We've detected that some of your pages were created with an older version of Spectra. To ensure your designs remain unaffected, we recommend updating the Spectra database now. Updating the Spectra database will not impact any other parts of your website."
 msgstr "Nous avons détecté que certaines de vos pages ont été créées avec une ancienne version de Spectra. Pour que vos créations ne soient pas affectées, nous vous recommandons de mettre à jour la base de données Spectra dès maintenant. La mise à jour de la base de données Spectra n’aura aucun impact sur les autres parties de votre site."
 
-#: classes/class-uagb-admin.php:315
+#: classes/class-uagb-admin.php:303
 msgid "Spectra database update required"
 msgstr "Mise à jour de la base de données Spectra requise"
 
-#: classes/class-uagb-admin.php:141
+#: classes/class-uagb-admin.php:129
 msgid "Log file not found."
 msgstr "Fichier journal introuvable."
 
-#: classes/class-uagb-admin.php:108
+#: classes/class-uagb-admin.php:96
 msgid "Migration started successfully."
 msgstr "La migration a bien commencé."
 
@@ -5951,7 +5951,7 @@ msgstr "Désolé, vous n’êtes pas autorisé à effectuer cette opération."
 #: admin-core/inc/admin-menu.php:148 admin-core/inc/admin-menu.php:159
 #: admin-core/inc/admin-menu.php:169 admin-core/inc/admin-menu.php:183
 #: admin-core/inc/admin-menu.php:194 admin-core/inc/admin-menu.php:273
-#: classes/class-uagb-init-blocks.php:579 classes/class-uagb-nps-notice.php:176
+#: classes/class-uagb-init-blocks.php:579 classes/class-uagb-nps-notice.php:171
 msgid "Spectra"
 msgstr "Spectra"
 
@@ -6102,17 +6102,17 @@ msgstr "Titre de la publication"
 msgid "Content Timeline Child"
 msgstr "Contenu enfant de la chronologie"
 
-#: classes/class-uagb-admin.php:208
+#: classes/class-uagb-admin.php:196
 msgid "Error occurred, The version selected is invalid. Try selecting different version."
 msgstr "Une erreur s’est produite, la version sélectionnée n’est pas valide. Essayez de sélectionner une version différente."
 
-#: classes/class-uagb-admin.php:195 classes/class-uagb-admin.php:226
+#: classes/class-uagb-admin.php:183 classes/class-uagb-admin.php:214
 #: admin-core/assets/build/dashboard-app.js:1
 #: admin-core/assets/build/dashboard-app.js:3
 msgid "Rollback to Previous Version"
 msgstr "Revenir à la version précédente"
 
-#: classes/class-uagb-admin.php:124 classes/class-uagb-admin.php:194
+#: classes/class-uagb-admin.php:112 classes/class-uagb-admin.php:182
 msgid "You do not have permission to access this page."
 msgstr "Vous n’avez pas le droit d’accéder à cette page."
 
@@ -6453,7 +6453,7 @@ msgid "Blockquote"
 msgstr "Citation"
 
 #. translators: %s: html tags
-#: classes/class-uagb-admin.php:391
+#: classes/class-uagb-admin.php:379
 msgid "Spectra requires&nbsp;%3$sBlock Editor%4$s. You can change your editor settings to Block Editor from&nbsp;%1$shere%2$s. Plugin is currently NOT RUNNING."
 msgstr "Spectra nécessite  %3$sl’éditeur de blocs%4$s. Vous pouvez modifier les réglages de votre éditeur dans l’éditeur de bloc par %1$sici%2$s. L’extension n’est pas en fonctionnement pour le moment."
 
@@ -6541,7 +6541,7 @@ msgstr "Blocs"
 
 #: blocks-config/post-timeline/class-uagb-post-timeline.php:545
 #: blocks-config/post/class-uagb-post.php:624
-#: blocks-config/post/class-uagb-post.php:2282
+#: blocks-config/post/class-uagb-post.php:2226
 #: includes/blocks/post-carousel/attributes.php:118
 #: includes/blocks/post-grid/attributes.php:109
 #: includes/blocks/post-masonry/attributes.php:111
