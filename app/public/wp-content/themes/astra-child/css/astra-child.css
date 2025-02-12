@@ -125,12 +125,14 @@ header #commander {
 /*menu commander*/
 
 #menu-item-21 a{
-    background-color: var(--button-nav); /* Couleur de fond */
+    
+    text-decoration: none; /* Pas de soulignement */
     font-weight: 700 !important;
     flex-shrink: 0;
     display: flex;
     align-items: center !important;
     text-align: center !important;
+    
 
     
 
@@ -312,12 +314,17 @@ footer {
 }
 
 
-.nav-bar{
+/* Burger menu */
+
+#ast-hf-menu-1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: 100%; /* Ajuste la largeur au contenu */
+    padding: 07px 20px; /* Marge intérieure */
 }
+    
+
 
 .page-commander {
     background-color: var(--primary-color);
@@ -462,6 +469,7 @@ footer {
 }
 .commander{
     margin: 35px !important;
+    
 }
 
 
@@ -496,6 +504,15 @@ footer {
 }
 
 
+body > footer{
+
+ margin-top: 0px !important;
+
+}
+
+
+
+
 /* Page commander */
 
 #block-6b7415d7-da37-4baf-b0ca-3c4041207be8 > div > div > div{
@@ -520,6 +537,7 @@ footer {
     font-size: 38px;
     font-weight: 800;
     line-height: 45.6px;
+    
    
  
 }
@@ -821,6 +839,7 @@ h3 {
     height: 55px;
     border-radius: 5px;
     background: #E0B9B4;
+    color : #fff !important;
 }
 
 #post-10 > div > div.wp-block-uagb-container.uagb-block-e4289c54.alignfull.uagb-is-root-container{
@@ -907,7 +926,6 @@ h3 {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: -160px;
     z-index: 50;
     /* right: 45%; */
     left : 25%; 
@@ -956,8 +974,26 @@ h3 {
 
 }
 
+#post-12 > div > div.wp-block-uagb-container.contacter.uagb-block-66e6da37.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container.uagb-block-06705ca7.alignfull.uagb-is-root-container > div > div > div:nth-child(2) > div.wp-block-uagb-image.alignleft.uagb-block-1bc24c07.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-left.fleur.cachemobile{
+    margin-top: 0px !important;
+}
 
 
+#post-12 > div > div.wp-block-uagb-container.contacter.uagb-block-66e6da37.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container.uagb-block-06705ca7.alignfull.uagb-is-root-container > div > div > div:nth-child(2) > div.wp-block-uagb-image.alignleft.uagb-block-1bc24c07.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-left.fleur.cachemobile > figure{
+    margin-top: -190px !important;
+}
+
+
+#wpcf7-f255-p12-o1 > form > p:nth-child(5) > input {
+   
+    color : #fff !important;
+    background-color :  #E0B9B4;
+}
+
+#wpcf7-f255-p12-o1 > form {
+    text-align : center;
+
+}
 
 /* Media queries */
 
@@ -1231,6 +1267,7 @@ h3 {
     
     .commander {
       margin: 35px;
+      
     }
     
     .pensent {
